@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+    <title>@yield('title')</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-font basic-color">
+        <div class="container">
+            <a class="navbar-brand icon" href="#">
+                <img src="/image/icon.svg" width="80" height="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">TEMUKAN</a>
+                    </li>
+                    <li class="nav-item dropdown mr-3 active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            KATEGORI KELAS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">KENAPA HARUS SI TANI?</a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">SARAN</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">TENTANG</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {{-- JUMBOTRON --}}
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="jumbo-big">Kini, semua bisa
+                menjadi #petanimillenial,
+                bareng <img class="jumbo-big-image" src="/image/icon.svg">
+            </h1>
+            <p class="jumbo-small">Bareng si tani, kamu bisa mendapatkan kursus menjadi petani cerdas dibimbing
+                mentor-mentor yang berkompeten dibidangnya loh! tunggu apalagi? yuk gabung sekarang!</p>
+            <p class="lead mt-5 d-flex">
+                <a class="btn btn-light jumbo-button-1" href="#" role="button">GABUNG KE KELAS</a>
+                <a class="btn btn-outline-light ml-3 jumbo-button-2" href="#" role="button">APA KEUNTUNGANNYA?</a>
+            </p>
+        </div>
+    </div>
+    {{-- JUMBOTRON END --}}
+    {{-- ABOUT --}}
+    <div class="container mt-5 mb-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <img src="/image/img-about.svg" class="about-img" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2 class="about-big">Selamat Datang di
+                    Sinau Tani Indonesia!</h2>
+                <p class="about-small">
+                    Sinau Tani Indonesia atau biasa di singkat sitani, adalah sebuah platform website yang menyediakan
+                    kelas online gratis, yang membahas berbagai hal mengenai pertanian dan perkebunan dari tradisional
+                    maupun pertanian modern.
+                    <br> tani, dirancang untuk mudah dipahami dan digunakan di semua elemen masyarakat. Materi yang
+                    disampaikan pun dibuat mudah dipahami dan dipandu mentor yang berpengalaman loh!
+                </p>
+                <a class="btn btn-outline-light about-button-3" href="#" role="button">PELAJARI LEBIH LANJUT </a>
+            </div>
+        </div>
+    </div>
+    {{-- ABOUT END --}}
+    {{-- KATEGORI KELAS --}}
+    <div class="category">
+        <div class="container">
+            <div class="title-category">
+                <h3 class="category-title">Pilih kategori kelas </h3>
+                <p class="category-description">Yuk, pilih kategori kelas yang ingin kamu ikuti, semuanya gratis kok.
+                    Klik pada kategori yang ingin kamu ikuti untuk melihat kelas yang tersedia ya!.</p>
+            </div>
+            <div class="row mt-4 pb-5">
+                <div class="col-md-4">
+                    <a href="">
+                        <div class="card card-category">
+                            <img class="card-img category-img" src="/image/kategori-pertanian.svg"
+                                alt="Kategori Pertanian">
+                            <div class="card-img-overlay">
+                                <div class="category-content">
+                                    <h3 class="card-title">Kategori Pertanian</h3>
+                                    <p class="card-text">Tersedia 5 kelas yang bisa kamu ikuti!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="">
+                        <div class="card card-category">
+                            <img class="card-img category-img" src="/image/kategori-perkebunan.svg"
+                                alt="Kategori Pertanian">
+                            <div class="card-img-overlay">
+                                <div class="category-content">
+                                    <h3 class="card-title">Kategori Perkebunan</h3>
+                                    <p class="card-text">Tersedia 4 kelas yang bisa kamu ikuti!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="">
+                        <div class="card card-category">
+                            <img class="card-img category-img" src="/image/kategori-hidroponik.svg"
+                                alt="Kategori Pertanian">
+                            <div class="card-img-overlay">
+                                <div class="category-content">
+                                    <h3 class="card-title">Kategori Pertanian Sistem Hidroponik</h3>
+                                    <p class="card-text">Tersedia 2 kelas yang bisa kamu ikuti!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- KATEGORI KELAS END --}}
+    {{-- KEUNTUNGAN --}}
+    <div class="container">
+        <div class="judul-keuntungan">
+            <h3 class="keuntungan-judul">Apa keuntungan belajar bareng si tani?</h3>
+            <p class="deskripsi-keuntungan">Dengan gabung ke kelas gratis di si tani tentu aja ada banyak keuntunganya
+                loh, kira-kira apa saja keuntungnya yuk simak!</p>
+        </div>
+        <div class="row mb-5 pb-4">
+            <div class="col-md-3">
+                <img class="img-keuntungan" src="/image/keuntungan1.svg" alt="Gratis">
+                <h4 class="keuntungan-big">Tanpa dipungut biaya apapun</h4>
+                <p class="keuntungan-small">Kamu nggak perlu mengeluarkan uang satu rupiah pun untuk mengukuti semua
+                    kelas yang ada.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-keuntungan" src="/image/keuntungan2.svg" alt="Mentor yang handal">
+                <h4 class="keuntungan-big">Dibimbing mentor berpengalaman</h4>
+                <p class="keuntungan-small">Semua mentor si tani berpengalaman pada bidangnya masing-masing dan memiliki
+                    cara mengajar yang menyenangkan.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-keuntungan" src="/image/keuntungan3.svg" alt="Materi berkualitas">
+                <h4 class="keuntungan-big">Video dan materi yang berkualitas</h4>
+                <p class="keuntungan-small">Video pembelajaran yang ada di si tani, semua memiliki resolusi maksimal
+                    hingga 1080p! dan materi yang dibuat mudah dipahami.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-keuntungan" src="/image/keuntungan4.svg" alt="Ringkasan materi tersedia">
+                <h4 class="keuntungan-big">Gratis ringkasan materi yang bisa kamu unduh</h4>
+                <p class="keuntungan-small">Setelah menyimak pembelajaran, kamu juga bisa mendapatkan ringkasan materi
+                    yang disampaikan untuk kamu pelajari lagi loh..</p>
+            </div>
+        </div>
+    </div>
+    {{-- KEUNTUNGAN END --}}
+    {{-- TESTIMONY --}}
+    <div class="container">
+        <div class="testi-title pt-5">
+            <h3>Apa kata mereka?</h3>
+        </div>
+        <div class="carousel-testi">
+        </div>
+    </div>
+    {{-- TESTIMONY END --}}
+    {{-- FEEDBACK --}}
+    <div class="container mt-5 mb-5">
+        <div class="feedback-box">
+            <div class="d-flex justify-content-between align-items-center feedback-content">
+                <h4 class="feed-big pt-1">Lalu, bagaimana pendapatmu tentang si tani?</h4>
+                <a href="" class="btn btn-success testi-button">KIRIM PENDAPATMU</a>
+            </div>
+        </div>
+    </div>
+    {{-- FEEDBACK END --}}
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="image-footer pb-4">
+                    <img src="/image/icon-footer.svg" alt="">
+                </div>
+                <div class="row footer-content">
+                    <div class="col-md-6">
+                        <ul>
+                            <li class="ftr-tps">Sinau tani adalah sebuah website penyedia kursus online gratis, yang
+                                berbasis di Yogyakarta, Indonesia dan didirikan pada Oktober 2020</li>
+                            <li class="ftr-tipis">Jika anda memiliki ide, kritik atau saran,bisa menghubungi hotline
+                                kami di :</li>
+                            <li class="ftr-biasa">(+62)81234567890</li>
+                            <li class="ftr-biasa">sales-sitani-idn@gmail.com</li>
+                            <li class="ftr-biasa">kerjasama-sitani-idn@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 bantuan-link">
+                        <ul>
+                            <li>
+                                <strong>Menu</strong>
+                            </li>
+                            <li class="ftr-tipis">Kategori :</li>
+                            <li>
+                                <a href="" class="ftr-biasa">Pertanian</a>
+                            </li>
+                            <li>
+                                <a href="" class="ftr-biasa">Perkebunan</a>
+                            </li>
+                            <li>
+                                <a href="" class="ftr-biasa">Pertanian modern</a>
+                            </li>
+                            <li>
+                                <a href="" class="ftr-biasa">Testimoni</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>
+                                <strong>Kantor</strong>
+                            </li>
+                            <li class="ftr-tipis">
+                                Yogyakarta, Indonesia
+                            </li>
+                            <li>
+                                <strong>Support dan Donasi</strong>
+                            </li>
+                            <li class="ftr-tipis">
+                                (+62)81234567890
+                            </li>
+                            <li class="ftr-tipis">
+                                donasi_sitani@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end d-flex justify-content-center">
+            <h5 class="ending mt-2">Copyright sitani 2020</h5>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
+</body>
+
+</html>

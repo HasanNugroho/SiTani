@@ -25,7 +25,7 @@
             <img src="/image/img-about.svg" class="about-img" alt="">
         </div>
         <div class="col-md-6">
-            <h2 class="about-big">Selamat Datang di 
+            <h2 class="about-big">Selamat Datang di
                 Sinau Tani Indonesia!</h2>
             <p class="about-small">
                 Sinau Tani Indonesia atau biasa di singkat sitani, adalah sebuah platform website yang menyediakan  kelas online gratis, yang membahas berbagai hal mengenai pertanian dan perkebunan dari tradisional maupun pertanian modern. 

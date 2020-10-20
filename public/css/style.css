@@ -54,7 +54,7 @@ body{
     font-weight: bold !important;
     color: #35974A !important;
     font-size: 20px !important;
-    box-shadow: 5px 5px 0px 0px #FFFFFF 50% !important;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.425) !important;
 }
 .jumbo-button-2 {
     display: inline-block;
@@ -62,10 +62,11 @@ body{
     font-weight: bold !important;
     color: #ffffff !important;
     font-size: 20px !important;
-    box-shadow: 5px 5px 0px 0px #FFFFFF 50% !important;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.425) !important;
 }
 .jumbo-button-2:hover{
     color: #35974A !important;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.856) !important;
 }
 /* END JUMBOTRON */
 
@@ -94,12 +95,13 @@ body{
 .about-button-3 {
     display: inline-block;
     margin: 4px 2px;
-    background-color: #E7F3E9, 100%;
+    background-color: #35974A, 25%;
     font-weight: bold !important;
     color: #35974A !important;
     font-size: 20px !important;
     box-shadow: 5px 5px 0px 0px #FFFFFF 50% !important;
     border-color: #35974A !important;
+    box-shadow: 3px 3px rgba(53, 151, 74, 0.753) !important;
 }
 .about-button-3:hover{
     background-color: #35974A !important;
