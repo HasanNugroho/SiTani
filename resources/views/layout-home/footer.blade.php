@@ -2,7 +2,7 @@
     <div class="footer">
     <div class="container">
         <div class="image-footer pb-4">
-            <img src="/image/icon-footer.svg" alt="">
+            <img src="/image/landing/icon-footer.svg" alt="">
         </div>
         <div class="row footer-content">
             <div class="col-md-6">
