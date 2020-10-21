@@ -115,7 +115,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/perkebunan/coming-soon.png"
                             alt="Coming soon">

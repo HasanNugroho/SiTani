@@ -12,17 +12,16 @@
                 <li class="nav-item mr-3">
                     <a class="nav-link" href="/" aria-current="date">TEMUKAN</a>
                 </li>
-                <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                         KATEGORI KELAS
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/pertanian">Pertanian</a>
                         <a class="dropdown-item" href="/perkebunan">Perkebunan</a>
                         <a class="dropdown-item" href="/hidroponik">Hidroponik</a>
-                    </div>
-                </li>
+                    </ul>
+                  </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link" href="#keuntungan">KENAPA HARUS SI TANI?</a>
                 </li>
@@ -33,7 +32,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#tentang">TENTANG</a>
+                    <a class="nav-link" href="#footer">TENTANG</a>
                 </li>
             </ul>
         </div>

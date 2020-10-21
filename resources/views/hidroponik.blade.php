@@ -46,7 +46,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/hidroponik/kangkung.png" alt="Cabai">
+                        <img class="card-img category-img" src="/image/hidroponik/kangkung.png" alt="kangkung">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya Kangkung</h3>
@@ -60,7 +60,7 @@
                 <a href="">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/tomat.png"
-                            alt="Padi">
+                            alt="tomat">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya Tomat</h3>
@@ -74,7 +74,7 @@
                 <a href="">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/brokoli.png"
-                            alt="Jagung">
+                            alt="brokoli">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya Brokoli</h3>
@@ -88,7 +88,7 @@
                 <a href="">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/sawi.png"
-                            alt="Kacang Tanah">
+                            alt="sawi">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya Sawi</h3>
@@ -102,7 +102,7 @@
                 <a href="">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/bayam.png"
-                            alt="Kacang Panjang">
+                            alt="bayam">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya Bayam</h3>
@@ -116,7 +116,7 @@
                 <a href="">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/selada.png"
-                            alt="Kacang Panjang">
+                            alt="selada">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya Selada</h3>
@@ -130,7 +130,7 @@
                 <a href="">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/pakcoy.png"
-                            alt="Kacang Panjang">
+                            alt="pakcoy">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya Pakcoy</h3>
@@ -144,7 +144,7 @@
                 <a href="">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/stroberi.png"
-                            alt="Kacang Panjang">
+                            alt="stroberi">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya Stoberi</h3>
@@ -155,7 +155,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/coming-soon.png"
                             alt="Coming soon">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,19 +15,15 @@ use App\Http\Controllers\FeedbackController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/pertanian', function () {
-    return view('pertanian');
-});
-Route::get('/perkebunan', function () {
-    return view('perkebunan');
-});
-Route::get('/hidroponik', function () {
-    return view('hidroponik');
-});
 
+Route::group(['prefix' => '/'], function () {
+    Route::get('', [HomeController::class, 'home']);
+    Route::get('pertanian', [HomeController::class, 'pertanian']);
+    Route::get('perkebunan', [HomeController::class, 'perkebunan']);
+    Route::get('hidroponik', [HomeController::class, 'hidroponik']);
+    Route::get('pengembangan', [HomeController::class, 'pengembangan']);
+    
+});
 Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
 
 

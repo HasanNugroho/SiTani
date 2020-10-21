@@ -36,7 +36,6 @@
                 <br> tani, dirancang untuk mudah dipahami dan digunakan di semua elemen masyarakat. Materi yang
                 disampaikan pun dibuat mudah dipahami dan dipandu mentor yang berpengalaman loh!
             </p>
-            <a class="btn btn-outline-light about-button-3" href="#" role="button">PELAJARI LEBIH LANJUT </a>
         </div>
     </div>
 </div>
@@ -51,7 +50,7 @@
         </div>
         <div class="row mt-4 pb-5">
             <div class="col-md-4">
-                <a href="">
+                <a href="/pertanian">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/landing/kategori-pertanian.png"
                             alt="Kategori Pertanian">
@@ -65,7 +64,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/perkebunan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/landing/kategori-perkebunan.png"
                             alt="Kategori Pertanian">
@@ -79,7 +78,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/hidroponik">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/landing/kategori-hidroponik.png"
                             alt="Kategori Pertanian">
@@ -148,8 +147,8 @@
                     <div class="col-10">
                         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner ">
-                                <div class="carousel-item active">
-                                    <div class="row">
+                                <div class="carousel-item active ">
+                                    <div class="row d-flex">
                                         <div class="col-md-4 mb-3 justify-content-center">
                                             <div class="card-testi">
                                                 <div class="body-testi">
