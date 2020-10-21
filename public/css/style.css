@@ -1,37 +1,37 @@
-html{
+html {
     font-family: Rubik;
 }
-.basic-color{
-    background-color:#35974A;
+.basic-color {
+    background-color: #35974a;
 }
 /* NAVBAR */
-.navbar-font{
-    color: #E7F3E9;
+.navbar-font {
+    color: #e7f3e9;
     font-weight: bold;
     font-size: 14px;
     font-style: normal;
     line-height: 19px;
     font-family: Rubik;
 }
-.navbar-cstm{
+.navbar-cstm {
     height: 70px;
 }
-.dropdown-menu{
-    color: #35974A !important;
+.dropdown-menu {
+    color: #35974a !important;
     font-weight: bold !important;
     font-size: 16px !important;
-    background-color: #E7F3E9 !important;
+    background-color: #e7f3e9 !important;
     font-family: Rubik !important;
 }
-.nav-link{
-    color: #E7F3E9 !important;
+.nav-link {
+    color: #e7f3e9 !important;
     font-weight: bold;
     font-size: 14px;
     font-style: normal;
     line-height: 19px;
     font-family: Rubik !important;
 }
-.nav-link:hover{
+.nav-link:hover {
     color: #ffffff !important;
 }
 /* END NAVBAR */
@@ -46,30 +46,29 @@ html{
     width: 100%;
     border-radius: 0% !important;
 }
-.jumbo-big{
-    margin-top: 6rem;
+.jumbo-big {
     font-family: Rubik;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: bolder;
     font-size: 2.7rem;
     font-style: normal;
     line-height: 50px;
     max-width: 550px;
 }
-.jumbo-big-image{
+.jumbo-big-image {
     width: 120px;
 }
-.ktkls{
+.ktkls {
     display: inline-block;
     font-family: Rubik;
     padding: 10px 6px;
-    background-color: #256A34;
+    background-color: #256a34;
     font-weight: bold !important;
     color: #E7F3E9 !important;
     font-size: 1rem !important;
     border-radius: 15px;
 }
-.jumbo-small{
+.jumbo-small {
     margin-top: 2rem;
     font-family: Rubik;
     font-style: normal;
@@ -84,7 +83,7 @@ html{
     display: inline-block;
     margin: 4px 2px;
     font-weight: bold !important;
-    color: #35974A !important;
+    color: #35974a !important;
     font-size: 20px !important;
     box-shadow: 3px 3px rgba(255, 255, 255, 0.425) !important;
 }
@@ -107,19 +106,19 @@ html{
 /* END JUMBOTRON */
 
 /* ABOUT */
-.about-img{
+.about-img {
     width: 100%;
     height: auto;
 }
-.about-big{
-    color: #35974A;
+.about-big {
+    color: #35974a;
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
     font-size: 2rem;
     line-height: 38px;
 }
-.about-small{
+.about-small {
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
@@ -130,60 +129,61 @@ html{
     color: rgba(0, 0, 0, 0.6);
 }
 /* CATEGORY */
-.category{
-    background-color: #E7F3E9;
+.category {
+    background-color: #e7f3e9;
 }
-/* .card-img-overlay{
-    background-color: #E7F3E9;
-} */
-.title-category{
+.card.card-category {
+    background-color: transparent;
+    border: none;
+}
+.title-category {
     text-align: center;
     padding-top: 80px;
 }
-.category-title{
+.category-title {
     font-family: Rubik;
     font-weight: bold;
     font-size: 2.2rem;
     line-height: 33px;
     text-align: center;
 }
-.category-description{
+.category-description {
     font-family: Rubik;
     font-size: 1.2rem;
     line-height: 25px;
     text-align: center;
 }
-.card-category{
+.card-category {
     margin: 10px 15px;
 }
-.category-content{
+.category-content {
     position: absolute;
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
 }
-.card-title{
+.card-title {
     font-family: Rubik;
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-.card-text{
+.card-text {
     font-family: Rubik;
     font-size: 16px;
     line-height: 25px;
     align-items: center;
-    color: #E7F3E9;
+    color: #e7f3e9;
 }
 
-.category-img{
+.category-img {
     max-width: 335px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    background-color: #E7F3E9 !important;
+    background-color: #e7f3e9 !important;
     box-shadow: 3px 3px rgb(142, 211, 153) !important;
 }
 .category-img:hover{
@@ -191,18 +191,18 @@ html{
 }
 /* CATEGORY END */
 /* KEUNTUNGAN */
-.judul-keuntungan{
+.judul-keuntungan {
     margin-top: 80px;
     text-align: center;
 }
-.img-keuntungan{
+.img-keuntungan {
     max-width: 246px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-.keuntungan-judul{
+.keuntungan-judul {
     font-family: Rubik;
     font-weight: bold;
     font-size: 28px;
@@ -210,14 +210,14 @@ html{
     text-align: center;
     color: #219653;
 }
-.deskripsi-keuntungan{
+.deskripsi-keuntungan {
     font-family: Rubik;
     font-size: 16px;
     line-height: 25px;
     align-items: center;
     text-align: center;
 }
-.keuntungan-big{
+.keuntungan-big {
     font-family: Rubik;
     font-weight: 500;
     font-size: 20px;
@@ -225,7 +225,7 @@ html{
     text-align: center;
     color: #000000;
 }
-.keuntungan-small{
+.keuntungan-small {
     font-family: Rubik;
     font-size: 16px;
     line-height: 25px;
@@ -235,7 +235,7 @@ html{
 }
 /* KEUNTUNGAN END */
 /* TESTIMONY */
-.testi-title{
+.testi-title {
     font-family: Rubik;
     font-weight: bold;
     font-size: 28px;
@@ -243,16 +243,22 @@ html{
     text-align: center;
     color: #219653;
 }
-.card-testi{
-    background: #E7F3E9;
-    border: 3px solid #35974A;
+.card-testi {
+    background: #e7f3e9;
+    border: 3px solid #35974a;
     box-sizing: border-box;
     box-shadow: 7px 7px 0px rgba(53, 151, 74, 0.25);
     border-radius: 5px;
     width: 275px;
     height: 265px;
 }
-.testi-big{
+.body-testi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.testi-big {
     font-family: Rubik;
     font-style: normal;
     font-weight: 500;
@@ -261,7 +267,7 @@ html{
     text-align: center;
     color: #219653;
 }
-.testi-small{
+.testi-small {
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
@@ -270,7 +276,7 @@ html{
     text-align: center;
     color: rgba(0, 0, 0, 0.6);
 }
-.testi-img-round{
+.testi-img-round {
     border-radius: 100px;
     width: 65px;
     height: 65px;
@@ -278,25 +284,25 @@ html{
     margin-left: auto;
     margin-right: auto;
 }
-.btn-carousel{
+.btn-carousel {
     padding: 5px !important;
-    background: #E7F3E9 !important;
+    background: #e7f3e9 !important;
     border-radius: 100px !important;
 }
-.align-btn{
+.align-btn {
     margin-bottom: auto;
     margin-top: auto;
 }
 /* TESTIMONY END */
 /* FEEDBACK */
-.feedback-box{
-    background-color: #E7F3E9;
+.feedback-box {
+    background-color: #e7f3e9;
     border-radius: 5px;
 }
-.feedback-content{
+.feedback-content {
     padding: 1.5rem;
 }
-.feed-big{
+.feed-big {
     font-family: Rubik;
     font-style: normal;
     font-weight: 500;
@@ -304,34 +310,36 @@ html{
     line-height: 25px;
     color: #000000;
 }
-.testi-button, .feed-button{
+.testi-button,
+.feed-button {
     display: inline-block;
     margin: 5px 3px;
-    background-color: #E7F3E9, 100%;
+    background-color: #e7f3e9, 100%;
     font-weight: bold !important;
-    color: #E7F3E9 !important;
+    color: #e7f3e9 !important;
     font-size: 17px !important;
-    box-shadow: 4px 4px 0px 0px #249b5877!important;
-    border-color: #35974A !important;
+    box-shadow: 4px 4px 0px 0px #249b5877 !important;
+    border-color: #35974a !important;
 }
-.testi-button, .feed-button:hover{
+.testi-button,
+.feed-button:hover {
     background-color: rgb(34, 116, 52);
 }
-.feed-button-no{
+.feed-button-no {
     display: inline-block;
     margin: 5px 3px;
-    background-color: #E7F3E9;
+    background-color: #e7f3e9;
     font-weight: bold !important;
-    color: #35974A !important;
+    color: #35974a !important;
     font-size: 17px !important;
-    box-shadow: 4px 4px 0px 0px #249b5877!important;
-    border-color: #35974A !important;
+    box-shadow: 4px 4px 0px 0px #249b5877 !important;
+    border-color: #35974a !important;
 }
-.feed-button-no:hover{
+.feed-button-no:hover {
     background-color: rgb(34, 116, 52) !important;
-    color: #E7F3E9 !important;
+    color: #e7f3e9 !important;
 }
-.title-modal-feed{
+.title-modal-feed {
     font-family: Rubik;
     font-style: normal;
     font-weight: 500;
@@ -340,7 +348,7 @@ html{
     text-align: center;
     color: #000000;
 }
-.label-feed{
+.label-feed {
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
@@ -348,22 +356,22 @@ html{
     line-height: 24px;
     color: #000000;
 }
-.form-feed{
+.form-feed {
     box-shadow: 0px 0px 0px 3.2px rgba(0, 123, 255, 0.25);
     border-radius: 5px;
 }
 /* FEEDBACK END */
 /* FOOTER */
-.footer{
-    background-color: #F6F6F8;
+.footer {
+    background-color: #f6f6f8;
     padding-top: 45px;
     padding-bottom: 45px;
     font-family: Rubik;
 }
-.image-footer{
+.image-footer {
     max-width: 155px;
 }
-.ftr-tps{
+.ftr-tps {
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
@@ -373,7 +381,7 @@ html{
     color: #999999;
     list-style-type: none;
 }
-.ftr-tipis{
+.ftr-tipis {
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
@@ -384,7 +392,7 @@ html{
     margin-top: 10px;
     list-style-type: none;
 }
-.ftr-biasa{
+.ftr-biasa {
     font-family: Rubik;
     font-size: 1rem;
     line-height: 25px;
@@ -395,10 +403,10 @@ html{
     margin-top: 10px;
     list-style: none;
 }
-.footer-end{
-    background-color: #F2F2F2;
+.footer-end {
+    background-color: #f2f2f2;
 }
-.ending{
+.ending {
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
@@ -446,13 +454,13 @@ html{
 /* PENGEMBANGAN END */
 @media  (min-width: 225px) and (max-width: 676px){
     /* NAVBAR */
-    .bg-nav{
-        background-color: #35974A;
+    .bg-nav {
+        background-color: #35974a;
         padding: 6px 0px 10px 0px;
         padding-left: 10px !important;
     }
-    .navbar-font{
-        color: #E7F3E9;
+    .navbar-font {
+        color: #e7f3e9;
         font-size: 14px;
         font-style: normal;
         line-height: 19px;
@@ -460,12 +468,12 @@ html{
     }
     /* NAVBAR END */
     /* JUMBOTRON */
-    .jumbotron{
+    .jumbotron {
         right: 10rem;
         width: 100%;
         height: 600px;
     }
-    .jumbo-big{
+    .jumbo-big {
         font-size: 20px;
         font-style: normal;
         line-height: 25px;
@@ -478,16 +486,16 @@ html{
         color: rgba(255, 255, 255, 0.72);
         max-width: 400px;
     }*/
-    .jumbo-big-image{
+    .jumbo-big-image {
         width: 60px;
     }
     .jumbo-button-1 {
         display: inline-block;
         margin: 4px 2px;
         font-weight: bold !important;
-        color: #35974A !important;
+        color: #35974a !important;
         font-size: 17px !important;
-        box-shadow: 5px 5px 0px 0px #FFFFFF 50% !important;
+        box-shadow: 5px 5px 0px 0px #ffffff 50% !important;
     }
     .jumbo-button-2 {
         display: inline-block;
@@ -495,79 +503,80 @@ html{
         font-weight: bold !important;
         color: #ffffff !important;
         font-size: 17px !important;
-        box-shadow: 5px 5px 0px 0px #FFFFFF 50% !important;
+        box-shadow: 5px 5px 0px 0px #ffffff 50% !important;
     }
     /* JUMBOTRON END */
 
     /* ABOUT */
-    .about-big, .about-small{
+    .about-big,
+    .about-small {
         margin-left: 10px;
         text-align: justify;
     }
-    .jumbo-button-3{
+    .jumbo-button-3 {
         text-align: center;
     }
-    .card-category{
+    .card-category {
         margin: 10px 60px;
     }
     /* ABOUT END */
     /* KATEGORI */
-    .card-title{
+    .card-title {
         font-family: Rubik;
         font-weight: bold;
         font-size: 18px;
         line-height: 28px;
-        color: #FFFFFF;
+        color: #ffffff;
     }
-    .card-text{
+    .card-text {
         font-family: Rubik;
         font-size: 10px;
         line-height: 15px;
         align-items: center;
-        color: #E7F3E9;
+        color: #e7f3e9;
     }
     /* KATEGORI END */
     /* TESTIMONY */
-    .feed-big{
+    .feed-big {
         font-family: Rubik;
         font-style: normal;
         font-weight: 500;
         font-size: 15px;
         line-height: 25px;
     }
-    .testi-button{
+    .testi-button {
         display: inline-block;
         font-size: 14px !important;
     }
     /* TESTIMONY END */
 }
-@media  (min-width: 377px) and (max-width: 985px){
-    .bg-nav{
-        background-color: #35974A;
+@media (min-width: 377px) and (max-width: 985px) {
+    .bg-nav {
+        background-color: #35974a;
         padding: 6px 0px 10px 0px;
         padding-left: 10px !important;
     }
-    .navbar-font{
-        color: #E7F3E9;
+    .navbar-font {
+        color: #e7f3e9;
         font-size: 14px;
         font-style: normal;
         line-height: 19px;
         font-family: Rubik;
     }
-        /* KATEGORI */
-        .card-title{
-            font-family: Rubik;
-            font-weight: bold;
-            font-size: 17px;
-            line-height: 28px;
-            color: #FFFFFF;
-        }
-        .card-text{
-            font-family: Rubik;
-            font-size: 10px;
-            line-height: 15px;
-            align-items: center;
-            color: #E7F3E9;
-        }
-        /* KATEGORI END */
+    /* KATEGORI */
+    .card-title {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 28px;
+        color: #ffffff;
+    }
+    .card-text {
+        font-family: Rubik;
+        font-size: 10px;
+        line-height: 15px;
+        align-items: center;
+        color: #e7f3e9;
+    }
+    /* KATEGORI END */
 }

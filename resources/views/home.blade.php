@@ -5,8 +5,8 @@
 @section('content')
 {{-- JUMBOTRON --}}
 
-<div class="jumbotron" style="background-image: url(/image/landing/jumbotron.png);">
-    <div class="container">
+<div class="jumbotron d-flex" style="background-image: url(/image/landing/jumbotron.png);">
+    <div class="container m-auto">
         <h1 class="jumbo-big">Kini, semua bisa
             menjadi #petanimillenial,
             bareng <img class="jumbo-big-image" src="/image/landing/icon.svg">
