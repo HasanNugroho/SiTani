@@ -1,4 +1,4 @@
-body{
+html{
     font-family: Rubik;
 }
 .basic-color{
@@ -13,14 +13,18 @@ body{
     line-height: 19px;
     font-family: Rubik;
 }
-.dropdown-menu{
+/* .dropdown-menu{
     color: #35974A !important;
     font-weight: bold !important;
     font-size: 16px !important;
     background-color: #E7F3E9 !important;
     font-family: Rubik !important;
+<<<<<<< HEAD
 }
     
+=======
+} */
+>>>>>>> c28014839726631a7cff43cf4d1cec8748389227
 /* END NAVBAR */
 
 /* JUMBOTRON */
@@ -90,7 +94,8 @@ body{
 
 /* ABOUT */
 .about-img{
-    max-width: 450px;
+    width: 100%;
+    height: auto;
 }
 .about-big{
     color: #35974A;
@@ -129,6 +134,9 @@ body{
 .category{
     background-color: #E7F3E9;
 }
+/* .card-img-overlay{
+    background-color: #E7F3E9;
+} */
 .title-category{
     text-align: center;
     padding-top: 80px;
@@ -193,7 +201,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 .keuntungan-judul{
     font-family: Rubik;
@@ -236,6 +244,58 @@ body{
     text-align: center;
     color: #219653;
 }
+.card-testi{
+    background: #E7F3E9;
+    border: 3px solid #35974A;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 0px rgba(53, 151, 74, 0.25);
+    border-radius: 5px;
+    width: 275px;
+    height: 265px;
+}
+.body-testi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.testi-big{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #219653;
+}
+.testi-small{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+.testi-img-round{
+    border-radius: 100px;
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-carousel{
+    padding: 5px !important;
+    background: #E7F3E9 !important;
+    border-radius: 100px !important;
+}
+.align-btn{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+/* TESTIMONY END */
+/* FEEDBACK */
 .feedback-box{
     background-color: #E7F3E9;
     border-radius: 5px;
@@ -299,7 +359,7 @@ body{
     box-shadow: 0px 0px 0px 3.2px rgba(0, 123, 255, 0.25);
     border-radius: 5px;
 }
-/* TESTIMONY END */
+/* FEEDBACK END */
 /* FOOTER */
 .footer{
     background-color: #F6F6F8;
@@ -356,8 +416,21 @@ body{
 /* FOOTER END */
 
 
-
 @media  (min-width: 225px) and (max-width: 676px){
+    /* NAVBAR */
+    .bg-nav{
+        background-color: #35974A;
+        padding: 6px 0px 10px 0px;
+        padding-left: 10px !important;
+    }
+    .navbar-font{
+        color: #E7F3E9;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 19px;
+        font-family: Rubik;
+    }
+    /* NAVBAR END */
     /* JUMBOTRON */
     .jumbotron{
         right: 10rem;
@@ -376,10 +449,10 @@ body{
         line-height: 16px;
         color: rgba(255, 255, 255, 0.72);
         max-width: 400px;
-    }
+    }*/
     .jumbo-big-image{
-        width: 55px;
-    } */
+        width: 60px;
+    }
     .jumbo-button-1 {
         display: inline-block;
         margin: 4px 2px;
@@ -410,6 +483,22 @@ body{
         margin: 10px 60px;
     }
     /* ABOUT END */
+    /* KATEGORI */
+    .card-title{
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    .card-text{
+        font-family: Rubik;
+        font-size: 10px;
+        line-height: 15px;
+        align-items: center;
+        color: #E7F3E9;
+    }
+    /* KATEGORI END */
     /* TESTIMONY */
     .feed-big{
         font-family: Rubik;
@@ -423,4 +512,34 @@ body{
         font-size: 14px !important;
     }
     /* TESTIMONY END */
+}
+@media  (min-width: 377px) and (max-width: 985px){
+    .bg-nav{
+        background-color: #35974A;
+        padding: 6px 0px 10px 0px;
+        padding-left: 10px !important;
+    }
+    .navbar-font{
+        color: #E7F3E9;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 19px;
+        font-family: Rubik;
+    }
+        /* KATEGORI */
+        .card-title{
+            font-family: Rubik;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        .card-text{
+            font-family: Rubik;
+            font-size: 10px;
+            line-height: 15px;
+            align-items: center;
+            color: #E7F3E9;
+        }
+        /* KATEGORI END */
 }
