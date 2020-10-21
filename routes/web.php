@@ -15,7 +15,7 @@ use App\Http\Controllers\FeedbackController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 Route::get('/pertanian', function () {
     return view('pertanian');

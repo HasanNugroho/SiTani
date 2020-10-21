@@ -196,7 +196,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 .keuntungan-judul{
     font-family: Rubik;
@@ -239,6 +239,58 @@ body{
     text-align: center;
     color: #219653;
 }
+.card-testi{
+    background: #E7F3E9;
+    border: 3px solid #35974A;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 0px rgba(53, 151, 74, 0.25);
+    border-radius: 5px;
+    width: 275px;
+    height: 265px;
+}
+.body-testi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.testi-big{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #219653;
+}
+.testi-small{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+.testi-img-round{
+    border-radius: 100px;
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-carousel{
+    padding: 5px !important;
+    background: #E7F3E9 !important;
+    border-radius: 100px !important;
+}
+.align-btn{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+/* TESTIMONY END */
+/* FEEDBACK */
 .feedback-box{
     background-color: #E7F3E9;
     border-radius: 5px;
@@ -302,7 +354,7 @@ body{
     box-shadow: 0px 0px 0px 3.2px rgba(0, 123, 255, 0.25);
     border-radius: 5px;
 }
-/* TESTIMONY END */
+/* FEEDBACK END */
 /* FOOTER */
 .footer{
     background-color: #F6F6F8;
@@ -357,7 +409,6 @@ body{
     padding: 7px 0;
 }
 /* FOOTER END */
-
 
 
 @media  (min-width: 225px) and (max-width: 676px){

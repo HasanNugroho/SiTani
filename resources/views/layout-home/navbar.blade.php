@@ -28,7 +28,8 @@
                     <a class="nav-link" href="#">KENAPA HARUS SI TANI?</a>
                 </li>
                 <li class="nav-item active mr-3">
-                    <a class="nav-link" href="#">SARAN</a>
+                    <a class="nav-link" data-toggle="modal"
+                    data-target=".bd-example-modal-sm" href="#">SARAN</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">TENTANG</a>
