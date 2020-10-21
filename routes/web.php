@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FeedbackController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,10 @@ Route::get('/pertanian', function () {
 Route::get('/perkebunan', function () {
     return view('perkebunan');
 });
+
+Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
+Route::get('/dashboard/tanggapan', [FeedbackController::class, 'index']);
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

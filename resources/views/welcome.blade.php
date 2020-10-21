@@ -165,16 +165,16 @@
                             untuk pengembangan
                             si tani!</p>
                     </div>
-                    <form action="" class="text-center">
+                    <form action="{{route('feedback.post')}}" method="POST" class="text-left">
                         @csrf
                         <div class="form-group">
                             <label for="exampleFormControlInput1" class="label-feed">Email</label>
                             <input type="email" class="form-feed form-control" id="exampleFormControlInput1"
-                                placeholder="keitarokatsuki@apple.com">
+                                placeholder="keitarokatsuki@apple.com" name="email">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput2" class="label-feed">Pendapatmu</label>
-                            <textarea name="" class="form-feed" id="exampleFormControlInput2" cols="31" rows="6"
+                            <textarea name="message" class="form-feed form-control" id="exampleFormControlInput2" cols="31" rows="6"
                                 placeholder="Web nya sih anjay mabar gaming contolodondon mantappu djiwaa bintang 10 ribu rupiah odading mang oleh"></textarea>
                         </div>
                         <div class="btn-fd text-center">
