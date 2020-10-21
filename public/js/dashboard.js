@@ -3,13 +3,14 @@ import { user } from "./components/dashboard/user.js";
 import { tani } from "./components/dashboard/tani.js";
 import { kebun } from "./components/dashboard/kebun.js";
 import { tanggapan } from "./components/dashboard/tanggapan.js";
+import { kelas } from "./components/dashboard/kelas.js";
 
 window.onload = function () {
     const root = document.getElementById("root");
     root.innerHTML = home;
 };
 let target;
-document.getElementById("sidebar").addEventListener("click", (e) => {
+document.getElementById("sidebar-side").addEventListener("click", (e) => {
     e.preventDefault();
     target = e.target.id;
     switch (target) {
@@ -21,7 +22,6 @@ document.getElementById("sidebar").addEventListener("click", (e) => {
             break;
         case "pertanian":
             document.getElementById("root").innerHTML = tani;
-            console.log("success");
             break;
         case "kebun":
             document.getElementById("root").innerHTML = kebun;
@@ -29,7 +29,8 @@ document.getElementById("sidebar").addEventListener("click", (e) => {
         case "tanggapan":
             document.getElementById("root").innerHTML = tanggapan;
             break;
-        default:
-            console.log("ok");
+        case "kelas":
+            document.getElementById("root").innerHTML = kelas;
+            break;
     }
 });

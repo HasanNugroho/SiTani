@@ -1,43 +1,49 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
 
-        <x-jet-validation-errors class="mb-4" />
+@extends('layouts.main')
 
-        <form method="POST" action="{{ route('register') }}">
+@section('css','login.css')
+@section('title','Login')
+@section('root')
+<div class="login-wrapper">
+
+        <div class="row m-auto justify-content-center login-section">
+
+        <form method="POST" action="{{ route('register') }}" class="col-md-5 m-auto login-form p-5 shadow">
+        <img src="/assets/image/logo.png" alt="" width="200px" class="d-flex m-auto">
             @csrf
 
             <div>
-                <x-jet-label for="name" value="{{ __('Name') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                <x-jet-label for="name" value="{{ __('Name') }}" class="mt-3"/>
+                <x-jet-input id="name" class="form-control" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+                <input id="email" class="form-control @error('email') is-invalid @enderror" type="email" name="email" :value="old('email')" required />
+                @error('email')
+                <span class="invalid-feedback">
+                {{$message}}
+                </span>
+                @enderror
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+                <input id="password" class="form-control @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="new-password" />
+                @error('password')
+                <span class="invalid-feedback">
+                {{$message}}
+                </span>
+                @enderror
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
+                <x-jet-input id="password_confirmation" class="form-control" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-jet-button class="ml-4">
-                    {{ __('Register') }}
-                </x-jet-button>
-            </div>
+            <button class="btn btn-success mt-4" type="submit">Submit</button>
+    
         </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+        </div>
+        @endsection

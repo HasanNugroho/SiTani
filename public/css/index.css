@@ -6,3 +6,6 @@ body {
 .bg-green {
     background-color: #219653;
 }
+.invalid {
+    color: red;
+}
