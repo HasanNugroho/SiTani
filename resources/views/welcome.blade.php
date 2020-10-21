@@ -4,8 +4,8 @@
 
 @section('content')
 {{-- JUMBOTRON --}}
-<div class="jumbotron" style="background-image: url(/image/landing/jumbotron.svg);">
-    <div class="container">
+<div class="jumbotron d-flex" style="background-image: url(/image/landing/jumbotron.svg);">
+    <div class="container m-auto">
         <h1 class="jumbo-big">Kini, semua bisa
             menjadi #petanimillenial,
             bareng <img class="jumbo-big-image" src="/image/landing/icon.svg">
@@ -22,10 +22,10 @@
 {{-- ABOUT --}}
 <div class="container mt-5 mb-5">
     <div class="row d-flex align-items-center">
-        <div class="col-md-6">
+        <div class="col-md">
             <img src="/image/landing/img-about.svg" class="about-img" alt="">
         </div>
-        <div class="col-md-6">
+        <div class="col-md">
             <h2 class="about-big">Selamat Datang di
                 Sinau Tani Indonesia!</h2>
             <p class="about-small">

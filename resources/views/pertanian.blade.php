@@ -4,8 +4,8 @@
 
 @section('content')
 {{-- JUMBOTRON --}}
-<div class="jumbotron" style="background-image: url(/image/pertanian/jumbotron.svg);">
-    <div class="container">
+<div class="jumbotron d-flex" style="background-image: url(/image/pertanian/jumbotron.png);">
+    <div class="container m-auto">
         <h3 class="ktkls mt-5">KATEGORI KELAS</h3>
         <h1 class="jumbo-big mt-3">Pertanian
         </h1>
@@ -19,10 +19,10 @@
 {{-- ABOUT --}}
 <div class="container mt-5 mb-5">
     <div class="row d-flex align-items-center">
-        <div class="col-md-6">
-            <img src="/image/pertanian/pertanian.svg" class="about-img" alt="">
+        <div class="col-md">
+            <img src="/image/pertanian/pertanian.png" class="about-img" alt="">
         </div>
-        <div class="col-md-6">
+        <div class="col-md">
             <h2 class="about-big">Mengapa harus belajar pertanian?</h2>
             <p class="about-small mt-3">
                 Pertanian merupakan salah satu sektor penopang kehidupan suatu negara. Pertanian sebagai sektor penghasil bahan pangan yang dibutuhkan oleh semua masyarakat, baik di pedesaan maupun perkotaan.
@@ -47,7 +47,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/pertanian/cabai.svg" alt="Cabai">
+                        <img class="card-img category-img" src="/image/pertanian/cabai.png" alt="Cabai">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya Cabai</h3>
@@ -60,7 +60,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/pertanian/padi.svg"
+                        <img class="card-img category-img" src="/image/pertanian/padi.png"
                             alt="Padi">
                         <div class="card-img-overlay">
                             <div class="category-content">
@@ -74,7 +74,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/pertanian/jagung.svg"
+                        <img class="card-img category-img" src="/image/pertanian/jagung.png"
                             alt="Jagung">
                         <div class="card-img-overlay">
                             <div class="category-content">
@@ -88,7 +88,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/pertanian/kacang-tanah.svg"
+                        <img class="card-img category-img" src="/image/pertanian/kacang-tanah.png"
                             alt="Kacang Tanah">
                         <div class="card-img-overlay">
                             <div class="category-content">
@@ -102,7 +102,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/pertanian/kacang-panjang.svg"
+                        <img class="card-img category-img" src="/image/pertanian/kacang-panjang.png"
                             alt="Kacang Panjang">
                         <div class="card-img-overlay">
                             <div class="category-content">
@@ -116,7 +116,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/pertanian/coming-soon.svg"
+                        <img class="card-img category-img" src="/image/pertanian/coming-soon.png"
                             alt="Coming soon">
                         <div class="card-img-overlay">
                             <div class="category-content">

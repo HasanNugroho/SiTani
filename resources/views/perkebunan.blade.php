@@ -4,8 +4,8 @@
 
 @section('content')
 {{-- JUMBOTRON --}}
-<div class="jumbotron" style="background-image: url(/image/perkebunan/jumbotron.svg);">
-    <div class="container">
+<div class="jumbotron d-flex" style="background-image: url(/image/perkebunan/jumbotron.png);">
+    <div class="container m-auto">
         <h3 class="ktkls mt-5">KATEGORI KELAS</h3>
         <h1 class="jumbo-big mt-3">Pertanian
         </h1>
@@ -20,7 +20,7 @@
 <div class="container mt-5 mb-5">
     <div class="row d-flex align-items-center">
         <div class="col-md-6">
-            <img src="/image/perkebunan/perkebunan.svg" class="about-img" alt="">
+            <img src="/image/perkebunan/perkebunan.png" class="about-img" alt="">
         </div>
         <div class="col-md-6">
             <h2 class="about-big">Mengapa harus belajar Perkebunan?</h2>
@@ -47,7 +47,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/perkebunan/kelapa-sawit.svg" alt="Cabai">
+                        <img class="card-img category-img" src="/image/perkebunan/kelapa-sawit.png" alt="Cabai">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Budidaya
@@ -61,7 +61,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/perkebunan/teh.svg"
+                        <img class="card-img category-img" src="/image/perkebunan/teh.png"
                             alt="Padi">
                         <div class="card-img-overlay">
                             <div class="category-content">
@@ -75,7 +75,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/perkebunan/kelapa.svg"
+                        <img class="card-img category-img" src="/image/perkebunan/kelapa.png"
                             alt="Jagung">
                         <div class="card-img-overlay">
                             <div class="category-content">
@@ -89,7 +89,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/perkebunan/karet.svg"
+                        <img class="card-img category-img" src="/image/perkebunan/karet.png"
                             alt="Kacang Tanah">
                         <div class="card-img-overlay">
                             <div class="category-content">
@@ -103,7 +103,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/perkebunan/kopi.svg"
+                        <img class="card-img category-img" src="/image/perkebunan/kopi.png"
                             alt="Kacang Panjang">
                         <div class="card-img-overlay">
                             <div class="category-content">
@@ -117,7 +117,7 @@
             <div class="col-md-4">
                 <a href="">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/perkebunan/coming-soon.svg"
+                        <img class="card-img category-img" src="/image/perkebunan/coming-soon.png"
                             alt="Coming soon">
                         <div class="card-img-overlay">
                             <div class="category-content">

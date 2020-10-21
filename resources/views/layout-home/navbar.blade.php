@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-font basic-color" >
-    <div class="container">
+    <div class="container py-2">
         <a class="navbar-brand icon" href="#">
-            <img src="/image/landing/icon.svg" width="80" height="80" alt="">
+            <img src="/image/landing/icon.svg" width="80" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,10 +10,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active mr-3">
+                <li class="nav-item mr-3">
                     <a class="nav-link" href="#">TEMUKAN</a>
                 </li>
-                <li class="nav-item dropdown mr-3 active">
+                <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         KATEGORI KELAS
@@ -24,13 +24,13 @@
                         <a class="dropdown-item" href="#">Hidroponik</a>
                     </div>
                 </li>
-                <li class="nav-item active mr-3">
+                <li class="nav-item mr-3">
                     <a class="nav-link" href="#">KENAPA HARUS SI TANI?</a>
                 </li>
-                <li class="nav-item active mr-3">
+                <li class="nav-item mr-3">
                     <a class="nav-link" href="#">SARAN</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">TENTANG</a>
                 </li>
             </ul>

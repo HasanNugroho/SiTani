@@ -25,7 +25,6 @@ Route::get('/perkebunan', function () {
 });
 
 Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
-Route::get('/dashboard/tanggapan', [FeedbackController::class, 'index']);
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
