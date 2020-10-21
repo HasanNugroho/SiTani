@@ -1,5 +1,6 @@
 html {
     font-family: Rubik;
+    scroll-behavior: smooth;
 }
 .basic-color {
     background-color: #35974a;
@@ -38,13 +39,15 @@ html {
 
 /* JUMBOTRON */
 .jumbotron{
-    padding-top: 2.4rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
     border-radius: 0% !important;
+}
+.jumbo-u{
+    vertical-align: middle;
 }
 .jumbo-big {
     font-family: Rubik;
@@ -143,13 +146,13 @@ html {
 .category-title {
     font-family: Rubik;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 33px;
     text-align: center;
 }
 .category-description {
     font-family: Rubik;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 25px;
     text-align: center;
 }
@@ -191,9 +194,12 @@ html {
 }
 /* CATEGORY END */
 /* KEUNTUNGAN */
+.keuntungan{
+    background-color: white;
+}
 .judul-keuntungan {
-    margin-top: 80px;
     text-align: center;
+    margin-top: 80px;
 }
 .img-keuntungan {
     max-width: 246px;
@@ -252,13 +258,7 @@ html {
     width: 275px;
     height: 265px;
 }
-.body-testi {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.testi-big {
+.testi-big{
     font-family: Rubik;
     font-style: normal;
     font-weight: 500;

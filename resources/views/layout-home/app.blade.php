@@ -51,6 +51,7 @@
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <script src="/bootstrap/pooper.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/smooth.js"></script>
 </body>
 
 </html>

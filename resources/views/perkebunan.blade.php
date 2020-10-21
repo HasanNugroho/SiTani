@@ -5,7 +5,7 @@
     class="jumbotron d-flex"
     style="background-image: url(/image/perkebunan/jumbotron.png)"
 >
-    <div class="container m-auto">
+    <div class="container m-auto jumbo-u">
         <h3 class="ktkls mt-5">KATEGORI KELAS</h3>
         <h1 class="jumbo-big mt-3">Pertanian</h1>
         <p class="jumbo-small">
@@ -14,7 +14,7 @@
             Bibendum integer metus, sed tristique.
         </p>
         <p class="lead mt-5 d-flex">
-            <a class="btn btn-light jumbo-button-1" href="#" role="button"
+            <a class="btn btn-light jumbo-button-1" href="#kategori-perkebunan" role="button"
                 >LIHAT DAFTAR KELAS</a
             >
         </p>
@@ -52,7 +52,7 @@
 </div>
 {{-- ABOUT END --}}
 {{-- KATEGORI KELAS --}}
-<div class="category">
+<div class="category" id="kategori-perkebunan">
     <div class="container">
         <div class="title-category">
             <h3 class="category-title">Pilih Kelas</h3>

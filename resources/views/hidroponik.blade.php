@@ -10,7 +10,7 @@
         <h1 class="jumbo-big mt-3">Hidroponik</h1>
         <p class="jumbo-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus tortor libero, vel mauris adipiscing suspendisse id risus vitae. Bibendum integer metus, sed tristique.</p>
         <p class="lead mt-5 d-flex">
-            <a class="btn btn-light jumbo-button-1" href="#" role="button">LIHAT DAFTAR KELAS</a>
+            <a class="btn btn-light jumbo-button-1" href="#kategori-hidro" role="button">LIHAT DAFTAR KELAS</a>
         </p>
     </div>
 </div>
@@ -35,7 +35,7 @@
 </div>
 {{-- ABOUT END --}}
 {{-- KATEGORI KELAS --}}
-<div class="category">
+<div class="category" id="kategori-hidro">
     <div class="container">
         <div class="title-category">
             <h3 class="category-title">Pilih  Kelas</h3>
