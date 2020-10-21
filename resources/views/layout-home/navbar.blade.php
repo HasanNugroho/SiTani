@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-font basic-color" >
     <div class="container">
-        <a class="navbar-brand icon" href="#">
+        <a class="navbar-brand icon" href="/">
             <img src="/image/landing/icon.svg" width="80" height="80" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -19,8 +19,8 @@
                         KATEGORI KELAS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Pertanian</a>
-                        <a class="dropdown-item" href="#">Perkebunan</a>
+                        <a class="dropdown-item" href="/pertanian">Pertanian</a>
+                        <a class="dropdown-item" href="/perkebunan">Perkebunan</a>
                         <a class="dropdown-item" href="#">Hidroponik</a>
                     </div>
                 </li>

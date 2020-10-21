@@ -146,10 +146,10 @@
                     </div>
                     <div class="col-10">
                         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
+                            <div class="carousel-inner justify-content-center">
                                 <div class="carousel-item active">
                                     <div class="row">
-                                        <div class="col-md-4 mb-3">
+                                        <div class="col-md-4 mb-3 justify-content-center">
                                             <div class="card-testi">
                                                 <div class="body-testi">
                                                     <p class="card-text testi-small">Gurunya cantique banged asw mantappu djiwaaaaaaaaa!</p>
@@ -159,7 +159,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 mb-3">
+                                        <div class="col-md-4 mb-3 justify-content-center">
                                             <div class="card-testi">
                                                 <div class="body-testi">
                                                     <p class="card-text testi-small">Suka deh sama kelasnya, cara penyampaiannya asik parah dongg!</p>
@@ -169,7 +169,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 mb-3">
+                                        <div class="col-md-4 mb-3 justify-content-center">
                                             <div class="card-testi">
                                                 <div class="body-testi">
                                                     <p class="card-text testi-small">Gue siapa yak uhuy :3</p>

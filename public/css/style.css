@@ -16,13 +16,13 @@ body{
     line-height: 19px;
     font-family: Rubik;
 }
-.dropdown-menu{
+/* .dropdown-menu{
     color: #35974A !important;
     font-weight: bold !important;
     font-size: 16px !important;
     background-color: #E7F3E9 !important;
     font-family: Rubik !important;
-}
+} */
 /* END NAVBAR */
 
 /* JUMBOTRON */
@@ -93,7 +93,8 @@ body{
 
 /* ABOUT */
 .about-img{
-    max-width: 450px;
+    width: 100%;
+    height: auto;
 }
 .about-big{
     color: #35974A;
@@ -464,6 +465,22 @@ body{
         margin: 10px 60px;
     }
     /* ABOUT END */
+    /* KATEGORI */
+    .card-title{
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    .card-text{
+        font-family: Rubik;
+        font-size: 10px;
+        line-height: 15px;
+        align-items: center;
+        color: #E7F3E9;
+    }
+    /* KATEGORI END */
     /* TESTIMONY */
     .feed-big{
         font-family: Rubik;
