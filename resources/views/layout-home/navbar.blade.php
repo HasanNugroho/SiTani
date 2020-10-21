@@ -29,14 +29,10 @@
                 <li class="nav-item mr-3">
                     <a class="nav-link" href="#">KENAPA HARUS SI TANI?</a>
                 </li>
-<<<<<<< HEAD
+
                 <li class="nav-item mr-3">
                     <a class="nav-link" href="#">SARAN</a>
-=======
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" data-toggle="modal"
-                    data-target=".bd-example-modal-sm" href="#">SARAN</a>
->>>>>>> c28014839726631a7cff43cf4d1cec8748389227
+
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">TENTANG</a>
