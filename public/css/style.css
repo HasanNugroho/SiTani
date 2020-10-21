@@ -13,22 +13,32 @@ html{
     line-height: 19px;
     font-family: Rubik;
 }
-/* .dropdown-menu{
+.navbar-cstm{
+    height: 70px;
+}
+.dropdown-menu{
     color: #35974A !important;
     font-weight: bold !important;
     font-size: 16px !important;
     background-color: #E7F3E9 !important;
     font-family: Rubik !important;
-<<<<<<< HEAD
 }
-    
-=======
-} */
->>>>>>> c28014839726631a7cff43cf4d1cec8748389227
+.nav-link{
+    color: #E7F3E9 !important;
+    font-weight: bold;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 19px;
+    font-family: Rubik !important;
+}
+.nav-link:hover{
+    color: #ffffff !important;
+}
 /* END NAVBAR */
 
 /* JUMBOTRON */
 .jumbotron{
+    padding-top: 3rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -366,6 +376,7 @@ html{
     padding-top: 45px;
     padding-bottom: 45px;
     font-family: Rubik;
+    text-decoration: none;
 }
 .image-footer{
     max-width: 155px;
@@ -378,6 +389,7 @@ html{
     line-height: 25px;
     align-items: center;
     color: #999999;
+    text-decoration: none;
 }
 .ftr-tipis{
     font-family: Rubik;
@@ -388,6 +400,7 @@ html{
     align-items: center;
     color: #999999;
     margin-top: 10px;
+    text-decoration: none;
 }
 .ftr-biasa{
     font-family: Rubik;
@@ -399,6 +412,7 @@ html{
     align-items: center;
     color: rgba(0, 0, 0, 0.6);
     margin-top: 10px;
+    text-decoration: none;
 }
 .footer-end{
     background-color: #F2F2F2;

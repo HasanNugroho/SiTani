@@ -23,6 +23,9 @@ Route::get('/pertanian', function () {
 Route::get('/perkebunan', function () {
     return view('perkebunan');
 });
+Route::get('/hidroponik', function () {
+    return view('hidroponik');
+});
 
 Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
 

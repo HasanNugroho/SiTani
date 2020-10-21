@@ -7,7 +7,6 @@
 
 <div class="jumbotron" style="background-image: url(/image/landing/jumbotron.png);">
     <div class="container">
-
         <h1 class="jumbo-big">Kini, semua bisa
             menjadi #petanimillenial,
             bareng <img class="jumbo-big-image" src="/image/landing/icon.svg">
@@ -15,22 +14,17 @@
         <p class="jumbo-small">Bareng si tani, kamu bisa mendapatkan kursus menjadi petani cerdas dibimbing
             mentor-mentor yang berkompeten dibidangnya loh! tunggu apalagi? yuk gabung sekarang!</p>
         <p class="lead mt-5">
-            <a class="btn btn-light jumbo-button-1" href="#" role="button">GABUNG KE KELAS</a>
-            <a class="btn btn-outline-light jumbo-button-2" href="#" role="button">APA KEUNTUNGANNYA?</a>
+            <a class="btn btn-light jumbo-button-1" href="#kategori" role="button">GABUNG KE KELAS</a>
+            <a class="btn btn-outline-light jumbo-button-2" href="#keuntungan" role="button">APA KEUNTUNGANNYA?</a>
         </p>
     </div>
 </div>
 {{-- JUMBOTRON END --}}
 {{-- ABOUT --}}
-<div class="container mt-5 mb-5">
+<div class="container mt-5 mb-5" id="tentang">
     <div class="row d-flex align-items-center">
-<<<<<<< HEAD:resources/views/welcome.blade.php
-        <div class="col-md">
-            <img src="/image/landing/img-about.svg" class="about-img" alt="">
-=======
         <div class="col-md-6">
             <img src="/image/landing/img-about.png" class="about-img" alt="">
->>>>>>> c28014839726631a7cff43cf4d1cec8748389227:resources/views/home.blade.php
         </div>
         <div class="col-md">
             <h2 class="about-big">Selamat Datang di
@@ -48,7 +42,7 @@
 </div>
 {{-- ABOUT END --}}
 {{-- KATEGORI KELAS --}}
-<div class="category">
+<div class="category" id="kategori">
     <div class="container">
         <div class="title-category">
             <h3 class="category-title">Pilih kategori kelas </h3>
@@ -103,7 +97,7 @@
 </div>
 {{-- KATEGORI KELAS END --}}
 {{-- KEUNTUNGAN --}}
-<div class="container">
+<div class="container" id="keuntungan">
     <div class="judul-keuntungan">
         <h3 class="keuntungan-judul">Apa keuntungan belajar bareng si tani?</h3>
         <p class="deskripsi-keuntungan">Dengan gabung ke kelas gratis di si tani tentu aja ada banyak keuntunganya loh,
@@ -153,7 +147,7 @@
                     </div>
                     <div class="col-10">
                         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner justify-content-center">
+                            <div class="carousel-inner ">
                                 <div class="carousel-item active">
                                     <div class="row">
                                         <div class="col-md-4 mb-3 justify-content-center">
@@ -240,7 +234,7 @@
 {{-- FEEDBACK --}}
 <div class="container mt-5 mb-5">
     <div class="feedback-box">
-        <div class="justify-content-between align-items-center feedback-content">
+        <div class="d-flex justify-content-between align-items-center feedback-content">
             <h4 class="feed-big pt-1">Lalu, bagaimana pendapatmu tentang si tani?</h4>
             <button type="button" class="btn btn-success testi-button" data-toggle="modal"
                 data-target=".bd-example-modal-sm">KIRIM PENDAPATMU</button>
@@ -248,43 +242,4 @@
     </div>
 </div>
 {{-- FEEDBACK END --}}
-
-<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="container">
-                <div class="modal-body">
-                    <div class="mt-2 mb-2 d-flex justify-content-center">
-                        <span class="iconify" data-inline="false" data-icon="bi:chat-square-dots-fill" width="45"
-                            height="45" style="color: #219653;"></span>
-                    </div>
-                    <div class="title-modal-feed mb-3">
-                        <p>Yuk berikan pendapatmu
-                            untuk pengembangan
-                            si tani!</p>
-                    </div>
-                    <form action="{{route('feedback.post')}}" method="POST" class="text-left">
-                        @csrf
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1" class="label-feed">Email</label>
-                            <input type="email" class="form-feed form-control" id="exampleFormControlInput1"
-                                placeholder="keitarokatsuki@apple.com" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput2" class="label-feed">Pendapatmu</label>
-                            <textarea name="message" class="form-feed form-control" id="exampleFormControlInput2"
-                                cols="31" rows="6"
-                                placeholder="Web nya sih anjay mabar gaming contolodondon mantappu djiwaa bintang 10 ribu rupiah odading mang oleh"></textarea>
-                        </div>
-                        <div class="btn-fd text-center">
-                            <button class="btn btn-outline-light feed-button-no" data-dismiss="modal">CANCEL</button>
-                            <button type="submit" class="btn btn-success feed-button">KIRIM</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection
