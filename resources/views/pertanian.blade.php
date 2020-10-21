@@ -24,10 +24,10 @@
         </div>
         <div class="col-md-6">
             <h2 class="about-big">Mengapa harus belajar pertanian?</h2>
-            <p class="about-small mt-3">
+            <p class="about-small mt-3 mr-1">
                 Pertanian merupakan salah satu sektor penopang kehidupan suatu negara. Pertanian sebagai sektor penghasil bahan pangan yang dibutuhkan oleh semua masyarakat, baik di pedesaan maupun perkotaan.
             </p>
-            <p class="about-small mt-3">
+            <p class="about-small mt-3 mr-1">
                 Semakin berkembangnya populasi manusia kebutuhan pangan tentu semakin banyak dibutuhkan.Karena indonesia mempunyai lahan luas dan potensi pertanian tradisional yang tidak dimiliki oleh negara lain 
                 Yuk ikut serta menjadi #pahlawanpangan, jadi petani itu keren!
             </p>
@@ -133,7 +133,7 @@
 {{-- FEEDBACK --}}
 <div class="container mt-5 mb-5">
     <div class="feedback-box">
-        <div class="d-flex justify-content-between align-items-center feedback-content">
+        <div class="justify-content-between align-items-center feedback-content">
             <h4 class="feed-big pt-1">Lalu, bagaimana pendapatmu tentang si tani?</h4>
             <button type="button" class="btn btn-success testi-button" data-toggle="modal"
                 data-target=".bd-example-modal-sm">KIRIM PENDAPATMU</button>

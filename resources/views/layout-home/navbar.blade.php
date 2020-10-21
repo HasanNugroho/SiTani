@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-font basic-color" >
-    <div class="container">
+    <div class="container bg-nav">
         <a class="navbar-brand icon" href="/">
             <img src="/image/landing/icon.svg" width="80" height="80" alt="">
         </a>

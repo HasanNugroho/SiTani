@@ -8,13 +8,13 @@
     <div class="container">
         <h1 class="jumbo-big">Kini, semua bisa
             menjadi #petanimillenial,
-            bareng <img class="jumbo-big-image" src="/image/landing/icon.png">
+            bareng <img class="jumbo-big-image" src="/image/landing/icon.svg">
         </h1>
         <p class="jumbo-small">Bareng si tani, kamu bisa mendapatkan kursus menjadi petani cerdas dibimbing
             mentor-mentor yang berkompeten dibidangnya loh! tunggu apalagi? yuk gabung sekarang!</p>
-        <p class="lead mt-5 d-flex">
+        <p class="lead mt-5">
             <a class="btn btn-light jumbo-button-1" href="#" role="button">GABUNG KE KELAS</a>
-            <a class="btn btn-outline-light ml-3 jumbo-button-2" href="#" role="button">APA KEUNTUNGANNYA?</a>
+            <a class="btn btn-outline-light jumbo-button-2" href="#" role="button">APA KEUNTUNGANNYA?</a>
         </p>
     </div>
 </div>
@@ -233,7 +233,7 @@
 {{-- FEEDBACK --}}
 <div class="container mt-5 mb-5">
     <div class="feedback-box">
-        <div class="d-flex justify-content-between align-items-center feedback-content">
+        <div class="justify-content-between align-items-center feedback-content">
             <h4 class="feed-big pt-1">Lalu, bagaimana pendapatmu tentang si tani?</h4>
             <button type="button" class="btn btn-success testi-button" data-toggle="modal"
                 data-target=".bd-example-modal-sm">KIRIM PENDAPATMU</button>

@@ -1,4 +1,4 @@
-body{
+html{
     font-family: Rubik;
 }
 .basic-color{
@@ -133,6 +133,9 @@ body{
 .category{
     background-color: #E7F3E9;
 }
+/* .card-img-overlay{
+    background-color: #E7F3E9;
+} */
 .title-category{
     text-align: center;
     padding-top: 80px;
@@ -413,6 +416,20 @@ body{
 
 
 @media  (min-width: 225px) and (max-width: 676px){
+    /* NAVBAR */
+    .bg-nav{
+        background-color: #35974A;
+        padding: 6px 0px 10px 0px;
+        padding-left: 10px !important;
+    }
+    .navbar-font{
+        color: #E7F3E9;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 19px;
+        font-family: Rubik;
+    }
+    /* NAVBAR END */
     /* JUMBOTRON */
     .jumbotron{
         right: 10rem;
@@ -431,10 +448,10 @@ body{
         line-height: 16px;
         color: rgba(255, 255, 255, 0.72);
         max-width: 400px;
-    }
+    }*/
     .jumbo-big-image{
-        width: 55px;
-    } */
+        width: 60px;
+    }
     .jumbo-button-1 {
         display: inline-block;
         margin: 4px 2px;
@@ -494,4 +511,34 @@ body{
         font-size: 14px !important;
     }
     /* TESTIMONY END */
+}
+@media  (min-width: 377px) and (max-width: 985px){
+    .bg-nav{
+        background-color: #35974A;
+        padding: 6px 0px 10px 0px;
+        padding-left: 10px !important;
+    }
+    .navbar-font{
+        color: #E7F3E9;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 19px;
+        font-family: Rubik;
+    }
+        /* KATEGORI */
+        .card-title{
+            font-family: Rubik;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        .card-text{
+            font-family: Rubik;
+            font-size: 10px;
+            line-height: 15px;
+            align-items: center;
+            color: #E7F3E9;
+        }
+        /* KATEGORI END */
 }
