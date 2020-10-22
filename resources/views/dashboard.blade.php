@@ -11,11 +11,13 @@
 
 <div class="row con">
     <div class="col-md-3 sidebar" id="sidebar">
-        <img src="/assets/image/logo.png" alt="" class="img-fluid d-flex m-auto my-4" width="200px">
-        <a href="#" class="nav-link sidebar-nav my-3" aria-current="true" id="home">
-            <span class="iconify" data-icon="ion:speedometer-outline" data-inline="false"></span>
-            Ringkasan Performa
-        </a>
+      <div id="sidebar-side">
+        
+    <img src="/assets/image/logo.png" alt="" class="img-fluid d-flex m-auto my-4" width="200px">
+      <a href="#"class="nav-link sidebar-nav my-3" aria-current="true" id="home">
+      <span class="iconify" data-icon="ion:speedometer-outline" data-inline="false"></span>
+        Ringkasan Performa
+    
         <hr>
         <a href="#" class="nav-link sidebar-nav mt-3" aria-current="true">
             <span class="iconify" data-icon="ic:baseline-class" data-inline="false"></span>

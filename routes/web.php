@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\HomeController;
+use App\Action\Fortify\UpdateUserProfileInformation;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,7 +29,6 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/', 'verified'], fu
     Route::get('dashboard', function () {return view('dashboard');})->name('dashboard');
     Route::get('register',function() {return view('auth.register');})->name('register');
     Route::get('edit/{{id}}',[UpdateUserProfileInformation::class, 'edit'])->name('edit');
-
 });
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
