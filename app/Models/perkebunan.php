@@ -12,7 +12,7 @@ class perkebunan extends Model
     protected $fillable = [
         'kategori',
         'materi',
-        'subbab',
+        'judul',
         'mentor',
         'youtube',
         'ringkasan',

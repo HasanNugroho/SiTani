@@ -12,7 +12,7 @@ class hidroponik extends Model
     protected $fillable = [
         'kategori',
         'materi',
-        'subbab',
+        'judul',
         'mentor',
         'youtube',
         'ringkasan',

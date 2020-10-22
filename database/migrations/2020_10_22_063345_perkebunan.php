@@ -17,7 +17,7 @@ class Perkebunan extends Migration
             $table->id();
             $table->string('kategori');
             $table->string('materi');
-            $table->string('subbab');
+            $table->string('judul');
             $table->string('mentor');
             $table->string('youtube');
             $table->string('ringkasan');

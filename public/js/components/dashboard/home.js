@@ -5,7 +5,7 @@ export const home = `
 			<h2>Dashboard</h>
 		</div>
 		<div class="col-md-6 col-sm-6 text-right">
-			<a type="button" class="btn btn-primary mr-3" data-toggle="modal" data-target="#exampleModal">
+			<a type="button" class="btn btn-success mr-3" data-toggle="modal" data-target="#exampleModal">
 				Tambah Materi
 			</a>
 		</div>

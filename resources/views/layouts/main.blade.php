@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
-        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous"> --}}
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&display=swap"
         rel="stylesheet">
@@ -26,22 +27,17 @@
         integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
     </script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+{{-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="container">
                 <div class="modal-body">
                     <div class="mt-2 mb-2 d-flex justify-content-center">
-                        <span class="iconify" data-inline="false" data-icon="bi:chat-square-dots-fill" width="45"
-                            height="45" style="color: #219653;"></span>
-                    </div>
-                    <div class="title-modal-feed mb-3">
-                        <p>Yuk berikan pendapatmu
-                            untuk pengembangan
-                            si tani!</p>
+                        <h2>Update materimu</h2>
                     </div>
                     <form method="POST" action="{{route('tambah.materi')}}" enctype="multipart/form-data">
                       @csrf
@@ -61,13 +57,26 @@
                               <option value="cabai">Cabai</option>
                               <option value="padi">Padi</option>
                               <option value="jagung">Jagung</option>
-                              <option value="kacang-tanah">Kacang Tanah</option>
-                              <option value="kacang-panjang">Kacang Panjang</option>
+                              <option value="kacang tanah">Kacang Tanah</option>
+                              <option value="kacang panjang">Kacang Panjang</option>
+                              <option value="kelapa sawit">Kelapa Sawit</option>
+                              <option value="kelapa">Kelapa</option>
+                              <option value="teh">Teh</option>
+                              <option value="kopi">Kopi</option>
+                              <option value="karet">Karet</option>
+                              <option value="kangkung">Kangkung</option>
+                              <option value="tomat">Tomat</option>
+                              <option value="brokoli">Brokoli</option>
+                              <option value="sawi">Sawi</option>
+                              <option value="bayam">Bayam</option>
+                              <option value="selada">Selada</option>
+                              <option value="pakcoy">Pakcoy</option>
+                              <option value="stroberi">Stroberi</option>
                           </select>
                       </div>
                       <div class="mb-3">
-                          <label for="subbab" class="form-label">Sub Bab</label>
-                          <input type="text" class="form-control" id="subbab" name="subbab" required>
+                          <label for="subbab" class="form-label">Judul</label>
+                          <input type="text" class="form-control" id="subbab" name="judul" required>
                       </div>
                       <div class="mb-3">
                           <label for="mentor" class="form-label">Mentor</label>
@@ -90,5 +99,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 </html>
