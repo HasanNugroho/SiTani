@@ -22,6 +22,7 @@ Route::group(['prefix' => '/'], function () {
     Route::get('perkebunan', [HomeController::class, 'perkebunan']);
     Route::get('hidroponik', [HomeController::class, 'hidroponik']);
     Route::get('pengembangan', [HomeController::class, 'pengembangan']);
+    Route::get('materi', [HomeController::class, 'materi']);
 });
 Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
 

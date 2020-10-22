@@ -38,7 +38,7 @@ export const home = `
 				  </div>
 				  <div class="col-4 mt-3">
   					<div class="card text-white">
-					  <img src="/assets/image/banner/komen.png" class="card-img" alt="...">
+					  <img src="/assets/image/banner/kelas.png" class="card-img" alt="...">
 					  <div class="card-img-overlay d-flex">
 					  	<div class="mt-auto ml-auto text-right">					  		
 					    <h5 class="card-title m-auto d-block">Kelas</h5>
@@ -49,7 +49,7 @@ export const home = `
 				  </div>
 				  <div class="col-4 mt-3">
 				  <div class="card text-white">
-				  <img src="/assets/image/banner/komen.png" class="card-img" alt="...">
+				  <img src="/assets/image/banner/bab.png" class="card-img" alt="...">
 				  <div class="card-img-overlay d-flex">
 					  <div class="mt-auto ml-auto text-right">					  		
 					<h5 class="card-title m-auto d-block">Sub Bab</h5>

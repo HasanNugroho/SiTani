@@ -26,4 +26,8 @@ class HomeController extends Controller
     {
         return view('pengembangan');
     }
+    public function materi()
+    {
+        return view('materi');
+    }
 }
