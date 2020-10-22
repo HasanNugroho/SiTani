@@ -13,11 +13,12 @@
     <div class="col-md-3 sidebar" id="sidebar">
         <div id="sidebar-side">
             <img src="/assets/image/logo.png" alt="" class="img-fluid d-flex m-auto my-4" width="200px">
-            <a href="#" class="nav-link sidebar-nav my-3" id="home">
-                <span class="iconify" data-icon="ion:speedometer-outline" data-inline="false"></span>
+              <a href="#"class="nav-link sidebar-nav my-3" aria-current="true" id="home">
+              <span class="iconify" data-icon="ion:speedometer-outline" data-inline="false"></span>
                 Ringkasan Performa
+                </a>
                 <hr>
-                <a href="#" class="nav-link sidebar-nav mt-3" aria-current="true">
+                <a href="#" class="nav-link sidebar-nav mt-3" aria-current="true" id="kelas">
                     <span class="iconify" data-icon="ic:baseline-class" data-inline="false"></span>
                     Kelas
                 </a>
@@ -47,14 +48,14 @@
                     User
                 </a>
                 <hr>
-                <form action="/logout" method="POST">
-                    @csrf
-                    <button type="submit" href="/logout" class="btn btn-success  mt-4 d-flex mx-4">Logout</button>
-                </form>
+            </div>
+            <form action="/logout" method="POST">
+                @csrf
+                <button type="submit" href="/logout" class="btn btn-success  mt-4 d-flex mx-4">Logout</button>
+            </form>
         </div>
-    </div>
-    <div class="col-md-9" id="root">
-    </div>
+<div class="col" id="root">
+</div>
 </div>
 
 

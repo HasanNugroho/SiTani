@@ -1,7 +1,6 @@
 export const tanggapan= `
+<h2 class="mt-4 container-fluid">Tanggapan Pemirsa</h2>
 
-<div class="container-fluid">
-<h3 class="mt-2">Tanggapan Pemirsa</h3>
 <table class="table">
   <thead>
     <tr>
@@ -31,5 +30,5 @@ export const tanggapan= `
     </tr>
   </tbody>
 </table>
-</div>
+
 `

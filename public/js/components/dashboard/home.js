@@ -1,10 +1,14 @@
 export const home = `
-<div class="container-fluid">
-	<div class="row">
-		<a type="button" class="btn btn-primary col-md-6 col-sm-6 text-right" data-toggle="modal" data-target="#exampleModal">
-			Tambah Materi
-		</a>
-		<h2 class="col-md-6 col-sm-6 text-left">Dashboard</h2>
+<div class="container">
+	<div class="row mt-4">
+		<div class="col-md-6 col-sm-6 text-left">
+			<h2>Dashboard</h>
+		</div>
+		<div class="col-md-6 col-sm-6 text-right">
+			<a type="button" class="btn btn-primary mr-3" data-toggle="modal" data-target="#exampleModal">
+				Tambah Materi
+			</a>
+		</div>
 	</div>
 		<div class="row container-fluid mt-3">
 			<div class="col-4">

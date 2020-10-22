@@ -1,9 +1,6 @@
 export const tani= `
 
-<div class="container-fluid">
-<div class="row mt-4 mb-3">
-<h3 class="mt-2 col-md-6 col-sm-6">Materi Pertanian</h3>
-</div>
+<h2 class="mt-4 container-fluid">Materi Pertanian</h2>
 <table class="table">
   <thead>
     <tr>
