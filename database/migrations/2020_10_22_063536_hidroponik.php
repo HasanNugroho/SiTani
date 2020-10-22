@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePertaniansTable extends Migration
+class Hidroponik extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,14 @@ class CreatePertaniansTable extends Migration
      */
     public function up()
     {
-        Schema::create('pertanians', function (Blueprint $table) {
+        Schema::create('hidroponik', function (Blueprint $table) {
             $table->id();
+            $table->string('kategori');
+            $table->string('materi');
+            $table->string('subbab');
+            $table->string('mentor');
+            $table->string('youtube');
+            $table->string('ringkasan');
             $table->timestamps();
         });
     }
@@ -26,6 +32,6 @@ class CreatePertaniansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pertanians');
+        Schema::dropIfExists('hidroponik');
     }
 }

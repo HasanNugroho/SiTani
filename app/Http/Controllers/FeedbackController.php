@@ -15,7 +15,7 @@ class FeedbackController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'email' => 'required|unique:feed_backs',
+            'email' => 'required',
             'message' => 'required|min:5',
         ]);
         Feedback::create([

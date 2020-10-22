@@ -3,17 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\HomeController;
-use App\Action\Fortify\UpdateUserProfileInformation;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\MateriController;
+
 
 
 Route::group(['prefix' => '/'], function () {
@@ -28,8 +19,9 @@ Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedb
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/', 'verified'], function () {
     Route::get('dashboard', function () {return view('dashboard');})->name('dashboard');
     Route::get('register',function() {return view('auth.register');})->name('register');
-    Route::get('edit/{{id}}',[UpdateUserProfileInformation::class, 'edit'])->name('edit');
 });
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
+
+Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verified'], function () {
+Route::post('/materi', [MateriController::class, 'store'])->name('tambah.materi');
+});
+
