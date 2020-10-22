@@ -30,11 +30,7 @@
                 </a>
             @endif
             <button class="btn btn-success" type="submit">Submit</button>
-
         </form>
-    
-            
-
      </div>
    </div>
 @endsection

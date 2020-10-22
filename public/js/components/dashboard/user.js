@@ -1,14 +1,19 @@
 export const user= `
 
 <div class="container-fluid">
-<h3 class="mt-2">User</h3>
+  <div class="row mt-4 mb-3">
+    <h3 class="mt-2 col-md-6 col-sm-6">User</h3>
+    <div class="col-md-6 col-sm-6 text-right">
+      <a href="{{route('register')}}" class="btn btn-success btn-md">Tambah Admin</a>
+    </div>
+  </div>
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">No</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Email</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -16,7 +21,10 @@ export const user= `
       <th scope="row">1</th>
       <td>Mark</td>
       <td>Otto</td>
-      <td>@mdo</td>
+      <td>
+        <a href="/edit/{{1}}" class="btn btn-outline-primary btn-sm">Edit Admin</a>
+        <a href="/hapus/{{1}}" class="btn btn-outline-danger btn-sm">Hapus</a>
+      </td>
     </tr>
     <tr>
       <th scope="row">2</th>

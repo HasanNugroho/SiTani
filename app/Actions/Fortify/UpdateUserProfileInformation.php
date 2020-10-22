@@ -16,6 +16,11 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
      * @param  array  $input
      * @return void
      */
+    public function edit($id, $user)
+    {
+        $edit = user::where('id', $id)->first();
+        return view('auth.edit');
+    }
     public function update($user, array $input)
     {
         Validator::make($input, [
