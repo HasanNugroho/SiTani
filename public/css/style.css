@@ -508,6 +508,11 @@ html {
     /* JUMBOTRON END */
 
     /* ABOUT */
+.judul-materi{
+    font-weight: 500;
+    font-family: Rubik;
+}
+
     .about-big,
     .about-small {
         margin-left: 10px;
