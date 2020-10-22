@@ -17,22 +17,29 @@
       <a href="#"class="nav-link sidebar-nav my-3" aria-current="true" id="home">
       <span class="iconify" data-icon="ion:speedometer-outline" data-inline="false"></span>
         Ringkasan Performa
-      </a>
-      <hr>
-      <a href="#"class="nav-link sidebar-nav mt-3" aria-current="true" id="kelas">
-      <span class="iconify" data-icon="ic:baseline-class" data-inline="false"></span>
-        Kelas
-      </a>
-      <div class="ml-4">
-        <a href="#"class="nav-link sidebar-nav " id="pertanian">
-          Pertanian
+    
+        <hr>
+        <a href="#" class="nav-link sidebar-nav mt-3" aria-current="true">
+            <span class="iconify" data-icon="ic:baseline-class" data-inline="false"></span>
+            Kelas
         </a>
-        <a href="#"class="nav-link sidebar-nav" aria-current="true" id="kebun">
-          Perkebunan
+        <div class="ml-4">
+            <a href="#" class="nav-link sidebar-nav " id="pertanian">
+                Pertanian
+            </a>
+            <a href="#" class="nav-link sidebar-nav" aria-current="true" id="kebun">
+                Perkebunan
+            </a>
+            <a href="#" class="nav-link sidebar-nav mb-3" aria-current="true" id="hidroponik">
+                Hidroponik
+            </a>
+        </div>
+        <hr>
+        <a href="#" class="nav-link sidebar-nav mt-3" aria-current="true" id="tanggapan">
+            <span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>
+            Tanggapan Pengguna
         </a>
-        <a href="#"class="nav-link sidebar-nav mb-3" aria-current="true" id="hidroponik">
-          Hidroponik
-        </a>
+<<<<<<< HEAD
       </div>
       <hr>
       <a href="#"class="nav-link sidebar-nav mt-3" aria-current="true" id="tanggapan">
@@ -54,10 +61,25 @@
     @csrf
       <button type="submit" href="/logout" class="btn btn-success  mt-4 d-flex mx-4" >Logout</button>
     </form>
+=======
+        <a href="#" class="nav-link sidebar-nav mb-3" aria-current="true" id="komentar">
+            <span class="iconify" data-icon="gridicons:chat" data-inline="false"></span>
+            Komentar
+        </a>
+        <hr>
+        <a href="#" class="nav-link sidebar-nav my-3" aria-current="true" id="user">
+            <span class="iconify" data-icon="bx:bxs-user" data-inline="false"></span>
+            User
+        </a>
+        <hr>
+        <form action="/logout" method="POST">
+            @csrf
+            <button type="submit" href="/logout" class="btn btn-success  mt-4 d-flex mx-4">Logout</button>
+        </form>
     </div>
-    <div class="col"id="root">
-
-</div>
+    <div class="col" id="root">
+>>>>>>> dc493212ee6902a2e729c091dfe8eab8291b9ea7
+    </div>
 </div>
 
 

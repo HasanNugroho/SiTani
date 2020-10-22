@@ -21,16 +21,16 @@
                     </li>
                     <li class="ftr-tipis">Kategori :</li>
                     <li>
-                        <a href="" class="ftr-biasa">Pertanian</a>
+                        <a href="/pertanian" class="ftr-biasa">Pertanian</a>
                     </li>
                     <li>
-                        <a href="" class="ftr-biasa">Perkebunan</a>
+                        <a href="/perkebunan" class="ftr-biasa">Perkebunan</a>
                     </li>
                     <li>
-                        <a href="" class="ftr-biasa">Pertanian modern</a>
+                        <a href="/hidroponik" class="ftr-biasa">Hidroponik</a>
                     </li>
                     <li>
-                        <a href="" class="ftr-biasa">Testimoni</a>
+                        <a href="/#testimoni" class="ftr-biasa">Testimoni</a>
                     </li>
                 </ul>
             </div>

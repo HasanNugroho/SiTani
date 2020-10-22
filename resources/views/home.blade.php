@@ -6,7 +6,7 @@
 {{-- JUMBOTRON --}}
 
 <div class="jumbotron d-flex" style="background-image: url(/image/landing/jumbotron.png);">
-    <div class="container m-auto">
+    <div class="container m-auto jumbo-u">
         <h1 class="jumbo-big">Kini, semua bisa
             menjadi #petanimillenial,
             bareng <img class="jumbo-big-image" src="/image/landing/icon.svg">
@@ -21,7 +21,7 @@
 </div>
 {{-- JUMBOTRON END --}}
 {{-- ABOUT --}}
-<div class="container mt-5 mb-5" id="tentang">
+<div class="container mt-5 mb-5">
     <div class="row d-flex align-items-center">
         <div class="col-md-6">
             <img src="/image/landing/img-about.png" class="about-img" alt="">
@@ -96,42 +96,44 @@
 </div>
 {{-- KATEGORI KELAS END --}}
 {{-- KEUNTUNGAN --}}
-<div class="container" id="keuntungan">
-    <div class="judul-keuntungan">
-        <h3 class="keuntungan-judul">Apa keuntungan belajar bareng si tani?</h3>
-        <p class="deskripsi-keuntungan">Dengan gabung ke kelas gratis di si tani tentu aja ada banyak keuntunganya loh,
-            kira-kira apa saja keuntungnya yuk simak!</p>
-    </div>
-    <div class="row mb-5 pb-4">
-        <div class="col-md-3">
-            <img class="img-keuntungan" src="/image/landing/keuntungan1.png" alt="Gratis">
-            <h4 class="keuntungan-big">Tanpa dipungut biaya apapun</h4>
-            <p class="keuntungan-small">Kamu nggak perlu mengeluarkan uang satu rupiah pun untuk mengukuti semua kelas
-                yang ada.</p>
+<div class="container">
+    <div class="keuntungan" id="keuntungan">
+        <div class="judul-keuntungan">
+            <h3 class="keuntungan-judul">Apa keuntungan belajar bareng si tani?</h3>
+            <p class="deskripsi-keuntungan">Dengan gabung ke kelas gratis di si tani tentu aja ada banyak keuntunganya loh,
+                kira-kira apa saja keuntungnya yuk simak!</p>
         </div>
-        <div class="col-md-3">
-            <img class="img-keuntungan" src="/image/landing/keuntungan2.png" alt="Mentor yang handal">
-            <h4 class="keuntungan-big">Dibimbing mentor berpengalaman</h4>
-            <p class="keuntungan-small">Semua mentor si tani berpengalaman pada bidangnya masing-masing dan memiliki
-                cara mengajar yang menyenangkan.</p>
-        </div>
-        <div class="col-md-3">
-            <img class="img-keuntungan" src="/image/landing/keuntungan3.png" alt="Materi berkualitas">
-            <h4 class="keuntungan-big">Video dan materi yang berkualitas</h4>
-            <p class="keuntungan-small">Video pembelajaran yang ada di si tani, semua memiliki resolusi maksimal hingga
-                1080p! dan materi yang dibuat mudah dipahami.</p>
-        </div>
-        <div class="col-md-3">
-            <img class="img-keuntungan" src="/image/landing/keuntungan4.png" alt="Ringkasan materi tersedia">
-            <h4 class="keuntungan-big">Gratis ringkasan materi yang bisa kamu unduh</h4>
-            <p class="keuntungan-small">Setelah menyimak pembelajaran, kamu juga bisa mendapatkan ringkasan materi yang
-                disampaikan untuk kamu pelajari lagi loh..</p>
+        <div class="row">
+            <div class="col-md-3">
+                <img class="img-keuntungan" src="/image/landing/keuntungan1.png" alt="Gratis">
+                <h4 class="keuntungan-big">Tanpa dipungut biaya apapun</h4>
+                <p class="keuntungan-small">Kamu nggak perlu mengeluarkan uang satu rupiah pun untuk mengukuti semua kelas
+                    yang ada.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-keuntungan" src="/image/landing/keuntungan2.png" alt="Mentor yang handal">
+                <h4 class="keuntungan-big">Dibimbing mentor berpengalaman</h4>
+                <p class="keuntungan-small">Semua mentor si tani berpengalaman pada bidangnya masing-masing dan memiliki
+                    cara mengajar yang menyenangkan.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-keuntungan" src="/image/landing/keuntungan3.png" alt="Materi berkualitas">
+                <h4 class="keuntungan-big">Video dan materi yang berkualitas</h4>
+                <p class="keuntungan-small">Video pembelajaran yang ada di si tani, semua memiliki resolusi maksimal hingga
+                    1080p! dan materi yang dibuat mudah dipahami.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-keuntungan" src="/image/landing/keuntungan4.png" alt="Ringkasan materi tersedia">
+                <h4 class="keuntungan-big">Gratis ringkasan materi yang bisa kamu unduh</h4>
+                <p class="keuntungan-small">Setelah menyimak pembelajaran, kamu juga bisa mendapatkan ringkasan materi yang
+                    disampaikan untuk kamu pelajari lagi loh..</p>
+            </div>
         </div>
     </div>
 </div>
 {{-- KEUNTUNGAN END --}}
 {{-- TESTIMONY --}}
-<div class="container">
+<div class="container" id="testimoni">
     <div class="testi-title pt-5">
         <h3>Apa kata mereka?</h3>
     </div>
