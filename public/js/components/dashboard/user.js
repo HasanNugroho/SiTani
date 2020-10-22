@@ -1,12 +1,9 @@
 export const user= `
+<h2 class="mt-4 container-fluid">User</h2>
 
-<div class="container-fluid">
-  <div class="row mt-4 mb-3">
-    <h3 class="mt-2 col-md-6 col-sm-6">User</h3>
-    <div class="col-md-6 col-sm-6 text-right">
-      <a href="{{route('register')}}" class="btn btn-success btn-md">Tambah Admin</a>
+  <div class="col-md text-right container-fluid my-3">
+      <a href="/register" class="btn btn-success btn-md">Tambah Admin</a>
     </div>
-  </div>
 <table class="table">
   <thead>
     <tr>
@@ -26,17 +23,7 @@ export const user= `
         <a href="/hapus/{{1}}" class="btn btn-outline-danger btn-sm">Hapus</a>
       </td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
+
   </tbody>
 </table>
 </div>

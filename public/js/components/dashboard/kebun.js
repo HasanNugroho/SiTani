@@ -1,7 +1,6 @@
 export const kebun= `
+<h2 class="mt-4 container-fluid">Materi Perkebunan</h2>
 
-<div class="container-fluid">
-<h3 class="mt-2">Materi Perkebunan</h3>
 <table class="table">
   <thead>
     <tr>

@@ -9,7 +9,7 @@
             <img src="/assets/image/logo.png" alt="" width="200px" class="d-flex m-auto">
             <div>
                 <label for="name" class="form-label mt-4">Nama</label>
-                <input id="name" class="form-control" type="email" name="name" :value="old('name')" required autofocus />
+                <input id="name" class="form-control" type="text" name="name" :value="old('name')" required autofocus />
             </div>
             <div>
                 <label for="email" class="form-label mt-1">Email</label>
@@ -24,9 +24,7 @@
                 <input id="password-confrim" class="form-control" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
             <div class="mt-3">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    Sudah Daftar?
-                </a>
+                
                 <button class="btn btn-success" type="submit">Submit</button>
             </div>
         </form>
