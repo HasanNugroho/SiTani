@@ -452,6 +452,170 @@ html {
     color: #E7F3E9 !important;
 }
 /* PENGEMBANGAN END */
+/* WEB PLAYER */
+.judul-materi{
+    font-weight: 4rem;
+    font-family: Rubik;
+}
+.card-webplayer{
+    background: #e7f3e9;
+    border: 3px solid #35974a;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 0px rgba(53, 151, 74, 0.25);
+    border-radius: 5px;
+    height: auto;
+}
+.card-img-player{
+    margin-top: 1em;
+    width: 85%;
+    height: auto;
+}
+.card-player-big{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+}
+.card-player-small{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 25px;
+    color: #219653;
+}
+.card-mentor{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+}
+.judul-playlist{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 25px;
+    color: #219653;
+    margin-top: 1rem;
+}
+.daftar-playlist{
+    margin: 0 10px;
+}
+.play-icon{
+    color: #219653;
+    width: 20px;
+    height: 20px;
+    margin-top: 0.15rem;
+}
+.materi-playlist{
+    text-align: left;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 25px;
+    color: #000000;
+    margin-left: 5px;
+}
+.prev, .next{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 25px;
+    color: #219653;
+    text-decoration: none;
+}
+.prev:hover, .next:hover{
+    color: #106133 ;
+}
+.hidden{
+    display: none;
+}
+/* WEB PLAYER END */
+/* COMMENT */
+.teks-komentar{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.img-comment{
+    border-radius: 10px;
+}
+.bagian-komentar{
+    margin-left: 5px;
+    line-height: 1rem;
+}
+.nama{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.tanggal-komen{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #999999;
+}
+.isi-komentar{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+.reply{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #219653;
+    text-decoration: none;
+}
+.reply:hover{
+    color: #106133;
+}
+.bg-form-comment{
+    padding: 2rem;
+    background-color: #E7F3E9;
+}
+.judul-form{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.btn-comment{
+    font-family: Rubik !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    line-height: 25px;
+    color: #219653 !important;
+}
+.btn-comment:hover{
+    color: #E7F3E9 !important;
+}
+/* COMMENT END */
 @media  (min-width: 225px) and (max-width: 676px){
     /* NAVBAR */
     .bg-nav {
@@ -508,11 +672,6 @@ html {
     /* JUMBOTRON END */
 
     /* ABOUT */
-.judul-materi{
-    font-weight: 500;
-    font-family: Rubik;
-}
-
     .about-big,
     .about-small {
         margin-left: 10px;
@@ -554,6 +713,27 @@ html {
         font-size: 14px !important;
     }
     /* TESTIMONY END */
+    /* WEB PLAYER */
+    .next{
+        text-align: right;
+        margin-top: -2.55rem;
+    }
+    .not-hidden{
+        display: none;
+    }
+    .hidden{
+        display: inline;
+    }
+    .judul-materi{
+        font-weight: 4rem;
+        font-family: Rubik;
+    }
+    .display-button{
+        font-size: 0.6rem !important;
+    }
+    /* WEB PLAYER END */
+    /* COMMENT */
+
 }
 @media (min-width: 377px) and (max-width: 985px) {
     .bg-nav {

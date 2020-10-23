@@ -15,6 +15,7 @@ class Pertanian extends Migration
     {
         Schema::create('pertanian', function (Blueprint $table) {
             $table->id();
+            $table->string('slug');
             $table->string('kategori');
             $table->string('materi');
             $table->string('judul');

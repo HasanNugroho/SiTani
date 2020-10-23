@@ -10,6 +10,7 @@ class pertanian extends Model
     use HasFactory;
     protected $table = 'pertanian';
     protected $fillable = [
+        'slug',
         'kategori',
         'materi',
         'judul',

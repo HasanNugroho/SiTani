@@ -15,6 +15,7 @@ class Hidroponik extends Migration
     {
         Schema::create('hidroponik', function (Blueprint $table) {
             $table->id();
+            $table->string('slug');
             $table->string('kategori');
             $table->string('materi');
             $table->string('judul');

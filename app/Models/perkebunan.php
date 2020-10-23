@@ -10,6 +10,7 @@ class perkebunan extends Model
     use HasFactory;
     protected $table = 'perkebunan';
     protected $fillable = [
+        'slug',
         'kategori',
         'materi',
         'judul',

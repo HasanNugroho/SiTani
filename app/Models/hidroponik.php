@@ -10,6 +10,7 @@ class hidroponik extends Model
     use HasFactory;
     protected $table = 'hidroponik';
     protected $fillable = [
+        'slug',
         'kategori',
         'materi',
         'judul',

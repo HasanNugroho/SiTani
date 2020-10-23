@@ -15,6 +15,7 @@ class Perkebunan extends Migration
     {
         Schema::create('perkebunan', function (Blueprint $table) {
             $table->id();
+            $table->string('slug');
             $table->string('kategori');
             $table->string('materi');
             $table->string('judul');
