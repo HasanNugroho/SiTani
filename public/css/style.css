@@ -255,7 +255,7 @@ html {
     box-sizing: border-box;
     box-shadow: 7px 7px 0px rgba(53, 151, 74, 0.25);
     border-radius: 5px;
-    width: 275px;
+    width: 280px;
     height: 265px;
 }
 .testi-big{
@@ -277,6 +277,7 @@ html {
     color: rgba(0, 0, 0, 0.6);
 }
 .testi-img-round {
+    margin-top: 5px;
     border-radius: 100px;
     width: 65px;
     height: 65px;
@@ -284,14 +285,45 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
-.btn-carousel {
-    padding: 5px !important;
-    background: #e7f3e9 !important;
-    border-radius: 100px !important;
+.body-testi{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.align-btn {
-    margin-bottom: auto;
-    margin-top: auto;
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper{
+    max-width: 90% !important;
+    height: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swp{
+    color: #219653 !important;
+}
+.swp:hover{
+    color: #0b5a2d !important;
 }
 /* TESTIMONY END */
 /* FEEDBACK */

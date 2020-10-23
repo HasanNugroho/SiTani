@@ -15,6 +15,11 @@
    
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+
     {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous"> --}}
 
     <title>@yield('title')</title>
@@ -52,6 +57,41 @@
     <script src="/bootstrap/pooper.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/smooth.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="/js/swiper-bundle.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                '@0.75': {
+                slidesPerView: 1,
+                spaceBetween: 2,
+                },
+                '@1.00': {
+                slidesPerView: 2,
+                spaceBetween: 2,
+                },
+                '@1.50': {
+                slidesPerView: 3,
+                spaceBetween: 2,
+                },
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
 </body>
 
 </html>

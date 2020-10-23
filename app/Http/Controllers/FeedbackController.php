@@ -7,6 +7,11 @@ use App\Models\Feedback;
 
 class FeedbackController extends Controller
 {
+    public function show()
+    {
+        $tanggapan = Feedback::latest()->paginate(6);
+        return $tanggapan;
+    }
     public function index()
     {
         $tanggapan = Feedback::all();
@@ -15,10 +20,12 @@ class FeedbackController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'nama' => 'required',
             'email' => 'required',
             'message' => 'required|min:5',
         ]);
         Feedback::create([
+            'nama' => $request->nama,
             'email' => $request->email,
             'message' => $request->message,
         ]);

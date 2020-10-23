@@ -8,7 +8,10 @@ class HomeController extends Controller
 {
     public function home()
     {
-        return view('home');
+        $feedback = new FeedbackController;
+        $tanggapan = $feedback->show();
+
+        return view('home')->with(compact('tanggapan'));
     }
     public function pertanian()
     {
