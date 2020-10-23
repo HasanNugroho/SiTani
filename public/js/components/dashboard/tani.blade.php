@@ -1,6 +1,5 @@
-export const kebun= `
-<h2 class="mt-4 container-fluid">Materi Perkebunan</h2>
 
+<h2 class="mt-4 container-fluid">Materi Pertanian</h2>
 <table class="table">
   <thead>
     <tr>
@@ -31,4 +30,3 @@ export const kebun= `
   </tbody>
 </table>
 </div>
-`

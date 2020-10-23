@@ -1,4 +1,4 @@
-export const kelas = `
+
 <h2 class="mt-4 container-fluid">Dashboard</h2>
 			<div class="row container-fluid mt-3">
 
@@ -39,4 +39,4 @@ export const kelas = `
 				  </div>
 			
   			</div>
-  		</div>`;
+  		</div>

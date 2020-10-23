@@ -1,36 +1,45 @@
-import { home } from "./components/dashboard/home.js";
-import { user } from "./components/dashboard/user.js";
-import { tani } from "./components/dashboard/tani.js";
-import { kebun } from "./components/dashboard/kebun.js";
-import { tanggapan } from "./components/dashboard/tanggapan.js";
-import { kelas } from "./components/dashboard/kelas.js";
+
+
+function ajax(element){
+     var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                document.getElementById("root").innerHTML = this.responseText;
+            }
+        };
+        xhr.open("GET", 'js/components/dashboard/'+element+'.blade.php', true);
+        xhr.send();
+}
 
 window.onload = function () {
-    const root = document.getElementById("root");
-    root.innerHTML = home;
+    ajax('home')
 };
 let target;
+
+
 document.getElementById("sidebar-side").addEventListener("click", (e) => {
+
+    
     e.preventDefault();
     target = e.target.id;
     switch (target) {
         case "home":
-            document.getElementById("root").innerHTML = home;
+            ajax('home')
             break;
         case "user":
-            document.getElementById("root").innerHTML = user;
+            ajax('user')
             break;
         case "pertanian":
-            document.getElementById("root").innerHTML = tani;
+            ajax('tani')
             break;
         case "kebun":
-            document.getElementById("root").innerHTML = kebun;
+            ajax('kebun')
             break;
         case "tanggapan":
-            document.getElementById("root").innerHTML = tanggapan;
+            ajax('tanggapan')
             break;
         case "kelas":
-            document.getElementById("root").innerHTML = kelas;
+            ajax('kelas')
             break;
     }
 });
