@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MateriController;
+use App\Http\Controllers\DashboardController;
+
 
 
 
@@ -18,7 +20,7 @@ Route::group(['prefix' => '/'], function () {
 Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
 
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/', 'verified'], function () {
-    Route::get('dashboard', function () {return view('dashboard');})->name('dashboard');
+    Route::get('dashboard', [DashboardController::class, 'index']);
     Route::get('register',function() {return view('auth.register');})->name('register');
 });
 

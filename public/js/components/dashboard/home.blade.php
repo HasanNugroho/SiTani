@@ -1,8 +1,8 @@
-export const home = `
+
 <div class="container">
 	<div class="row mt-4">
 		<div class="col-md-6 col-sm-6 text-left">
-			<h2>Dashboard</h>
+			<h2>Dashboard</h2>
 		</div>
 		<div class="col-md-6 col-sm-6 text-right">
 			<a type="button" class="btn btn-success mr-3" data-toggle="modal" data-target="#exampleModal">
@@ -11,9 +11,8 @@ export const home = `
 		</div>
 	</div>
 		<div class="row container-fluid mt-3">
-			<div class="col-4">
-				<div class="card text-white">
-
+	
+		
   				<div class="col-4">
   					<div class="card text-white">
 
@@ -71,7 +70,7 @@ export const home = `
 				</div>
 			</div>
 			</div>
-		</div>
-	</div>
+
+
 </div>
-`;
+
