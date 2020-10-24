@@ -11,22 +11,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td></td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
+    @foreach ($tanggapan as $key=>$tanggapan)
+      <tr>
+        <th scope="row">1</th>
+        <td>{{$tanggapan->email}}</td>
+        <td>{{$tanggapan->message}}</td>
+        <td>@mdo</td>
+      </tr>
+    @endforeach
   </tbody>
 </table>

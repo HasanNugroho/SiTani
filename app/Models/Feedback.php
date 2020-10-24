@@ -9,6 +9,7 @@ class FeedBack extends Model
     use HasFactory;
     protected $table = 'feed_backs';
     protected $fillable = [
+        'nama',
         'email',
         'message',
     ];

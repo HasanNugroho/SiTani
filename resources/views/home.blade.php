@@ -134,103 +134,33 @@
 {{-- KEUNTUNGAN END --}}
 {{-- TESTIMONY --}}
 <div class="container" id="testimoni">
-    <div class="testi-title pt-5">
+    <div class="testi-title pt-5 mb-5">
         <h3>Apa kata mereka?</h3>
     </div>
-    <div class="carousel-testi">
-        <section class="pt-5 pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-1 align-btn">
-                        <a class="btn btn-carousel mb-3" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                            <span class="iconify" data-icon="grommet-icons:form-previous" color="#219653" data-width="30" data-height="30" data-inline="false"></span>
-                        </a>
-                    </div>
-                    <div class="col-10">
-                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner ">
-                                <div class="carousel-item active ">
-                                    <div class="row d-flex">
-                                        <div class="col-md-4 mb-3 justify-content-center">
-                                            <div class="card-testi">
-                                                <div class="body-testi">
-                                                    <p class="card-text testi-small">Gurunya cantique banged asw mantappu djiwaaaaaaaaa!</p>
-                                                    <h4 class="card-title testi-big">AnonymousPride3</h4>
-                                                    <img class="testi-img-round" alt="Image"
-                                                        src="/image/landing/profil1.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3 justify-content-center">
-                                            <div class="card-testi">
-                                                <div class="body-testi">
-                                                    <p class="card-text testi-small">Suka deh sama kelasnya, cara penyampaiannya asik parah dongg!</p>
-                                                    <h4 class="card-title testi-big">Up Gan hehe</h4>
-                                                    <img class="testi-img-round" alt="Image"
-                                                        src="/image/landing/profil2.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3 justify-content-center">
-                                            <div class="card-testi">
-                                                <div class="body-testi">
-                                                    <p class="card-text testi-small">Gue siapa yak uhuy :3</p>
-                                                    <h4 class="card-title testi-big">Anula</h4>
-                                                    <img class="testi-img-round" alt="Image"
-                                                        src="/image/landing/profil3.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card-testi">
-                                                <div class="body-testi">
-                                                    <p class="card-text testi-small">Gurunya cantique banged asw mantappu djiwaaaaaaaaa!</p>
-                                                    <h4 class="card-title testi-big">AnonymousPride3</h4>
-                                                    <img class="testi-img-round" alt="Image"
-                                                        src="/image/landing/profil2.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card-testi">
-                                                <div class="body-testi">
-                                                    <p class="card-text testi-small">Gurunya cantique banged asw mantappu djiwaaaaaaaaa!</p>
-                                                    <h4 class="card-title testi-big">AnonymousPride3</h4>
-                                                    <img class="testi-img-round" alt="Image"
-                                                        src="/image/landing/profil3.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card-testi">
-                                                <div class="body-testi">
-                                                    <p class="card-text testi-small">Gurunya cantique banged asw mantappu djiwaaaaaaaaa!</p>
-                                                    <h4 class="card-title testi-big">AnonymousPride3</h4>
-                                                    <img class="testi-img-round" alt="Image"
-                                                        src="/image/landing/profil1.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="carousel-testi pb-4">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                @foreach ($tanggapan as $tanggapan)
+                    <div class="swiper-slide">
+                        <div class="card-testi">
+                            <div class="body-testi">
+                                <p class="card-text testi-small">{{$tanggapan->message}}</p>
+                                <h4 class="card-title testi-big">{{$tanggapan->nama}}</h4>
+                                <img class="testi-img-round" alt="Image"
+                                src="/image/landing/profil1.png">
                             </div>
                         </div>
                     </div>
-                    <div class="col-1 align-btn">
-                        <a class="btn btn-carousel mb-3" href="#carouselExampleIndicators2" role="button"
-                            data-slide="next">
-                            <span class="iconify" data-icon="ic:baseline-navigate-next" color="#219653" data-width="30" data-height="30" data-inline="false"></span>
-                        </a>
-                    </div>
-                </div>
+                @endforeach
             </div>
-        </section>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next swp"></div>
+            <div class="swiper-button-prev swp"></div>
+        </div>
     </div>
 </div>
+  <!-- Swiper -->
+
 {{-- TESTIMONY END --}}
 {{-- FEEDBACK --}}
 <div class="container mt-5 mb-5">

@@ -56,6 +56,11 @@
                     <form action="{{route('feedback.post')}}" method="POST" class="text-left">
                         @csrf
                         <div class="form-group">
+                            <label for="exampleFormControlInput1" class="label-feed">Nama</label>
+                            <input type="text" class="form-feed form-control" id="exampleFormControlInput1"
+                                placeholder="keitarokatsuki@apple.com" name="nama" required>
+                        </div>
+                        <div class="form-group mt-2">
                             <label for="exampleFormControlInput1" class="label-feed">Email</label>
                             <input type="email" class="form-feed form-control" id="exampleFormControlInput1"
                                 placeholder="keitarokatsuki@apple.com" name="email" required>
