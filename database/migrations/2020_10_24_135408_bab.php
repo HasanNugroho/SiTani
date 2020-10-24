@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Perkebunan extends Migration
+class Bab extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,13 @@ class Perkebunan extends Migration
      */
     public function up()
     {
-        Schema::create('perkebunan', function (Blueprint $table) {
+        Schema::create('babs', function (Blueprint $table) {
             $table->id();
             $table->string('slug');
-            $table->string('post_id');
-            $table->string('materi_ke');
             $table->string('kategori');
-            $table->string('bab');
-            $table->string('judul');
+            $table->string('judul_bab');
             $table->string('mentor');
-            $table->string('youtube');
-            $table->string('ringkasan');
+            $table->string('gambar')->nullable();
             $table->timestamps();
         });
     }
@@ -35,6 +31,6 @@ class Perkebunan extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('perkebunan');
+        Schema::dropIfExists('bab');
     }
 }

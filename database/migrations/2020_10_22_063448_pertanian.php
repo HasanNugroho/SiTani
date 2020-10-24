@@ -16,8 +16,10 @@ class Pertanian extends Migration
         Schema::create('pertanian', function (Blueprint $table) {
             $table->id();
             $table->string('slug');
+            $table->string('post_id');
+            $table->string('materi_ke');
             $table->string('kategori');
-            $table->string('materi');
+            $table->string('bab');
             $table->string('judul');
             $table->string('mentor');
             $table->string('youtube');

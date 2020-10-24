@@ -45,7 +45,7 @@
         </div>
         <div class="row mt-4 pb-5">
             <div class="col-md-4">
-                <a href="">
+                <a href="/materi">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/pertanian/cabai.png" alt="Cabai">
                         <div class="card-img-overlay">
@@ -58,7 +58,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/pertanian/padi.png"
                             alt="Padi">
@@ -72,7 +72,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/pertanian/jagung.png"
                             alt="Jagung">
@@ -86,7 +86,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/pertanian/kacang-tanah.png"
                             alt="Kacang Tanah">
@@ -100,7 +100,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/pertanian/kacang-panjang.png"
                             alt="Kacang Panjang">

@@ -506,7 +506,7 @@ hr{
     background-color: #35974A, 25%;
     font-weight: bold !important;
     color: #35974A !important;
-    font-size: 20px !important;
+    font-size: 1rem !important;
     box-shadow: 5px 5px 0px 0px #FFFFFF 50% !important;
     border-color: #35974A !important;
     box-shadow: 3px 3px rgba(53, 151, 74, 0.753) !important;
@@ -514,6 +514,20 @@ hr{
 .pengembang-btn:hover{
     background-color: #35974A !important;
     color: #E7F3E9 !important;
+}
+.pengembang-back{
+    display: inline-block;
+    margin: 4px 2px;
+    background-color: #35974A !important;
+    font-weight: bold !important;
+    color: #E7F3E9 !important;
+    font-size: 1rem !important;
+    box-shadow: 5px 5px 0px 0px #FFFFFF 50% !important;
+    border-color: #35974A !important;
+    box-shadow: 3px 3px rgba(53, 151, 74, 0.753) !important;
+}
+.pengembang-back:hover{
+    background-color: rgb(31, 121, 51) !important;
 }
 /* PENGEMBANGAN END */
 /* WEB PLAYER */

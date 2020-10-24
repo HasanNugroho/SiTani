@@ -31,7 +31,7 @@
                     {{ $header }}
                 </div>
             </header>
-
+            {!!session()->get('message')!!}
             <!-- Page Content -->
             <main>
                 {{ $slot }}

@@ -4,11 +4,19 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MateriController;
+use App\Http\Controllers\BabController;
 use App\Http\Controllers\DashboardController;
+use Illuminate\Http\Request;
 
 
 
 
+Route::get('/ujicoba', [BabController::class, 'index']);
+Route::post('/ujicoba/post', [BabController::class, 'store'])->name('ujicoba.post');
+
+// Route::post('/ujicoba/post', function (Request $request) {
+//     dd($request->all());
+// });
 Route::group(['prefix' => '/'], function () {
     Route::get('', [HomeController::class, 'home']);
     Route::get('pertanian', [HomeController::class, 'pertanian']);

@@ -16,7 +16,7 @@
                     pengembangan. Mohon untuk cek secara berkala untuk mengetahui 
                     update dari kami ya
                 </p>
-                <a class="btn btn-light jumbo-button-1" href="/" role="button">KEMBALI</a>
+                <a class="btn btn-light pengembang-back" href="/" role="button">KEMBALI</a>
                 <a class="btn btn-outline-light pengembang-btn" href="/#kategori" role="button">BUKA KATEGORI KELAS </a>
             </div>
         </div>
