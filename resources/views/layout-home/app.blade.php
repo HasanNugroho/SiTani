@@ -62,17 +62,17 @@
     <script src="/js/swiper-bundle.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 0,
+            slidesPerView: 1,
+            spaceBetween: 10,
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
             breakpoints: {
                 '@0.75': {
                 slidesPerView: 1,
@@ -88,7 +88,7 @@
                 },
             },
             autoplay: {
-                delay: 3000,
+                delay: 2400,
             },
         });
     </script>

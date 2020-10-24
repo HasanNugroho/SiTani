@@ -7,10 +7,10 @@
 <div class="jumbotron d-flex" style="background-image: url(/image/pertanian/jumbotron.png);">
     <div class="container m-auto">
         <h3 class="ktkls mt-5">KATEGORI KELAS</h3>
-        <h1 class="jumbo-big mt-3">Pertanian
+        <h1 class="jumbo-big mt-2">Pertanian
         </h1>
         <p class="jumbo-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus tortor libero, vel mauris adipiscing suspendisse id risus vitae. Bibendum integer metus, sed tristique.</p>
-        <p class="lead mt-5 d-flex">
+        <p class="lead mt-4 d-flex">
             <a class="btn btn-light jumbo-button-1" href="#kategori-kelas" role="button">LIHAT DAFTAR KELAS</a>
         </p>
     </div>
@@ -114,17 +114,15 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="/pengembangan">
-                    <div class="card card-category">
-                        <img class="card-img category-img" src="/image/pertanian/coming-soon.png"
-                            alt="Coming soon">
-                        <div class="card-img-overlay">
-                            <div class="category-content">
-                                <h3 class="card-title">Segera hadir</h3>
-                            </div>
+                <div class="card card-category">
+                    <img class="card-img category-cms" src="/image/pertanian/coming-soon.png"
+                        alt="Coming soon">
+                    <div class="card-img-overlay">
+                        <div class="category-content">
+                            <h3 class="card-title">Segera hadir</h3>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>

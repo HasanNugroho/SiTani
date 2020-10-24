@@ -5,6 +5,13 @@ html {
 .basic-color {
     background-color: #35974a;
 }
+li{
+    list-style: none;
+}
+hr{
+    opacity: 8% !important;
+}
+
 /* NAVBAR */
 .navbar-font {
     color: #e7f3e9;
@@ -13,10 +20,13 @@ html {
     font-style: normal;
     line-height: 19px;
     font-family: Rubik;
+    padding: 1rem 0 !important;
 }
-.navbar-cstm {
-    height: 70px;
-}
+
+/* .navbar {
+    height: 70px !important;
+} */
+
 .dropdown-menu {
     color: #35974a !important;
     font-weight: bold !important;
@@ -35,6 +45,9 @@ html {
 .nav-link:hover {
     color: #ffffff !important;
 }
+.dropdown-item:hover:focus,.dropdown-item:active{
+    background-color: #35974a;
+}
 /* END NAVBAR */
 
 /* JUMBOTRON */
@@ -42,7 +55,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height:100vh;
     width: 100%;
     border-radius: 0% !important;
 }
@@ -57,22 +70,23 @@ html {
     font-style: normal;
     line-height: 50px;
     max-width: 550px;
+    margin-top: 11rem;
 }
 .jumbo-big-image {
-    width: 120px;
+    width: 8.2rem;
 }
 .ktkls {
     display: inline-block;
     font-family: Rubik;
-    padding: 10px 6px;
+    padding: 0.7rem 1rem;
     background-color: #256a34;
     font-weight: bold !important;
     color: #E7F3E9 !important;
     font-size: 1rem !important;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 .jumbo-small {
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
@@ -87,7 +101,7 @@ html {
     margin: 4px 2px;
     font-weight: bold !important;
     color: #35974a !important;
-    font-size: 20px !important;
+    font-size: 1rem !important;
     box-shadow: 3px 3px rgba(255, 255, 255, 0.425) !important;
 }
 .jumbo-button-2 {
@@ -95,7 +109,7 @@ html {
     margin: 4px 2px;
     font-weight: bold !important;
     color: #ffffff !important;
-    font-size: 20px !important;
+    font-size: 1rem !important;
     box-shadow: 3px 3px rgba(255, 255, 255, 0.425) !important;
 }
 .jumbo-button-1:hover{
@@ -192,6 +206,15 @@ html {
 .category-img:hover{
     box-shadow: 3px 3px rgb(40, 51, 42) !important;
 }
+.category-cms{
+    max-width: 335px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #e7f3e9 !important;
+    opacity: 50%;
+}
 /* CATEGORY END */
 /* KEUNTUNGAN */
 .keuntungan{
@@ -243,7 +266,7 @@ html {
 /* TESTIMONY */
 .testi-title {
     font-family: Rubik;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 28px;
     line-height: 33px;
     text-align: center;
@@ -342,14 +365,17 @@ html {
     line-height: 25px;
     color: #000000;
 }
+.btn{
+    padding: 0.6rem 1.2rem !important;
+}
 .testi-button,
 .feed-button {
     display: inline-block;
     margin: 5px 3px;
     background-color: #e7f3e9, 100%;
-    font-weight: bold !important;
+    font-weight: 500 !important;
     color: #e7f3e9 !important;
-    font-size: 17px !important;
+    font-size: 1rem !important;
     box-shadow: 4px 4px 0px 0px #249b5877 !important;
     border-color: #35974a !important;
 }
@@ -392,6 +418,9 @@ html {
     box-shadow: 0px 0px 0px 3.2px rgba(0, 123, 255, 0.25);
     border-radius: 5px;
 }
+.swiper-pagination-bullet-active{
+    background-color: #35974a !important;
+}
 /* FEEDBACK END */
 /* FOOTER */
 .footer {
@@ -399,6 +428,9 @@ html {
     padding-top: 45px;
     padding-bottom: 45px;
     font-family: Rubik;
+}
+.footer-contact{
+    margin-left: 0rem;
 }
 .image-footer {
     max-width: 155px;
@@ -539,6 +571,7 @@ html {
 }
 .daftar-playlist{
     margin: 0 10px;
+    text-decoration: none;
 }
 .play-icon{
     color: #219653;
@@ -648,7 +681,7 @@ html {
     color: #E7F3E9 !important;
 }
 /* COMMENT END */
-@media  (min-width: 225px) and (max-width: 676px){
+@media (max-width: 676px){
     /* NAVBAR */
     .bg-nav {
         background-color: #35974a;
@@ -670,11 +703,11 @@ html {
         height: 600px;
     }
     .jumbo-big {
-        font-size: 20px;
+        font-size: 2rem;
         font-style: normal;
-        line-height: 25px;
+        line-height: 2rem;
         max-width: 300px;
-        margin-top: 5.5rem;
+        margin-top: 9rem;
     }
     /* .jumbo-small{
         font-size: 15px;
@@ -683,7 +716,7 @@ html {
         max-width: 400px;
     }*/
     .jumbo-big-image {
-        width: 60px;
+        width: 5.6rem;
     }
     .jumbo-button-1 {
         display: inline-block;
@@ -720,14 +753,14 @@ html {
     .card-title {
         font-family: Rubik;
         font-weight: bold;
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 1.5rem !important;
+        line-height: 1.8rem !important;
         color: #ffffff;
     }
     .card-text {
         font-family: Rubik;
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
         align-items: center;
         color: #e7f3e9;
     }
@@ -761,13 +794,15 @@ html {
         font-family: Rubik;
     }
     .display-button{
-        font-size: 0.6rem !important;
+        font-size: 1rem !important;
+    }
+    .teks-komentar{
+        text-align: left;
     }
     /* WEB PLAYER END */
-    /* COMMENT */
 
 }
-@media (min-width: 377px) and (max-width: 985px) {
+@media (min-width: 676px) and (max-width: 985px) {
     .bg-nav {
         background-color: #35974a;
         padding: 6px 0px 10px 0px;
@@ -780,20 +815,20 @@ html {
         line-height: 19px;
         font-family: Rubik;
     }
-    /* KATEGORI */
     .card-title {
+        margin-left: 3rem;
         font-family: Rubik;
         font-weight: bold;
-        font-size: 17px;
-        line-height: 28px;
+        font-size: 2rem !important;
+        line-height: 2.5rem !important;
         color: #ffffff;
     }
     .card-text {
+        margin-left: 3rem;
         font-family: Rubik;
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         align-items: center;
         color: #e7f3e9;
     }
-    /* KATEGORI END */
 }

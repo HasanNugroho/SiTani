@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-3">
-                    <a class="nav-link" href="/" aria-current="date">TEMUKAN</a>
+                    <a class="nav-link" href="/" aria-current="date">BERANDA</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -23,7 +23,7 @@
                     </ul>
                   </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link" href="#keuntungan">KENAPA HARUS SI TANI?</a>
+                    <a class="nav-link js-scroll-trigger" href="/#keuntungan">KENAPA HARUS SI TANI?</a>
                 </li>
 
                 <li class="nav-item mr-3">

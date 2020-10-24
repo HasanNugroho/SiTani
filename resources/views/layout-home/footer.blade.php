@@ -6,16 +6,16 @@
         </div>
         <div class="row footer-content">
             <div class="col-md-6">
-                <ul>
+                <div class="footer-contact">
                     <li class="ftr-tps">Sinau tani adalah sebuah website penyedia kursus online gratis, yang berbasis di Yogyakarta, Indonesia dan didirikan pada Oktober 2020</li>
                     <li class="ftr-tipis">Jika anda memiliki ide, kritik atau saran,bisa menghubungi hotline kami di :</li>
                     <li class="ftr-biasa">(+62)81234567890</li>
                     <li class="ftr-biasa">sales-sitani-idn@gmail.com</li>
                     <li class="ftr-biasa">kerjasama-sitani-idn@gmail.com</li>
-                </ul>
+                </div>
             </div>
             <div class="col-md-2 bantuan-link">
-                <ul>
+                <div>
                     <li>
                         <strong>Menu</strong>
                     </li>
@@ -32,17 +32,17 @@
                     <li>
                         <a href="/#testimoni" class="ftr-biasa">Testimoni</a>
                     </li>
-                </ul>
+                </div>
             </div>
             <div class="col-md-4">
-                <ul>
+                <div>
                     <li>
                         <strong>Kantor</strong>
                     </li>
                     <li class="ftr-tipis">
                         Yogyakarta, Indonesia
                     </li>
-                    <li>
+                    <li class="mt-3">
                         <strong>Support dan Donasi</strong>
                     </li>
                     <li class="ftr-tipis">
@@ -51,7 +51,7 @@
                     <li class="ftr-tipis">
                         donasi_sitani@gmail.com
                     </li>
-                </ul>
+                </div>
             </div>
         </div>
     </div>

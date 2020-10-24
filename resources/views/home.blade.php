@@ -6,7 +6,7 @@
 {{-- JUMBOTRON --}}
 
 <div class="jumbotron d-flex" style="background-image: url(/image/landing/jumbotron.png);">
-    <div class="container m-auto jumbo-u">
+    <div class="container jumbo-u">
         <h1 class="jumbo-big">Kini, semua bisa
             menjadi #petanimillenial,
             bareng <img class="jumbo-big-image" src="/image/landing/icon.svg">
@@ -84,7 +84,7 @@
                             alt="Kategori Pertanian">
                         <div class="card-img-overlay">
                             <div class="category-content">
-                                <h3 class="card-title">Kategori Pertanian Sistem Hidroponik</h3>
+                                <h3 class="card-title">Kategori Pertanian Hidroponik</h3>
                                 <p class="card-text">Tersedia 2 kelas yang bisa kamu ikuti!</p>
                             </div>
                         </div>
@@ -96,11 +96,11 @@
 </div>
 {{-- KATEGORI KELAS END --}}
 {{-- KEUNTUNGAN --}}
-<div class="container">
-    <div class="keuntungan" id="keuntungan">
+<div class="container pt-3" id="keuntungan">
+    <div class="keuntungan" >
         <div class="judul-keuntungan">
             <h3 class="keuntungan-judul">Apa keuntungan belajar bareng si tani?</h3>
-            <p class="deskripsi-keuntungan">Dengan gabung ke kelas gratis di si tani tentu aja ada banyak keuntunganya loh,
+            <p class="deskripsi-keuntungan mb-5">Dengan gabung ke kelas gratis di si tani tentu aja ada banyak keuntunganya loh,
                 kira-kira apa saja keuntungnya yuk simak!</p>
         </div>
         <div class="row">
@@ -134,8 +134,8 @@
 {{-- KEUNTUNGAN END --}}
 {{-- TESTIMONY --}}
 <div class="container" id="testimoni">
-    <div class="testi-title pt-5 mb-5">
-        <h3>Apa kata mereka?</h3>
+    <div class="pt-5 mb-5">
+        <h3 class="testi-title">Apa kata mereka?</h3>
     </div>
     <div class="carousel-testi pb-4">
         <div class="swiper-container">
@@ -154,8 +154,8 @@
                 @endforeach
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next swp"></div>
-            <div class="swiper-button-prev swp"></div>
+            {{-- <div class="swiper-button-next swp"></div>
+            <div class="swiper-button-prev swp"></div> --}}
         </div>
     </div>
 </div>
@@ -167,7 +167,7 @@
     <div class="feedback-box">
         <div class="d-flex justify-content-between align-items-center feedback-content">
             <h4 class="feed-big pt-1">Lalu, bagaimana pendapatmu tentang si tani?</h4>
-            <button type="button" class="btn btn-success testi-button" data-toggle="modal"
+            <button type="button" class="btn btn-success testi-button btn1" data-toggle="modal"
                 data-target=".bd-example-modal-sm">KIRIM PENDAPATMU</button>
         </div>
     </div>

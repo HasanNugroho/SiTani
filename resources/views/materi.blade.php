@@ -25,14 +25,16 @@
                             <p>Daftar materi :</p>
                         </div>
                         <div class="daftar-playlist">
-                            <div class="d-flex align-self-center">
-                                <div class="col-md-1">
-                                    <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
+                            <a href="">
+                                <div class="d-flex align-self-center">
+                                    <div class="col-md-1">
+                                        <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <p class="materi-playlist">Materi I - Persiapan sebelum budidaya cabai</p>
+                                    </div>
                                 </div>
-                                <div class="col-md-11">
-                                    <p class="materi-playlist">Materi I - Persiapan sebelum budidaya cabai</p>
-                                </div>
-                            </div>
+                            </a>
                             <div class="d-flex align-self-center">
                                 <div class="col-md-1">
                                     <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
@@ -84,10 +86,10 @@
                     allowfullscreen></iframe>
             </div>
             <div class="row mt-3">
-                <div class="col-8">
+                <div class="col-6">
                     <h4 class="judul-materi">Materi III - Tata cara menyemai cabai agar hasil Baksimal</h4>
                 </div>
-                <div class="col-4">
+                <div class="col-6 text-right">
                     <button type="button" class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</button>
                 </div>
             </div>
