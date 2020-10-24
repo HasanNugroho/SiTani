@@ -21,6 +21,7 @@ Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedb
 
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/', 'verified'], function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
+    Route::get('/getuser', [DashboardController::class, 'getUser']);
     Route::get('register',function() {return view('auth.register');})->name('register');
 });
 

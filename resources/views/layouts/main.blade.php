@@ -28,9 +28,11 @@
     </script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </body>
 <!-- Modal -->
-{{-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<!-- {{-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -99,5 +101,5 @@
             </div>
         </div>
     </div>
-</div> --}}
+</div> --}} -->
 </html>

@@ -9,7 +9,10 @@ use App\Models\User;
 class DashboardController extends Controller
 {
     public function index(){
-    	$users = User::get();
-    	return view('dashboard',['users',$users]);
+    	return view('dashboard');
+    }
+    public function getUser(){
+        return User::get();
+        
     }
 }
