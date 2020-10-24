@@ -38,23 +38,45 @@ document.getElementById("sidebar-side").addEventListener("click", (e) => {
                                 if (res.status == 200) {
                                     this.users = res.data;
                                     var datax = res.data;
-                                    const a = (() => {
-                                        for (let i = 0; i < datax.length; i++) {
-                                            console.log();
-                                        }
-                                    });
+              
+                   let tb = ((e)=>{
+                      for (let i = 0; i < datax.length; i++) {
+                          return `  <tr>
+                          <th scope="row">1</th>
+                          <td>`+datax[i].name+`</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>`
+                          
+                      }
+                   })
+                console.log(tb())
+                  document.getElementById('root').innerHTML=`
+                  
+                                <h2 class="mt-4 container-fluid">User</h2>
 
+                                <div class="col-md text-right container-fluid my-3">
+                                    <a href="/register" class="btn btn-success btn-md">Tambah Admin</a>
+                                </div>
+                                <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Nama</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                              `+tb()+`
+                                </thead>
+                                <tbody id="tbody">
+                                <tr>
+                                <td></td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                </div>
 
-                                    document.getElementById("root").html = `    
-                                    <tr>
-                                    <th scope="row">1</th>
-                                    <td>{{$user->name}}</td>
-                                    <td>Otto</td>
-                                    <td>
-                                      <a href="/edit/{{1}}" class="btn btn-outline-primary btn-sm">Edit Admin</a>
-                                      <a href="/hapus/{{id}}" class="btn btn-outline-danger btn-sm">Hapus</a>
-                                    </td>
-                                  </tr>`;
+                  `
                                 }
                             })
                             .catch((err) => {
