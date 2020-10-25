@@ -52,12 +52,11 @@
             <div class="col-md-4">
                 <a href="/pertanian">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/landing/kategori-pertanian.png"
-                            alt="Kategori Pertanian">
+                        <img class="card-img category-img" src="/image/landing/kategori-pertanian.png" alt="Kategori Pertanian">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Kategori Pertanian</h3>
-                                <p class="card-text">Tersedia 5 kelas yang bisa kamu ikuti!</p>
+                                <p class="card-text">Tersedia {{$tani}} kelas yang bisa kamu ikuti!</p>
                             </div>
                         </div>
                     </div>
@@ -66,12 +65,11 @@
             <div class="col-md-4">
                 <a href="/perkebunan">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/landing/kategori-perkebunan.png"
-                            alt="Kategori Pertanian">
+                        <img class="card-img category-img" src="/image/landing/kategori-perkebunan.png" alt="Kategori Pertanian">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Kategori Perkebunan</h3>
-                                <p class="card-text">Tersedia 4 kelas yang bisa kamu ikuti!</p>
+                                <p class="card-text">Tersedia {{$kebun}} kelas yang bisa kamu ikuti!</p>
                             </div>
                         </div>
                     </div>
@@ -80,12 +78,11 @@
             <div class="col-md-4">
                 <a href="/hidroponik">
                     <div class="card card-category">
-                        <img class="card-img category-img" src="/image/landing/kategori-hidroponik.png"
-                            alt="Kategori Pertanian">
+                        <img class="card-img category-img" src="/image/landing/kategori-hidroponik.png" alt="Kategori Pertanian">
                         <div class="card-img-overlay">
                             <div class="category-content">
                                 <h3 class="card-title">Kategori Pertanian Hidroponik</h3>
-                                <p class="card-text">Tersedia 2 kelas yang bisa kamu ikuti!</p>
+                                <p class="card-text">Tersedia {{$hidro}} kelas yang bisa kamu ikuti!</p>
                             </div>
                         </div>
                     </div>
@@ -97,7 +94,7 @@
 {{-- KATEGORI KELAS END --}}
 {{-- KEUNTUNGAN --}}
 <div class="container pt-3" id="keuntungan">
-    <div class="keuntungan" >
+    <div class="keuntungan">
         <div class="judul-keuntungan">
             <h3 class="keuntungan-judul">Apa keuntungan belajar bareng si tani?</h3>
             <p class="deskripsi-keuntungan mb-5">Dengan gabung ke kelas gratis di si tani tentu aja ada banyak keuntunganya loh,
@@ -141,16 +138,15 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 @foreach ($tanggapan as $tanggapan)
-                    <div class="swiper-slide">
-                        <div class="card-testi">
-                            <div class="body-testi">
-                                <p class="card-text testi-small">{{$tanggapan->message}}</p>
-                                <h4 class="card-title testi-big">{{$tanggapan->nama}}</h4>
-                                <img class="testi-img-round" alt="Image"
-                                src="/image/landing/profil1.png">
-                            </div>
+                <div class="swiper-slide">
+                    <div class="card-testi">
+                        <div class="body-testi">
+                            <p class="card-text testi-small">{{$tanggapan->message}}</p>
+                            <h4 class="card-title testi-big">{{$tanggapan->nama}}</h4>
+                            <img class="testi-img-round" alt="Image" src="/image/landing/profil1.png">
                         </div>
                     </div>
+                </div>
                 @endforeach
             </div>
             <div class="swiper-pagination"></div>
@@ -159,7 +155,7 @@
         </div>
     </div>
 </div>
-  <!-- Swiper -->
+<!-- Swiper -->
 
 {{-- TESTIMONY END --}}
 {{-- FEEDBACK --}}
@@ -167,8 +163,7 @@
     <div class="feedback-box">
         <div class="d-flex justify-content-between align-items-center feedback-content">
             <h4 class="feed-big pt-1">Lalu, bagaimana pendapatmu tentang si tani?</h4>
-            <button type="button" class="btn btn-success testi-button btn1" data-toggle="modal"
-                data-target=".bd-example-modal-sm">KIRIM PENDAPATMU</button>
+            <button type="button" class="btn btn-success testi-button btn1" data-toggle="modal" data-target=".bd-example-modal-sm">KIRIM PENDAPATMU</button>
         </div>
     </div>
 </div>

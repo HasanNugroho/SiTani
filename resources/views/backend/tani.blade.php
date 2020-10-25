@@ -20,19 +20,21 @@
             <th scope="col">Slug</th>
             <th scope="col">Aksi</th>
         </tr>
-      </thead>
-      <tbody>
+    </thead>
+    <tbody>
+        <?php $i = 1 ?>
         @foreach ($bab as $key => $bab)
-          <tr>
-              <td scope="col"></td>
-              <td scope="col">{{$bab->judul_bab}}</th>
-              <td scope="col"><img class="show-img" src="{{ Storage::url($bab->gambar)}}" alt="{{$bab->gambar}}"></th>
-              <td scope="col">{{$bab->mentor}}</th>
-              <td scope="col">{{$bab->slug}}</td>
-              <td scope="col">
-                  <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Show</a>
-              </td>
-          </tr>
+        <tr>
+            <td scope="col"><?= $i ?></td>
+            <td scope="col">{{$bab->judul_bab}}</th>
+            <td scope="col"><img class="show-img" src="{{ Storage::url($bab->gambar)}}" alt="{{$bab->gambar}}"></th>
+            <td scope="col">{{$bab->mentor}}</th>
+            <td scope="col">{{$bab->slug}}</td>
+            <td scope="col">
+                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Show</a>
+            </td>
+        </tr>
+        <?php $i++ ?>
         @endforeach
     </tbody>
 </table>
@@ -44,8 +46,7 @@
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal form-material" method="POST" action="{{route('bab.post')}}"
-                    enctype="multipart/form-data">
+                <form class="form-horizontal form-material" method="POST" action="{{route('bab.post')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="container mt-4">
                         <div class="mb-3">
@@ -72,7 +73,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                    <button type="submit" class="btn btn-success">Kirim</button>
+                        <button type="submit" class="btn btn-success">Kirim</button>
                 </form>
             </div>
         </div>

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\bab;
+use App\Models\materi as ModelsMateri;
+use App\Models\materi;
 
 class HomeController extends Controller
 {
@@ -11,8 +13,10 @@ class HomeController extends Controller
     {
         $feedback = new FeedbackController;
         $tanggapan = $feedback->show();
-
-        return view('home')->with(compact('tanggapan'));
+        $tani = bab::where('kategori', 'pertanian')->count();
+        $kebun = bab::where('kategori', 'perkebunan')->count();
+        $hidro = bab::where('kategori', 'hidroponik')->count();
+        return view('home')->with(compact('tanggapan', 'tani', 'kebun', 'hidro'));
     }
     public function pertanian()
     {
@@ -33,8 +37,17 @@ class HomeController extends Controller
     {
         return view('pengembangan');
     }
-    public function materi()
+    public function materi($slug)
     {
-        return view('materi');
+        $bab = bab::where('slug', $slug)->get();
+        $materi = materi::where('bab', $slug)->get();
+        $materis = materi::where('bab', $slug)->count();
+
+        if ($materis == 0) {
+            return redirect('/pengembangan');
+        } else {
+
+            return view('materi');
+        }
     }
 }

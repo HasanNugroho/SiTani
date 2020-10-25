@@ -4,12 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
-<<<<<<< HEAD
-use App\Models\Materi;
-
-=======
 use App\Models\materi;
->>>>>>> 3ffed5aba036f1f93aa3c31b4e166b0a10eb3c1e
 use Illuminate\Support\Str;
 
 class MateriController extends Controller
@@ -30,29 +25,7 @@ class MateriController extends Controller
         ]);
 
         $file = Storage::putFile('public/pertanian', $request->file('ringkasan'));
-<<<<<<< HEAD
-        Materi::create([
-            'kategori' => $request->kategori,
-            'materi' => $request->materi,
-            'judul' => $request->judul,
-            'slug' => Str::slug($request->judul),
-            'post_id' => $request->post_id,
-            'materi_ke' => $request->materi_ke,
-            'mentor' => $request->mentor,
-            'youtube' => $request->youtube,
-            'ringkasan' => $file
-        ]);
 
-
-
-=======
-        }
-        elseif($request->kategori == 'perkebunan'){
-        $file = Storage::putFile('public/perkebunan', $request->file('ringkasan'));
-        }
-        else{
-        $file = Storage::putFile('public/hidroponik', $request->file('ringkasan'));
-        }
         materi::create([
             'kategori' => $request->kategori,
             'bab' => $request->bab,
@@ -63,8 +36,7 @@ class MateriController extends Controller
             'mentor' => $request->mentor,
             'youtube' => $request->youtube,
             'ringkasan' => $file
-            ]);
->>>>>>> 3ffed5aba036f1f93aa3c31b4e166b0a10eb3c1e
+        ]);
         return redirect('dashboard');
     }
 }

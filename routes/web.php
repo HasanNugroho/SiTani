@@ -26,7 +26,7 @@ Route::group(['prefix' => '/'], function () {
     Route::get('perkebunan', [HomeController::class, 'perkebunan']);
     Route::get('hidroponik', [HomeController::class, 'hidroponik']);
     Route::get('pengembangan', [HomeController::class, 'pengembangan']);
-    Route::get('materi', [HomeController::class, 'materi']);
+    Route::get('/materi/{slug}', [HomeController::class, 'materi']);
 });
 
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/', 'verified'], function () {
