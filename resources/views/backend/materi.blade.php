@@ -25,9 +25,10 @@
     </tr>
   </thead>
   <tbody>
+    <?php $i = 1 ?>
     @foreach ($materi as $m)
     <tr>
-      <td scope="col"></td>
+      <td scope="col">{{$i}}</td>
       <td scope="col">{{$m->materi_ke}}</th>
       <td scope="col">{{$m->judul}}</th>
       <td scope="col">{{$m->mentor}}</th>
@@ -37,6 +38,7 @@
         {{-- <a href="{{route('materi')}}" class="btn btn-outline-success">Show</a> --}}
       </td>
     </tr>
+    <?php $i++ ?>
     @endforeach
   </tbody>
 </table>

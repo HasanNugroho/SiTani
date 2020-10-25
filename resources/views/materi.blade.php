@@ -9,11 +9,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card-webplayer">
-                        <img src="/image/pertanian/cabai.png" class="card-img-player" alt="...">
+                        <img src="{{ Storage::url($bab[0]->gambar)}}" class="card-img-player" alt="...">
                         <div class="card-body">
-                            <p class="card-player-small">PERTANIAN</p>
-                            <h5 class="card-player-big">Kelas Budidaya Tanaman Cabai</h5>
-                            <p class="card-mentor">Mentor : M. Abdullah Umam M.Hum</p>
+                            <p class="card-player-small">{{$bab[0]->kategori}}</p>
+                            <h5 class="card-player-big">Kelas {{$bab[0]->judul_bab}}</h5>
+                            <p class="card-mentor">Mentor : {{$bab[0]->mentor}}</p>
                         </div>
                     </div>
                 </div>
@@ -25,56 +25,18 @@
                             <p>Daftar materi :</p>
                         </div>
                         <div class="daftar-playlist">
+                            @foreach($materis as $mat)
                             <a href="">
                                 <div class="d-flex align-self-center">
                                     <div class="col-md-1">
                                         <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
                                     </div>
                                     <div class="col-md-11">
-                                        <p class="materi-playlist">Materi I - Persiapan sebelum budidaya cabai</p>
+                                        <p class="materi-playlist">Materi {{$mat['materi_ke']}} - {{$mat['judul']}}</p>
                                     </div>
                                 </div>
                             </a>
-                            <div class="d-flex align-self-center">
-                                <div class="col-md-1">
-                                    <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
-                                </div>
-                                <div class="col-md-11">
-                                    <p class="materi-playlist">Materi II - Memilih bibit cabai yang pas</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-self-center">
-                                <div class="col-md-1">
-                                    <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
-                                </div>
-                                <div class="col-md-11">
-                                    <p class="materi-playlist">Materi I - Persiapan sebelum budidaya cabai</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-self-center">
-                                <div class="col-md-1">
-                                    <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
-                                </div>
-                                <div class="col-md-11">
-                                    <p class="materi-playlist">Materi III - Tata cara menyemai cabai agar hasil maksimal</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-self-center">
-                                <div class="col-md-1">
-                                    <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
-                                </div>
-                                <div class="col-md-11">
-                                    <p class="materi-playlist">Materi V - Teknik Pemupukan cabai yang tepat</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-self-center">
-                                <div class="col-md-1">
-                                    <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
-                                </div>
-                                <div class="col-md-11">
-                                    <p class="materi-playlist">Materi VI - Perawatan cabai dan cara memanen cabai</p>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -82,14 +44,14 @@
         </div>
         <div class="col-md-8 mt-5">
             <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MKazjpTyAis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="row mt-3">
+            <div class=" row mt-3">
                 <div class="col-6">
-                    <h4 class="judul-materi">Materi III - Tata cara menyemai cabai agar hasil Baksimal</h4>
+                    <h4 class="judul-materi">Materi {{$materi[0]->materi_ke}} - {{$materi[0]->judul}}</h4>
                 </div>
                 <div class="col-6 text-right">
-                    <button type="button" class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</button>
+                    <a href="/download/{{$materi[0]->ringkasan}}" type="button" class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</a>
                 </div>
             </div>
             {{-- <p class="about-small">
@@ -99,26 +61,13 @@
             </p> --}}
             <div class="row mt-3 mb-2 align-items-center">
                 <hr>
-                <div class="col-md-6">
-                    <a href="#" class="prev d-flex">
-                        <span class="iconify" data-icon="grommet-icons:form-next-link" data-width="24" data-height="24" data-inline="true" data-flip="horizontal"></span>
-                        <p class="not-hidden">Materi Sebelumnya</p>
-                        <p class="hidden">Sebelumnya</p>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#" class="next d-flex float-right">
-                        <p class="not-hidden">Materi selanjutnya</p>
-                        <p class="hidden">Selanjutnya</p>
-                        <span class="iconify" data-icon="grommet-icons:form-next-link" data-width="24" data-height="24"></span>
-                    </a>
-                </div>
-                <hr>
+
             </div>
             <div class="row">
                 <div class="text-center">
                     <p class="teks-komentar">Memiliki pertanyaan mengenai materi yang disampaikan? yuk tanyakan melalui kolom komentar!</p>
                 </div>
+                @foreach($comment as $c)
                 <div class="komentar-pengguna">
                     <div class="row mt-4 d-flex">
                         <div class="col-md-1">
@@ -126,47 +75,20 @@
                         </div>
                         <div class="col-md-11">
                             <div class="bagian-komentar">
-                                <p class="nama">Marcus Schleifer</p>
-                                <p class="tanggal-komen">Senin, 12 Juni 2098 at 18:56</p>
-                                <p class="isi-komentar">Wah, pak susanto, saya sudah mempraktekkan, tetapi setelah di anu, jadi kering pak,
-                                    bagaimana ya cara biar nggak kering?</p>
-                                <a href="#" class="reply">Reply</a>
+                                <p class="nama">{{$c['email']}}</p>
+                                <p class="tanggal-komen">{{$c['comment']}}</p>
+                                <a href="#komen" class="reply">Reply</a>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-4 d-flex">
-                        <div class="col-md-1">
-                            <img src="/image/asset/profil.png" alt="" class="img-comment">
-                        </div>
-                        <div class="col-md-11">
-                            <div class="bagian-komentar">
-                                <p class="nama">Giana Passaquindici Arcand</p>
-                                <p class="tanggal-komen">Senin, 12 Juni 2098 at 18:56</p>
-                                <p class="isi-komentar">Wah, pak susanto, saya sudah mempraktekkan, tetapi setelah di anu, jadi kering pak,
-                                    bagaimana ya cara biar nggak kering?</p>
-                                <a href="#" class="reply">Reply</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4 ml-5 d-flex">
-                        <div class="col-md-1 ">
-                            <img src="/image/asset/profil.png" alt="" class="img-comment">
-                        </div>
-                        <div class="col-md-11">
-                            <div class="bagian-komentar">
-                                <p class="nama">Madelyn Aminoff</p>
-                                <p class="tanggal-komen">Senin, 12 Juni 2098 at 18:56</p>
-                                <p class="isi-komentar">Wah, pak susanto, saya sudah mempraktekkan, tetapi setelah di anu, jadi kering pak,
-                                    bagaimana ya cara biar nggak kering?</p>
-                                <a href="#" class="reply">Reply</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
-                <div class="mt-5">
+                <div class="mt-5 pt-5" id="komen">
                     <div class="bg-form-comment">
                         <form action="/dashboard/komentar" method="POST">
                             @csrf
+                            <input type="hidden" name="post_id" value="{{$materi[0]->post_id}}">
                             <div class="row d-flex align-items-center">
 
                                 <div class="col-md-2">

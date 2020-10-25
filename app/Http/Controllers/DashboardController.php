@@ -55,8 +55,9 @@ class DashboardController extends Controller
             'email' => $request->email,
             'comment' => $request->komen,
             'gambar' => 'ok.jpg',
-            'post_id' => 'asldlaks',
+            'post_id' => $request->post_id,
         ]);
+        return redirect()->back();
     }
 
     public function deleteKomen(Request $request)

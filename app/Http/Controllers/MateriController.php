@@ -26,22 +26,22 @@ class MateriController extends Controller
             'judul' => 'required',
             'mentor' => 'required',
             'youtube' => 'required',
-            'post_id' => 'required',
-            'materi_ke' => 'required',
             'ringkasan' => 'required',
         ]);
-        $file = Storage::putFile('public/pertanian', $request->file('ringkasan'));
-
+        $name = $request->file('ringkasan');
+        $name = Str::random(10) . '.pdf';
+        Storage::putFile('/public/pertanian', $name);
         materi::create([
             'kategori' => $request->kategori,
             'bab' => $request->bab,
-            'materi_ke' => '1',
+            'materi_ke' => $request->materi_ke,
             'judul' => $request->judul,
             'post_id' => Str::random(5),
             'slug' => Str::slug($request->judul),
             'mentor' => $request->mentor,
             'youtube' => $request->youtube,
-            'ringkasan' => $file
+            'ringkasan' => $name
         ]);
+        return redirect()->back();
     }
 }
