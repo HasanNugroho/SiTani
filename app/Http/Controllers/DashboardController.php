@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Feedback;
 use App\Models\Comment;
+use App\Models\bab;
 use App\Models\materi;
 
 
@@ -16,8 +17,10 @@ class DashboardController extends Controller
     {
         $feeds = Feedback::count();
         $users = User::count();
+        $bab = bab::count();
         $materi = materi::count();
-        return view('backend.home', ['users' => $users, 'feed' => $feeds, 'materi' => $materi]);
+        $comment = Comment::count();
+        return view('backend.home', ['users' => $users, 'feed' => $feeds, 'bab' => $bab, 'materi' => $materi, 'comment' => $comment]);
     }
     public function getUser()
     {

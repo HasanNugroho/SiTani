@@ -27,19 +27,6 @@
 				</div>
 			</a>
 		</div>
-		<div class="col-4 ">
-			<a href="/dashboard/kelas">
-				<div class="card text-white">
-					<img src="/assets/image/banner/kelas.png" class="card-img" alt="...">
-					<div class="card-img-overlay d-flex">
-						<div class="mt-auto ml-auto text-right">
-							<h5 class="card-title m-auto d-block">Kelas</h5>
-							<p class="card-text m-auto d-block">Terdapat 3 Kelas</p>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
 		<div class="col-4">
 			<a href="/dashboard/kelas">
 
@@ -48,7 +35,20 @@
 					<div class="card-img-overlay d-flex">
 						<div class="mt-auto ml-auto text-right">
 							<h5 class="card-title m-auto d-block">Sub Bab</h5>
-							<p class="card-text m-auto d-block">Terdapat {{$materi}} Bab</p>
+							<p class="card-text m-auto d-block">Terdapat {{$bab}} Bab</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="col-4 ">
+			<a href="/dashboard/kelas">
+				<div class="card text-white">
+					<img src="/assets/image/banner/kelas.png" class="card-img" alt="...">
+					<div class="card-img-overlay d-flex">
+						<div class="mt-auto ml-auto text-right">
+							<h5 class="card-title m-auto d-block">Materi</h5>
+							<p class="card-text m-auto d-block">Terdapat {{$materi}} Materi</p>
 						</div>
 					</div>
 				</div>
@@ -68,15 +68,17 @@
 			</a>
 		</div>
 		<div class="col-4 mt-3">
-			<div class="card text-white">
-				<img src="/assets/image/banner/komen.png" class="card-img" alt="...">
-				<div class="card-img-overlay d-flex">
-					<div class="mt-auto ml-auto text-right">
-						<h5 class="card-title m-auto d-block">Komentar</h5>
-						<p class="card-text m-auto d-block">Terdapat 10 komentar</p>
+			<a href="/dashboard/komentar">
+				<div class="card text-white">
+					<img src="/assets/image/banner/komen.png" class="card-img" alt="...">
+					<div class="card-img-overlay d-flex">
+						<div class="mt-auto ml-auto text-right">
+							<h5 class="card-title m-auto d-block">Komentar</h5>
+							<p class="card-text m-auto d-block">Terdapat {{$comment}} komentar</p>
+						</div>
 					</div>
 				</div>
-			</div>
+			</a>
 		</div>
 
 

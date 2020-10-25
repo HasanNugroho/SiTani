@@ -1,18 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Models\bab;
 use Illuminate\Support\Str;
 use Alert;
+use App\Models\materi;
 
 class BabController extends Controller
 {
     public function materi($slug)
     {
         $bab = bab::where('slug', $slug)->get();
-        return view('backend.add-materi', compact('bab'));
+        $judul = $bab[0]->judul_bab;
+        $materi = materi::where("bab", $judul)->get();
+        // dd($materi);
+        return view('backend.materi', compact('bab', 'materi'));
     }
     public function store(Request $request)
     {

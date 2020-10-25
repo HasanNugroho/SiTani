@@ -24,7 +24,6 @@
     <tbody>
         <?php $i = 1 ?>
         @foreach ($bab as $key => $bab)
-<<<<<<< HEAD
         <tr>
             <td scope="col"><?= $i ?></td>
             <td scope="col">{{$bab->judul_bab}}</th>
@@ -36,18 +35,6 @@
             </td>
         </tr>
         <?php $i++ ?>
-=======
-          <tr>
-              <td scope="col"></td>
-              <td scope="col">{{$bab->judul_bab}}</th>
-              <td scope="col"><img class="show-img" src="{{ Storage::url($bab->gambar)}}" alt="{{$bab->gambar}}"></th>
-              <td scope="col">{{$bab->mentor}}</th>
-              <td scope="col">{{$bab->slug}}</td>
-              <td scope="col">
-                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Tambah Materi</a>
-              </td>
-          </tr>
->>>>>>> 4bfdf479d45834640e7814e3386e2636821cc38e
         @endforeach
     </tbody>
 </table>

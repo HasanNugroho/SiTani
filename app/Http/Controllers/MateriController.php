@@ -16,6 +16,8 @@ class MateriController extends Controller
     }
     public function store(Request $request)
     {
+
+
         // dd($request);
         $request->validate([
             'materi_ke' => 'required',
@@ -26,15 +28,14 @@ class MateriController extends Controller
             'youtube' => 'required',
             'post_id' => 'required',
             'materi_ke' => 'required',
-            'ringkasan' => 'required|mimes:pdf|max:10000',
+            'ringkasan' => 'required',
         ]);
-
         $file = Storage::putFile('public/pertanian', $request->file('ringkasan'));
 
         materi::create([
             'kategori' => $request->kategori,
             'bab' => $request->bab,
-            'materi_ke' => $request->materi_ke,
+            'materi_ke' => '1',
             'judul' => $request->judul,
             'post_id' => Str::random(5),
             'slug' => Str::slug($request->judul),
@@ -42,6 +43,5 @@ class MateriController extends Controller
             'youtube' => $request->youtube,
             'ringkasan' => $file
         ]);
-        return redirect('dashboard');
     }
 }

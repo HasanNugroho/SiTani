@@ -8,13 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Materi extends Model
 {
     use HasFactory;
-    protected $table = 'materis';
+    protected $table = 'materi';
     protected $fillable = [
         'slug',
         'kategori',
-        'materi',
+        'materi_ke',
+        'bab',
         'judul',
         'mentor',
+        'post_id',
         'youtube',
         'ringkasan',
     ];

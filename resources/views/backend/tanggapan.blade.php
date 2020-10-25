@@ -2,7 +2,7 @@
 @section('table')
 <div class="row mt-4">
   <div class="col-md-6 col-sm-6 text-left">
-    <h2>Tanggapan Pemirsa</h2>
+    <h2>Tanggapan Pengguna</h2>
   </div>
 
 </div>
