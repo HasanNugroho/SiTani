@@ -27,7 +27,9 @@ class MateriController extends Controller
             'ringkasan' => 'required',
         ]);
 
-            $file = Storage::putFile('public/data', $request->file('ringkasan'));
+            $extensi = $request->file('ringkasan')->extension();
+            $imgname = Str::random(15).'.'.$extensi;
+            $file = Storage::putFileAs('public/data', $request->file('ringkasan'), $imgname);
 
         materi::create([
             'kategori' => $request->kategori,
@@ -73,8 +75,11 @@ class MateriController extends Controller
         if($request->file('ringkasan')){
             Storage::delete($targetItem->ringkasan);//hapus data lama
 
-            $imgname = Storage::putFile('public/data', $request->file('ringkasan')->path());//tambah file baru
-            $update['ringkasan'] = $imgname;
+            $extensi = $request->file('ringkasan')->extension();
+            $imgname = Str::random(15).'.'.$extensi;
+            $file = Storage::putFileAs('public/data', $request->file('ringkasan'), $imgname);//tambah file baru
+
+            $update['ringkasan'] = $file;
         }
         $update['materi_ke'] = $request->get('materi_ke');
         $update['kategori'] = $request->get('kategori');
