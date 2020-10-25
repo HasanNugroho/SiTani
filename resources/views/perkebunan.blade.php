@@ -64,7 +64,7 @@
         </div>
         <div class="row mt-4 pb-5">
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img
                             class="card-img category-img"
@@ -85,7 +85,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img
                             class="card-img category-img"
@@ -104,7 +104,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img
                             class="card-img category-img"
@@ -123,7 +123,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img
                             class="card-img category-img"
@@ -142,7 +142,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img
                             class="card-img category-img"

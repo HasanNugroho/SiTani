@@ -44,7 +44,7 @@
         </div>
         <div class="row mt-4 pb-5">
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/kangkung.png" alt="kangkung">
                         <div class="card-img-overlay">
@@ -57,7 +57,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/tomat.png"
                             alt="tomat">
@@ -71,7 +71,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/brokoli.png"
                             alt="brokoli">
@@ -85,7 +85,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/sawi.png"
                             alt="sawi">
@@ -99,7 +99,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/bayam.png"
                             alt="bayam">
@@ -113,7 +113,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/selada.png"
                             alt="selada">
@@ -127,7 +127,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/pakcoy.png"
                             alt="pakcoy">
@@ -141,7 +141,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/hidroponik/stroberi.png"
                             alt="stroberi">

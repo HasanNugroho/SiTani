@@ -57,6 +57,6 @@
     </div>
 </div>
 <div class="footer-end d-flex justify-content-center">
-    <h5 class="ending mt-2">Copyright sitani 2020</h5>
+    <h5 class="ending mt-2">© 2020, Sitani. All Rights Reserved.</h5>
 </div>
 </footer>
