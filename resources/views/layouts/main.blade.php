@@ -17,6 +17,8 @@
 </head>
 
 <body>
+    @include('sweetalert::alert')
+
     @section('root')
     @show
 

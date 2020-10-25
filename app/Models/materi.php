@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class hidroponik extends Model
+class materi extends Model
 {
     use HasFactory;
-    protected $table = 'hidroponik';
+    protected $table = 'materi';
     protected $fillable = [
         'slug',
         'post_id',

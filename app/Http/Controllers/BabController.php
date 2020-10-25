@@ -5,13 +5,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Models\bab;
 use Illuminate\Support\Str;
+use Alert;
 
 class BabController extends Controller
 {
-    public function index()
+    public function bab()
     {
         $bab = bab::all();
-        return view('coba-input', compact('bab'));
+        return $bab;
     }
     public function store(Request $request)
     {
@@ -31,12 +32,7 @@ class BabController extends Controller
             'kategori' => $request->kategori,
             'mentor' => $request->mentor,
         ]);
-        session()->flash(
-            'message',
-            "<script>
-                swal('Success', 'Successfully delete', 'success');
-            </script>"
-        );
-        return redirect('ujicoba');
+        Alert::success('Sukses', 'Bab berhasil diinput');
+        return redirect('/dashboard/kelas');
     }
 }

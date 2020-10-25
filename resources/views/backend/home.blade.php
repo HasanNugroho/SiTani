@@ -48,7 +48,7 @@
 					<div class="card-img-overlay d-flex">
 						<div class="mt-auto ml-auto text-right">
 							<h5 class="card-title m-auto d-block">Sub Bab</h5>
-							<p class="card-text m-auto d-block">Terdapat 3 Bab</p>
+							<p class="card-text m-auto d-block">Terdapat {{$materi}} Bab</p>
 						</div>
 					</div>
 				</div>

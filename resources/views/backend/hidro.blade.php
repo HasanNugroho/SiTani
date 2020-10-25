@@ -22,32 +22,60 @@
         </tr>
     </thead>
     <tbody>
-
+        @foreach ($bab as $key => $bab)
+        <tr>
+            <td scope="col"></td>
+            <td scope="col">{{$bab->judul_bab}}</th>
+            <td scope="col"><img class="show-img" src="{{ Storage::url($bab->gambar)}}" alt="{{$bab->gambar}}"></th>
+            <td scope="col">{{$bab->mentor}}</th>
+            <td scope="col">{{$bab->slug}}</td>
+            <td scope="col">
+                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Show</a>
+            </td>
+        </tr>
+      @endforeach
     </tbody>
 </table>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Tambah Bab</h5>
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="/dashboard/kelas/hidroponik" method="POST" enctype="multipart/form-data">
+                <form class="form-horizontal form-material" method="POST" action="{{route('bab.post')}}"
+                    enctype="multipart/form-data">
                     @csrf
-                    <label for="judul" class="form-label">Judul Bab</label>
-                    <input type="text" class="form-control" id="judul" name="judul">
-                    <label for="mentor" class="form-label mt-3">Mentor</label>
-                    <input type="text" class="form-control" id="mentor" name="mentor">
-                    <label for="thumb" class="form-label mt-3">Thumbnail</label>
-                    <input type="file" class="form-control" id="thumb" name="thumb">
-            </div>
-            <div class="modal-footer">
-
-                <button type="submit" class="btn btn-success">Kirim</button>
+                    <div class="container mt-4">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Judul</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" name="judul_bab">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Mentor</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" name="mentor">
+                        </div>
+                        <div class="mb-3">
+                            {{-- <label for="exampleFormControlInput1" class="form-label">Kategori</label>
+                            <select  class="form-select" aria-label="Default select example" name="kategori">
+                                <option selected>Pilih Kategori</option>
+                                <option value="pertanian">Pertanian</option>
+                                <option value="perkebunan">Perkebunan</option>
+                                <option value="hidroponik">Hidroponik</option>
+                            </select> --}}
+                            <input type="hidden" value="hidroponik" name="kategori">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">gambar</label>
+                            <input type="file" class="form-control" id="exampleFormControlInput1" name="gambar">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Kirim</button>
                 </form>
             </div>
         </div>
     </div>
-</div>
+  </div>
 @endsection

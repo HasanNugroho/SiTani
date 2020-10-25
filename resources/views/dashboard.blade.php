@@ -4,7 +4,7 @@
 @section('css', 'dashboard.css')
 
 @section('root')
-
+@include('sweetalert::alert')
 
 <div class="row con">
     <div class="col-md-3 sidebar" id="sidebar">
@@ -56,8 +56,4 @@
         @show
     </div>
 </div>
-
-
-
-
 @endsection

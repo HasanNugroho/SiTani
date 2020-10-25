@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Feedback;
+use App\Models\materi;
 
 
 
@@ -14,7 +15,8 @@ class DashboardController extends Controller
     {
         $feeds = Feedback::count();
         $users = User::count();
-        return view('backend.home', ['users' => $users, 'feed' => $feeds]);
+        $materi = materi::count();
+        return view('backend.home', ['users' => $users, 'feed' => $feeds, 'materi' => $materi]);
     }
     public function getUser()
     {

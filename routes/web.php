@@ -13,9 +13,9 @@ use Illuminate\Http\Request;
 
 
 
-Route::get('/ujicoba', [BabController::class, 'index']);
-Route::post('/ujicoba/bab/post', [BabController::class, 'store'])->name('ujicoba.post');
-Route::post('/ujicoba/materi/post', [MateriController::class, 'store'])->name('tambah.materi');
+// Route::get('/ujicoba', [BabController::class, 'index']);
+// Route::post('/ujicoba/bab/post', [BabController::class, 'store'])->name('ujicoba.post');
+// Route::post('/ujicoba/materi/post', [MateriController::class, 'store'])->name('tambah.materi');
 
 // Route::post('/ujicoba/post', function (Request $request) {
 //     dd($request->all());
@@ -43,11 +43,17 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verif
     Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
 });
 
-Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas', 'verified'], function () {
+Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas/', 'verified'], function () {
     Route::get('tani', [ClassController::class, 'getTani']);
     Route::get('kebun', [ClassController::class, 'getKebun']);
     Route::get('hidroponik', [ClassController::class, 'getHidro']);
     Route::post('hidroponik', [ClassController::class, 'storeHidro']);
+    Route::post('bab/tambah', [BabController::class, 'store'])->name('bab.post');
+});
+Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas/materi', 'verified'], function () {
+    // Route::get('', [ClassController::class, 'materi']);
+    Route::get('{slug}', [ClassController::class, 'materi'])->name('materi');
+    Route::post('post', [MateriController::class, 'store'])->name('materi.post');
 });
 
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verified'], function () {
