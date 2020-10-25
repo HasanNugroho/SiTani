@@ -56,7 +56,7 @@
         <div class="row mt-4 pb-5">
             @foreach ($bab as $bab)
             <div class="col-md-4">
-                <a href="/materi/{{$bab->slug}}/1">
+                <a href="/materi/{{$bab->slug}}/{{$bab->id}}">
                     <div class="card card-category">
                         <img class="card-img category-img" src="{{ Storage::url($bab->gambar)}}" alt="Cabai" />
                         <div class="card-img-overlay">

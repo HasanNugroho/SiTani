@@ -51,7 +51,7 @@
                     <h4 class="judul-materi">Materi {{$materi[0]->materi_ke}} - {{$materi[0]->judul}}</h4>
                 </div>
                 <div class="col-6 text-right">
-                    <a href="/download/{{$materi[0]->ringkasan}}" type="button" class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</a>
+                    <a href="/download/{{Storage::url($materi[0]->ringkasan)}}" type="button" class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</a>
                 </div>
             </div>
             {{-- <p class="about-small">

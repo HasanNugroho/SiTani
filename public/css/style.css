@@ -371,6 +371,7 @@ hr{
 }
 .testi-button,
 .feed-button {
+    font-family: Rubik;
     display: inline-block;
     margin: 5px 3px;
     background-color: #e7f3e9, 100%;
@@ -386,11 +387,12 @@ hr{
 }
 .feed-button-no {
     display: inline-block;
+    font-family: Rubik;
     margin: 5px 3px;
     background-color: #e7f3e9;
     font-weight: bold !important;
     color: #35974a !important;
-    font-size: 17px !important;
+    font-size: 1rem !important;
     box-shadow: 4px 4px 0px 0px #249b5877 !important;
     border-color: #35974a !important;
 }
@@ -411,7 +413,7 @@ hr{
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #000000;
 }
