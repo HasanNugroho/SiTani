@@ -25,19 +25,22 @@
     </tr>
   </thead>
   <tbody>
+    <?php $i = 1 ?>
     @foreach ($materi as $m)
     <tr>
-      <td scope="col"></td>
+      <td scope="col"><?= $i ?></td>
       <td scope="col">{{$m->materi_ke}}</th>
       <td scope="col">{{$m->judul}}</th>
       <td scope="col">{{$m->mentor}}</th>
       <td scope="col">{{$m->youtube}}</th>
       <td scope="col">{{$m->slug}}</td>
       <td scope="col">
-        {{-- <a href="{{route('materi')}}" class="btn btn-outline-success">Show</a> --}}
+        <a href="/dashboard/kelas/materi/hapus/{{$m->slug}}" class="btn btn-sm btn-outline-danger">Hapus</a>
+        <a href="/dashboard/kelas/materi/edit/{{$m->slug}}" class="btn btn-sm btn-outline-primary">Edit</a>
       </td>
     </tr>
     @endforeach
+    <?php $i++ ?>
   </tbody>
 </table>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -74,16 +77,6 @@
               <label for="exampleFormControlInput1" class="form-label">Link youtube</label>
               <input type="text" class="form-control" id="exampleFormControlInput1" name="youtube">
             </div>
-            {{-- <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Kategori</label>
-            <select  class="form-select" aria-label="Default select example" name="kategori">
-                <option selected>Pilih Kategori</option>
-                <option value="pertanian">Pertanian</option>
-                <option value="perkebunan">Perkebunan</option>
-                <option value="hidroponik">Hidroponik</option>
-            </select>
-            <input type="hidden" value="perkebunan" name="kategori">
-        </div> --}}
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Ringkasan matei</label>
               <input type="file" class="form-control" id="exampleFormControlInput1" name="ringkasan">

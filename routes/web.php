@@ -54,8 +54,12 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas/',
     Route::post('hidroponik', [ClassController::class, 'storeHidro']);
     Route::post('bab/tambah', [BabController::class, 'store'])->name('bab.post');
 });
+
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas/materi', 'verified'], function () {
     // Route::get('', [ClassController::class, 'materi']);
     Route::get('{slug}', [BabController::class, 'materi']);
     Route::post('post', [MateriController::class, 'store'])->name('materi.post');
+    Route::get('hapus/{slug}', [MateriController::class, 'hapus']);
+    Route::get('edit/{slug}', [MateriController::class, 'edit']);
+    Route::post('edit/post', [MateriController::class, 'update'])->name('materi.update');
 });

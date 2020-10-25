@@ -16,7 +16,6 @@ class BabController extends Controller
         $bab = bab::where('slug', $slug)->get();
         $judul = $bab[0]->judul_bab;
         $materi = materi::where("bab", $judul)->get();
-        // dd($materi);
         return view('backend.materi', compact('bab', 'materi'));
     }
     public function store(Request $request)
@@ -40,4 +39,11 @@ class BabController extends Controller
         Alert::success('Sukses', 'Bab berhasil diinput');
         return redirect('/dashboard/kelas');
     }
+    // public function hapus($slug)
+    // {
+    //     $data = materi::where('slug', $slug)->first();
+    //     Storage::delete($data['gambar']);
+    //     $data->delete();
+    //     return view('backend.kelas');
+    // }
 }

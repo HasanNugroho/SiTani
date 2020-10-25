@@ -31,7 +31,7 @@
             <td scope="col">{{$bab->mentor}}</th>
             <td scope="col">{{$bab->slug}}</td>
             <td scope="col">
-                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Show</a>
+                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-sm btn-outline-success">Show</a>
             </td>
         </tr>
         <?php $i++ ?>
