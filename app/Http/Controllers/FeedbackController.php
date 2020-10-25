@@ -12,11 +12,7 @@ class FeedbackController extends Controller
         $tanggapan = Feedback::latest()->paginate(6);
         return $tanggapan;
     }
-    public function index()
-    {
-        $tanggapan = Feedback::all();
-        return view('public.js.components.dashboard.tanggapan', compact('tanggapan'));
-    }
+
     public function store(Request $request)
     {
         $request->validate([
