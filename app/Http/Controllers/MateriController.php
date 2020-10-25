@@ -16,8 +16,6 @@ class MateriController extends Controller
     }
     public function store(Request $request)
     {
-
-
         // dd($request);
         $request->validate([
             'materi_ke' => 'required',
@@ -28,9 +26,9 @@ class MateriController extends Controller
             'youtube' => 'required',
             'ringkasan' => 'required',
         ]);
-        $name = $request->file('ringkasan');
-        $name = Str::random(10) . '.pdf';
-        Storage::putFile('/public/pertanian', $name);
+
+        $file = Storage::putFile('public/data', $request->file('ringkasan'));
+
         materi::create([
             'kategori' => $request->kategori,
             'bab' => $request->bab,
@@ -40,8 +38,52 @@ class MateriController extends Controller
             'slug' => Str::slug($request->judul),
             'mentor' => $request->mentor,
             'youtube' => $request->youtube,
-            'ringkasan' => $name
+            'ringkasan' => $request->file('ringkasan')
         ]);
-        return redirect()->back();
+        return view('backend.kelas');
+    }
+    public function hapus($slug)
+    {
+        $data = materi::where('slug', $slug)->first();
+        Storage::delete($data['ringkasan']);
+        $data->delete();
+        return view('backend.kelas');
+    }
+    public function edit($slug)
+    {
+        $edit = materi::where('slug', $slug)->first();
+        return view('backend.update', compact('edit'));
+    }
+    public function update(Request $request)
+    {
+        $data = [
+            'materi_ke' => 'required',
+            'kategori' => 'required',
+            'bab' => 'required',
+            'judul' => 'required',
+            'mentor' => 'required',
+            'youtube' => 'required',
+        ];
+        if ($request->file('ringkasan')) {
+            $data['ringkasan'] = 'required';
+        }
+        $request->validate($data);
+
+        $targetItem = materi::where('id', $request->id)->first(); //memilih data yang akan diupdate
+        if ($request->file('ringkasan')) {
+            Storage::delete($targetItem->ringkasan); //hapus data lama
+
+            $imgname = Storage::putFile('public/data', $request->file('ringkasan')->path()); //tambah file baru
+            $update['ringkasan'] = $imgname;
+        }
+        $update['materi_ke'] = $request->get('materi_ke');
+        $update['kategori'] = $request->get('kategori');
+        $update['bab'] = $request->get('bab');
+        $update['judul'] = $request->get('judul');
+        $update['mentor'] = $request->get('mentor');
+        $update['youtube'] = $request->get('youtube');
+
+        materi::where('id', $request->id)->update($update);
+        return redirect('/dashboard/kelas');
     }
 }

@@ -23,7 +23,7 @@
     </thead>
     <tbody>
         <?php $i = 1 ?>
-        @foreach ($bab as $key => $bab)
+        @foreach ($bab as $bab)
         <tr>
             <td scope="col"><?= $i ?></td>
             <td scope="col">{{$bab->judul_bab}}</th>
@@ -31,7 +31,7 @@
             <td scope="col">{{$bab->mentor}}</th>
             <td scope="col">{{$bab->slug}}</td>
             <td scope="col">
-                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Show</a>
+                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-sm btn-outline-success">Show</a>
             </td>
         </tr>
         <?php $i++ ?>

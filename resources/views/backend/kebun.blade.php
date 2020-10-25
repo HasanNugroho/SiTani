@@ -31,7 +31,7 @@
       <td scope="col">{{$bab->mentor}}</th>
       <td scope="col">{{$bab->slug}}</td>
       <td scope="col">
-        <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Show</a>
+        <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-sm btn-outline-success">Show</a>
       </td>
     </tr>
     <?php $i++ ?>
@@ -58,13 +58,6 @@
               <input type="text" class="form-control" id="exampleFormControlInput1" name="mentor">
             </div>
             <div class="mb-3">
-              {{-- <label for="exampleFormControlInput1" class="form-label">Kategori</label>
-                          <select  class="form-select" aria-label="Default select example" name="kategori">
-                              <option selected>Pilih Kategori</option>
-                              <option value="pertanian">Pertanian</option>
-                              <option value="perkebunan">Perkebunan</option>
-                              <option value="hidroponik">Hidroponik</option>
-                          </select> --}}
               <input type="hidden" value="perkebunan" name="kategori">
             </div>
             <div class="mb-3">
