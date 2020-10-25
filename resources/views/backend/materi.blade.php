@@ -2,9 +2,9 @@
 @section('table')
 <div class="row mt-4">
   <div class="col-md-6 col-sm-6 text-left">
-    @foreach ($bab as $bab)
+    {{-- @foreach ($bab as $bab)
       <h2>Bab {{$bab->judul_bab}}</h2>
-    @endforeach
+    @endforeach --}}
   </div>
   <div class="col-md-6 col-sm-6 text-right">
     <a type="button" class="btn btn-success mr-3" data-toggle="modal" data-target="#exampleModal">
@@ -16,6 +16,7 @@
   <thead>
     <tr>
       <th scope="col">No</th>
+      <th scope="col">Materi ke</th>
       <th scope="col">Judul Materi</th>
       <th scope="col">Mentor</th>
       <th scope="col">Youtube</th>
@@ -27,12 +28,13 @@
     @foreach ($materi as $m)
     <tr>
         <td scope="col"></td>
-        <td scope="col"></th>
-        <td scope="col"><img class="show-img" src=""></th>
+        <td scope="col">{{$m->materi_ke}}</th>
+        <td scope="col">{{$m->judul}}</th>
         <td scope="col">{{$m->mentor}}</th>
+        <td scope="col">{{$m->youtube}}</th>
         <td scope="col">{{$m->slug}}</td>
         <td scope="col">
-            <a href="{{route('materi')}}" class="btn btn-outline-success">Show</a>
+            {{-- <a href="{{route('materi')}}" class="btn btn-outline-success">Show</a> --}}
         </td>
     </tr>
   @endforeach

@@ -9,6 +9,11 @@ use Illuminate\Support\Str;
 
 class MateriController extends Controller
 {
+    public function player($slug)
+    {
+        $player = materi::where('slug', $slug)->get();
+        return $player;
+    }
     public function store(Request $request)
     {
         // dd($request);

@@ -24,6 +24,7 @@
     <tbody>
         <?php $i = 1 ?>
         @foreach ($bab as $key => $bab)
+<<<<<<< HEAD
         <tr>
             <td scope="col"><?= $i ?></td>
             <td scope="col">{{$bab->judul_bab}}</th>
@@ -35,6 +36,18 @@
             </td>
         </tr>
         <?php $i++ ?>
+=======
+          <tr>
+              <td scope="col"></td>
+              <td scope="col">{{$bab->judul_bab}}</th>
+              <td scope="col"><img class="show-img" src="{{ Storage::url($bab->gambar)}}" alt="{{$bab->gambar}}"></th>
+              <td scope="col">{{$bab->mentor}}</th>
+              <td scope="col">{{$bab->slug}}</td>
+              <td scope="col">
+                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Tambah Materi</a>
+              </td>
+          </tr>
+>>>>>>> 4bfdf479d45834640e7814e3386e2636821cc38e
         @endforeach
     </tbody>
 </table>
@@ -42,7 +55,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Bab</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Bab Pertanian</h5>
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">

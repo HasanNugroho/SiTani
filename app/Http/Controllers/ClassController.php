@@ -7,11 +7,6 @@ use Illuminate\Http\Request;
 
 class ClassController extends Controller
 {
-    public function materi($slug){
-        $bab = bab::where('slug', $slug)->get();
-        $materi = materi::where('slug', $slug)->get();
-        return view('backend.materi',['bab' => $bab, 'materi' => $materi]);
-    }
     public function getTani()
     {
         $bab = bab::where('kategori', 'pertanian')->get();
