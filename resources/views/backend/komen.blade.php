@@ -12,7 +12,7 @@
             <th scope="col">No</th>
             <th scope="col">Email</th>
             <th scope="col">Komentar</th>
-            <th scope="col">Avatar</th>
+            <th scope="col">Post Id</th>
             <th scope="col">Aksi</th>
         </tr>
     </thead>
@@ -24,11 +24,11 @@
             <td scope="col"><?= $i ?></td>
             <td scope="col">{{$comment['email']}}</td>
             <td scope="col">{{$comment['comment']}}</td>
-            <td scope="col">{{$comment['gambar']}}</td>
+            <td scope="col">{{$comment['post_id']}}</td>
             <td scope="col">
-                <form action="/dashboard/komen" method="POST" class="d-inline">
-                    @csrf
+                <form action="/dashboard/komen/{{$comment['id']}}" method="POST" class="d-inline">
                     <input type="hidden" name="_method" value="delete" />
+                    @csrf
                     <input type="hidden" value="{{$comment['id']}}" name="id">
                     <button class="btn btn-danger  btn-sm " type="submit" style="width: 60px;">Hapus</button>
                 </form>

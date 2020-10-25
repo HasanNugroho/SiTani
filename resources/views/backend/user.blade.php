@@ -9,7 +9,7 @@
     <h2>User Terdaftar</h2>
   </div>
   <div class="col-md-6 col-sm-6 text-right">
-    <a type="button" class="btn btn-success mr-3" data-toggle="modal" data-target="#exampleModal">
+    <a href="/register" class="btn btn-success mr-3">
       Tambah User
     </a>
   </div>

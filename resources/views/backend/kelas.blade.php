@@ -4,39 +4,45 @@
 <div class="row container-fluid mt-3">
 
 	<div class="col-5">
-		<div class="card text-white">
-
-			<img src="/assets/image/banner/tani.png" class="card-img" alt="...">
-			<div class="card-img-overlay d-flex">
-				<div class="mt-auto ml-auto text-right">
-					<h5 class="card-title m-auto d-block">USER</h5>
-					<p class="card-text m-auto d-block">Terdaftar 10 User </p>
+		<a href="/dashboard/kelas/tani">
+			<div class="card text-white">
+				<img src="/assets/image/banner/tani.png" class="card-img" alt="...">
+				<div class="card-img-overlay d-flex">
+					<div class="mt-auto ml-auto text-right">
+						<h5 class="card-title m-auto d-block">Pertanian</h5>
+						<p class="card-text m-auto d-block">Terdapat {{$tani}} Bab Materi Pertanian</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</a>
 	</div>
 	<div class="col-5">
-		<div class="card text-white">
-			<img src="/assets/image/banner/hidro.png" class="card-img" alt="...">
-			<div class="card-img-overlay d-flex">
-				<div class="mt-auto ml-auto text-right">
-					<h5 class="card-title m-auto d-block">Tanggapan Pengguna</h5>
-					<p class="card-text m-auto d-block">Terdapat 100 tanggapan</p>
+		<a href="/dashboard/kelas/kebun">
+
+			<div class="card text-white">
+				<img src="/assets/image/banner/hidro.png" class="card-img" alt="...">
+				<div class="card-img-overlay d-flex">
+					<div class="mt-auto ml-auto text-right">
+						<h5 class="card-title m-auto d-block">Perkebunan</h5>
+						<p class="card-text m-auto d-block">Terdapat {{$kebun}} Bab Materi Perkebunan</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</a>
 	</div>
 
 	<div class="col-5 mt-3">
-		<div class="card text-white">
-			<img src="/assets/image/banner/kebun.png" class="card-img" alt="...">
-			<div class="card-img-overlay d-flex">
-				<div class="mt-auto ml-auto text-right">
-					<h5 class="card-title m-auto d-block">Kelas</h5>
-					<p class="card-text m-auto d-block">Terdapat 3 Kelas</p>
+		<a href="/dashboard/kelas/hidroponik">
+			<div class="card text-white">
+				<img src="/assets/image/banner/kebun.png" class="card-img" alt="...">
+				<div class="card-img-overlay d-flex">
+					<div class="mt-auto ml-auto text-right">
+						<h5 class="card-title m-auto d-block">Hidroponik</h5>
+						<p class="card-text m-auto d-block">Terdapat {{$hidro}} Bab Materi Hidroponik</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</a>
 	</div>
 
 </div>

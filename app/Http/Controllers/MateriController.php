@@ -47,7 +47,7 @@ class MateriController extends Controller
         $data = materi::where('slug', $slug)->first();
         Storage::delete($data['ringkasan']);
         $data->delete();
-        return view('backend.kelas');
+        return redirect()->back();
     }
     public function edit($slug)
     {
@@ -84,6 +84,6 @@ class MateriController extends Controller
         $update['youtube'] = $request->get('youtube');
 
         materi::where('id', $request->id)->update($update);
-        return redirect('/dashboard/kelas');
+        return redirect()->back();
     }
 }
