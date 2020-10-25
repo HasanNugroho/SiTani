@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Hidroponik extends Migration
+class Comments extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,12 @@ class Hidroponik extends Migration
      */
     public function up()
     {
-        Schema::create('hidroponik', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->string('slug');
+            $table->string('email');
+            $table->string('comment');
             $table->string('post_id');
-            $table->string('materi_ke');
-            $table->string('kategori');
-            $table->string('bab');
-            $table->string('judul');
-            $table->string('mentor');
-            $table->string('youtube');
-            $table->string('ringkasan');
+            $table->string('gambar')->nullable();
             $table->timestamps();
         });
     }
@@ -35,6 +30,6 @@ class Hidroponik extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('hidroponik');
+        //
     }
 }

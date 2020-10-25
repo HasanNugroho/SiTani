@@ -72,7 +72,7 @@
                                     <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
                                 </div>
                                 <div class="col-md-11">
-                                    <p class="materi-playlist">Materi VI -  Perawatan cabai dan cara memanen cabai</p>
+                                    <p class="materi-playlist">Materi VI - Perawatan cabai dan cara memanen cabai</p>
                                 </div>
                             </div>
                         </div>
@@ -82,8 +82,7 @@
         </div>
         <div class="col-md-8 mt-5">
             <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
-                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
             </div>
             <div class="row mt-3">
                 <div class="col-6">
@@ -100,20 +99,20 @@
             </p> --}}
             <div class="row mt-3 mb-2 align-items-center">
                 <hr>
-                    <div class="col-md-6">
-                        <a href="#" class="prev d-flex">
-                            <span class="iconify" data-icon="grommet-icons:form-next-link" data-width="24" data-height="24" data-inline="true" data-flip="horizontal"></span>
-                            <p class="not-hidden">Materi Sebelumnya</p>
-                            <p class="hidden">Sebelumnya</p>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#" class="next d-flex float-right">
-                            <p class="not-hidden">Materi selanjutnya</p>
-                            <p class="hidden">Selanjutnya</p>
-                            <span class="iconify" data-icon="grommet-icons:form-next-link" data-width="24" data-height="24"></span>
-                        </a>
-                    </div>
+                <div class="col-md-6">
+                    <a href="#" class="prev d-flex">
+                        <span class="iconify" data-icon="grommet-icons:form-next-link" data-width="24" data-height="24" data-inline="true" data-flip="horizontal"></span>
+                        <p class="not-hidden">Materi Sebelumnya</p>
+                        <p class="hidden">Sebelumnya</p>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="next d-flex float-right">
+                        <p class="not-hidden">Materi selanjutnya</p>
+                        <p class="hidden">Selanjutnya</p>
+                        <span class="iconify" data-icon="grommet-icons:form-next-link" data-width="24" data-height="24"></span>
+                    </a>
+                </div>
                 <hr>
             </div>
             <div class="row">
@@ -166,13 +165,15 @@
                 </div>
                 <div class="mt-5">
                     <div class="bg-form-comment">
-                        <form action="">
+                        <form action="/dashboard/komentar" method="POST">
+                            @csrf
                             <div class="row d-flex align-items-center">
+
                                 <div class="col-md-2">
-                                <label for="email" class="col-form-label judul-form">Email</label>
+                                    <label for="email" class="col-form-label judul-form">Email</label>
                                 </div>
                                 <div class="col-md-10">
-                                <input type="email" id="email" class="form-control">
+                                    <input type="email" id="email" class="form-control" name="email">
                                 </div>
                             </div>
                             <div class="row g-3 d-flex align-items-center mt-2">
@@ -180,11 +181,12 @@
                                     <label for="comment" class="col-form-label judul-form">Komentar</label>
                                 </div>
                                 <div class="col-md-10">
-                                    <textarea name="" id="comment" cols="50" rows="5" class="form-control"></textarea>
+                                    <textarea name="komen" id="comment" cols="50" rows="5" class="form-control"></textarea>
                                 </div>
                             </div>
                             <div class="text-right mt-2">
                                 <button type="submit" class="btn btn-outline-success btn-comment">KIRIM</button>
+
                             </div>
                         </form>
                     </div>

@@ -5,18 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class hidroponik extends Model
+class Comment extends Model
 {
-    use HasFactory;
-    protected $table = 'hidroponik';
+    protected $table = 'comments';
     protected $fillable = [
-        'slug',
-        'kategori',
-        'materi',
-        'judul',
-        'mentor',
-        'youtube',
-        'ringkasan',
+
+        'email',
+        'comment',
+        'gambar',
+        'post_id'
     ];
     protected $dates = [
         'created_at',

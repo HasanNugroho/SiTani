@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
-use App\Models\hidroponik;
-use App\Models\perkebunan;
-use App\Models\pertanian;
+use App\Models\Materi;
+
 use Illuminate\Support\Str;
 
 class MateriController extends Controller
@@ -18,45 +18,27 @@ class MateriController extends Controller
             'judul' => 'required',
             'mentor' => 'required',
             'youtube' => 'required',
+            'post_id' => 'required',
+            'materi_ke' => 'required',
             'ringkasan' => 'required|mimes:pdf|max:10000',
             'slug' => 'required',
         ]);
-        if($request->kategori == 'pertanian'){
+
         $file = Storage::putFile('public/pertanian', $request->file('ringkasan'));
-        pertanian::create([
+        Materi::create([
             'kategori' => $request->kategori,
             'materi' => $request->materi,
             'judul' => $request->judul,
             'slug' => Str::slug($request->judul),
+            'post_id' => $request->post_id,
+            'materi_ke' => $request->materi_ke,
             'mentor' => $request->mentor,
             'youtube' => $request->youtube,
             'ringkasan' => $file
-            ]);
-        }
-        elseif($request->kategori == 'perkebunan'){
-        $file = Storage::putFile('public/perkebunan', $request->file('ringkasan'));
-        perkebunan::create([
-            'kategori' => $request->kategori,
-            'materi' => $request->materi,
-            'judul' => $request->judul,
-            'slug' => Str::slug($request->judul),
-            'mentor' => $request->mentor,
-            'youtube' => $request->youtube,
-            'ringkasan' => $file
-            ]);
-        }
-        else{
-        $file = Storage::putFile('public/hidroponik', $request->file('ringkasan'));
-        hidroponik::create([
-            'kategori' => $request->kategori,
-            'materi' => $request->materi,
-            'judul' => $request->judul,
-            'slug' => Str::slug($request->judul),
-            'mentor' => $request->mentor,
-            'youtube' => $request->youtube,
-            'ringkasan' => $file
-            ]);
-        }
+        ]);
+
+
+
         return redirect('dashboard');
     }
 }

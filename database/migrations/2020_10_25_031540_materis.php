@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Perkebunan extends Migration
+class Materis extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class Perkebunan extends Migration
      */
     public function up()
     {
-        Schema::create('perkebunan', function (Blueprint $table) {
+        Schema::create('materis', function (Blueprint $table) {
             $table->id();
             $table->string('slug');
             $table->string('post_id');
@@ -35,6 +35,6 @@ class Perkebunan extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('perkebunan');
+        //
     }
 }
