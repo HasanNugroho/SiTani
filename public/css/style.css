@@ -196,6 +196,7 @@ hr{
 
 .category-img {
     max-width: 335px;
+    /* height: 335px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -479,6 +480,9 @@ hr{
     display: flex;
     color: #999999;
     padding: 7px 0;
+}
+.link:hover{
+    color: #219653;
 }
 /* FOOTER END */
 

@@ -1,22 +1,31 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\bab;
+use App\Models\materi;
 use Illuminate\Http\Request;
 
 class ClassController extends Controller
 {
+    public function materi($slug){
+        $bab = bab::where('slug', $slug)->get();
+        $materi = materi::where('slug', $slug)->get();
+        return view('backend.materi',['bab' => $bab, 'materi' => $materi]);
+    }
     public function getTani()
     {
-        return view('backend.tani');
+        $bab = bab::where('kategori', 'pertanian')->get();
+        return view('backend.tani')->with(compact('bab'));
     }
     public function getKebun()
     {
-        return view('backend.kebun');
+        $bab = bab::where('kategori', 'perkebunan')->get();
+        return view('backend.kebun')->with(compact('bab'));
     }
     public function getHidro()
     {
-        return view('backend.hidro');
+        $bab = bab::where('kategori', 'hidroponik')->get();
+        return view('backend.hidro')->with(compact('bab'));
     }
     public function storeHidro(Request $request)
     {
