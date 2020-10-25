@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\bab;
+use App\Models\Comment;
 use App\Models\materi as ModelsMateri;
 use App\Models\materi;
+use Facade\FlareClient\Http\Response;
 
 class HomeController extends Controller
 {
@@ -37,17 +39,24 @@ class HomeController extends Controller
     {
         return view('pengembangan');
     }
-    public function materi($slug)
+    public function materi($slug, $id)
     {
         $bab = bab::where('slug', $slug)->get();
-        $materi = materi::where('bab', $slug)->get();
-        $materis = materi::where('bab', $slug)->count();
-
-        if ($materis == 0) {
+        $materi = materi::where(['bab' => $bab[0]->judul_bab, 'materi_ke' => $id])->get();
+        $materis = materi::where(['bab' => $bab[0]->judul_bab])->get();
+        $comment = Comment::where('post_id', $materi[0]->post_id)->get();
+        $m = materi::where('bab', $bab[0]->judul_bab)->count();
+        if ($m == 0) {
             return redirect('/pengembangan');
         } else {
 
-            return view('materi');
+            return view('materi')->with(compact('bab', 'materi', 'comment', 'materis'));
         }
+    }
+    public function download($path)
+    {
+
+        $fpath = '/storage/pertanian/' . $path;
+        return response()->download(public_path($fpath));
     }
 }

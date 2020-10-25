@@ -40,7 +40,7 @@ class MateriController extends Controller
             'slug' => Str::slug($request->judul),
             'mentor' => $request->mentor,
             'youtube' => $request->youtube,
-            'ringkasan' => $file
+            'ringkasan' => $request->file('ringkasan')
         ]);
         return view('backend.kelas');
     }
@@ -66,14 +66,14 @@ class MateriController extends Controller
             'mentor' => 'required',
             'youtube' => 'required',
         ];
-        if($request->file('ringkasan')){
+        if ($request->file('ringkasan')) {
             $data['ringkasan'] = 'required';
         }
         $request->validate($data);
 
-        $targetItem = materi::where('id', $request->id)->first();//memilih data yang akan diupdate
-        if($request->file('ringkasan')){
-            Storage::delete($targetItem->ringkasan);//hapus data lama
+        $targetItem = materi::where('id', $request->id)->first(); //memilih data yang akan diupdate
+        if ($request->file('ringkasan')) {
+            Storage::delete($targetItem->ringkasan); //hapus data lama
 
             $extensi = $request->file('ringkasan')->extension();
             $imgname = Str::random(15).'.'.$extensi;

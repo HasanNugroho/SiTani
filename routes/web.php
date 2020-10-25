@@ -22,11 +22,12 @@ use Illuminate\Http\Request;
 // });
 Route::group(['prefix' => '/'], function () {
     Route::get('', [HomeController::class, 'home']);
+    Route::get('/download/{path}', [HomeController::class, 'download']);
     Route::get('pertanian', [HomeController::class, 'pertanian']);
     Route::get('perkebunan', [HomeController::class, 'perkebunan']);
     Route::get('hidroponik', [HomeController::class, 'hidroponik']);
     Route::get('pengembangan', [HomeController::class, 'pengembangan']);
-    Route::get('/materi/{slug}', [HomeController::class, 'materi']);
+    Route::get('/materi/{slug}/{id}', [HomeController::class, 'materi']);
 });
 
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/', 'verified'], function () {

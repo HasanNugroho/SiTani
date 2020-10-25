@@ -28,7 +28,7 @@
     <?php $i = 1 ?>
     @foreach ($materi as $m)
     <tr>
-      <td scope="col"><?= $i ?></td>
+      <td scope="col">{{$i}}</td>
       <td scope="col">{{$m->materi_ke}}</th>
       <td scope="col">{{$m->judul}}</th>
       <td scope="col">{{$m->mentor}}</th>
@@ -39,6 +39,7 @@
         <a href="/dashboard/kelas/materi/edit/{{$m->slug}}" class="btn btn-sm btn-outline-primary">Edit</a>
       </td>
     </tr>
+    <?php $i++ ?>
     @endforeach
     <?php $i++ ?>
   </tbody>
