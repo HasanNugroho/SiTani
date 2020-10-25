@@ -5,16 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class materi extends Model
+class Materi extends Model
 {
     use HasFactory;
-    protected $table = 'materi';
+    protected $table = 'materis';
     protected $fillable = [
         'slug',
-        'post_id',
-        'materi_ke',
         'kategori',
-        'bab',
+        'materi',
         'judul',
         'mentor',
         'youtube',
