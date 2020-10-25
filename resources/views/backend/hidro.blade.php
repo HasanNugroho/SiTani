@@ -30,7 +30,7 @@
             <td scope="col">{{$bab->mentor}}</th>
             <td scope="col">{{$bab->slug}}</td>
             <td scope="col">
-                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Show</a>
+                <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-outline-success">Tambah Materi</a>
             </td>
         </tr>
       @endforeach
@@ -40,7 +40,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Bab</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Bab Hidroponik</h5>
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">

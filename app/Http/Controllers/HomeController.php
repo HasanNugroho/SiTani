@@ -35,6 +35,8 @@ class HomeController extends Controller
     }
     public function materi()
     {
-        return view('materi');
+        $mc = new MateriController;
+        $player = $mc->player($slug);
+        return view('materi')->with(compact('player'));
     }
 }

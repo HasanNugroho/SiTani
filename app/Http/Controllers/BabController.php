@@ -9,10 +9,10 @@ use Alert;
 
 class BabController extends Controller
 {
-    public function bab()
+    public function materi($slug)
     {
-        $bab = bab::all();
-        return $bab;
+        $bab = bab::where('slug', $slug)->get();
+        return view('backend.add-materi', compact('bab'));
     }
     public function store(Request $request)
     {

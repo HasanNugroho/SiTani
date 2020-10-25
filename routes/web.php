@@ -52,10 +52,6 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas/',
 });
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas/materi', 'verified'], function () {
     // Route::get('', [ClassController::class, 'materi']);
-    Route::get('{slug}', [ClassController::class, 'materi'])->name('materi');
+    Route::get('{slug}', [BabController::class, 'materi']);
     Route::post('post', [MateriController::class, 'store'])->name('materi.post');
-});
-
-Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verified'], function () {
-    Route::post('/materi', [MateriController::class, 'store'])->name('tambah.materi');
 });
