@@ -26,7 +26,7 @@
                         </div>
                         <div class="daftar-playlist">
                             @foreach($materis as $mat)
-                            <a href="">
+                            <a href="/materi/{{$bab[0]->slug}}/{{$mat['materi_ke']}}">
                                 <div class="d-flex align-self-center">
                                     <div class="col-md-1">
                                         <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
@@ -71,7 +71,7 @@
                 <div class="komentar-pengguna">
                     <div class="row mt-4 d-flex">
                         <div class="col-md-1">
-                            <img src="/image/asset/profil.png" alt="" class="img-comment">
+                            <img src="/assets/{{$c['gambar']}}" alt="" class="img-comment" width="50px">
                         </div>
                         <div class="col-md-11">
                             <div class="bagian-komentar">

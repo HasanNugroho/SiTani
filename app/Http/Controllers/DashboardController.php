@@ -36,7 +36,10 @@ class DashboardController extends Controller
 
     public function getKelas(Request $request)
     {
-        return view('backend.kelas');
+        $tani = bab::where('kategori', 'pertanian')->count();
+        $kebun = bab::where('kategori', 'perkebunan')->count();
+        $hidro = bab::where('kategori', 'hidroponik')->count();
+        return view('backend.kelas', ['tani' => $tani, 'kebun' => $kebun, 'hidro' => $hidro]);
     }
 
     public function getTanggapan()
@@ -51,18 +54,21 @@ class DashboardController extends Controller
     }
     public function postKomen(Request $request)
     {
+        $avatar = ['avatar1.svg', 'avatar2.svg', 'avatar.svg'];
+        $a = array_rand($avatar, 1);
+
         Comment::create([
             'email' => $request->email,
             'comment' => $request->komen,
-            'gambar' => 'ok.jpg',
+            'gambar' =>  $avatar[$a],
             'post_id' => $request->post_id,
         ]);
         return redirect()->back();
     }
 
-    public function deleteKomen(Request $request)
+    public function deleteKomen(Request $request, $id)
     {
-        Comment::destroy($request->id);
+        Comment::destroy($id);
         return redirect()->back();
     }
 }
