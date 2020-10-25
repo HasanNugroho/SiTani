@@ -35,7 +35,7 @@
                 <span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>
                 Tanggapan Pengguna
             </a>
-            <a href="#" class="nav-link sidebar-nav mb-3" aria-current="true" id="komentar">
+            <a href="/dashboard/komentar" class="nav-link sidebar-nav mb-3" aria-current="true" id="komentar">
                 <span class="iconify" data-icon="gridicons:chat" data-inline="false"></span>
                 Komentar
             </a>

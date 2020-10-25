@@ -5,7 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Feedback;
+<<<<<<< HEAD
+use App\Models\Comment;
+=======
 use App\Models\materi;
+>>>>>>> 3ffed5aba036f1f93aa3c31b4e166b0a10eb3c1e
 
 
 
@@ -39,5 +43,25 @@ class DashboardController extends Controller
     {
         $feeds = Feedback::get();
         return view('backend.tanggapan', ['feeds' => $feeds]);
+    }
+    public function getKomen()
+    {
+        $comments = Comment::get();
+        return view('backend.komen', ['comments' => $comments]);
+    }
+    public function postKomen(Request $request)
+    {
+        Comment::create([
+            'email' => $request->email,
+            'comment' => $request->komen,
+            'gambar' => 'ok.jpg',
+            'post_id' => 'asldlaks',
+        ]);
+    }
+
+    public function deleteKomen(Request $request)
+    {
+        Comment::destroy($request->id);
+        return redirect()->back();
     }
 }

@@ -40,6 +40,10 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verif
     Route::post('user', [DashboardController::class, 'destroy']);
     Route::get('kelas', [DashboardController::class, 'getKelas']);
     Route::get('tanggapan', [DashboardController::class, 'getTanggapan']);
+    Route::get('komentar', [DashboardController::class, 'getKomen']);
+    Route::post('komentar', [DashboardController::class, 'postKomen']);
+    Route::delete('komentar', [DashboardController::class, 'deleteKomen']);
+
     Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
 });
 
