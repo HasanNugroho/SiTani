@@ -28,14 +28,14 @@ class DashboardController extends Controller
         return redirect()->back();
     }
 
-    public function getKelas(Request $request){eturn view('backend.kelas');}
+    public function getKelas(Request $request)
+    {
+        return view('backend.kelas');
+    }
 
     public function getTanggapan()
     {
         $feeds = Feedback::get();
         return view('backend.tanggapan', ['feeds' => $feeds]);
     }
-
-
-   
 }
