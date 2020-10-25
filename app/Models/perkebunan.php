@@ -11,8 +11,10 @@ class perkebunan extends Model
     protected $table = 'perkebunan';
     protected $fillable = [
         'slug',
+        'post_id',
+        'materi_ke',
         'kategori',
-        'materi',
+        'bab',
         'judul',
         'mentor',
         'youtube',

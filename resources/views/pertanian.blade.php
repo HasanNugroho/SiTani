@@ -44,20 +44,22 @@
                 Klik pada kelas yang ingin kamu ikuti untuk bergabung ke kelas!</p>
         </div>
         <div class="row mt-4 pb-5">
-            <div class="col-md-4">
-                <a href="/materi">
-                    <div class="card card-category">
-                        <img class="card-img category-img" src="/image/pertanian/cabai.png" alt="Cabai">
-                        <div class="card-img-overlay">
-                            <div class="category-content">
-                                <h3 class="card-title">Budidaya Cabai</h3>
-                                <p class="card-text">Mentor : M. Abdullah Umam M.Hum</p>
+            @foreach ($bab as $bab)
+                <div class="col-md-4">
+                    <a href="/materi/{{$bab->slug}}">
+                        <div class="card card-category">
+                            <img class="card-img category-img" src="{{ Storage::url($bab->gambar)}}" alt="Cabai">
+                            <div class="card-img-overlay">
+                                <div class="category-content">
+                                    <h3 class="card-title">Budidaya {{$bab->judul_bab}}</h3>
+                                    <p class="card-text">{{$bab->mentor}}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
+                    </a>
+                </div>
+            @endforeach
+            {{-- <div class="col-md-4">
                 <a href="/pengembangan">
                     <div class="card card-category">
                         <img class="card-img category-img" src="/image/pertanian/padi.png"
@@ -112,7 +114,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div>--}}
             <div class="col-md-4">
                 <div class="card card-category">
                     <img class="card-img category-cms" src="/image/pertanian/coming-soon.png"

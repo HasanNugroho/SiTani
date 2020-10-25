@@ -11,8 +11,10 @@ class pertanian extends Model
     protected $table = 'pertanian';
     protected $fillable = [
         'slug',
+        'post_id',
+        'materi_ke',
         'kategori',
-        'materi',
+        'bab',
         'judul',
         'mentor',
         'youtube',

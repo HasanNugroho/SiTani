@@ -10,7 +10,8 @@ class BabController extends Controller
 {
     public function index()
     {
-        return view('coba-input');
+        $bab = bab::all();
+        return view('coba-input', compact('bab'));
     }
     public function store(Request $request)
     {
@@ -36,6 +37,6 @@ class BabController extends Controller
                 swal('Success', 'Successfully delete', 'success');
             </script>"
         );
-        return redirect('home');
+        return redirect('ujicoba');
     }
 }

@@ -12,7 +12,8 @@ use Illuminate\Http\Request;
 
 
 Route::get('/ujicoba', [BabController::class, 'index']);
-Route::post('/ujicoba/post', [BabController::class, 'store'])->name('ujicoba.post');
+Route::post('/ujicoba/bab/post', [BabController::class, 'store'])->name('ujicoba.post');
+Route::post('/ujicoba/materi/post', [MateriController::class, 'store'])->name('tambah.materi');
 
 // Route::post('/ujicoba/post', function (Request $request) {
 //     dd($request->all());
@@ -34,6 +35,6 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/', 'verified'], fu
 });
 
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verified'], function () {
-Route::post('/materi', [MateriController::class, 'store'])->name('tambah.materi');
+// Route::post('/materi', [MateriController::class, 'store'])->name('tambah.materi');
 });
 

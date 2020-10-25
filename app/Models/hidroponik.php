@@ -11,8 +11,10 @@ class hidroponik extends Model
     protected $table = 'hidroponik';
     protected $fillable = [
         'slug',
+        'post_id',
+        'materi_ke',
         'kategori',
-        'materi',
+        'bab',
         'judul',
         'mentor',
         'youtube',
