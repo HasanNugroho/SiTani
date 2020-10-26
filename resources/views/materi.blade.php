@@ -91,7 +91,7 @@
                                     <label for="email" class="col-form-label judul-form">Email</label>
                                 </div>
                                 <div class="col-md-10">
-                                    <input type="email" id="email" class="form-control" name="email">
+                                    <input type="email" id="email" class="form-control" name="email" required>
                                 </div>
                             </div>
                             <div class="row g-3 d-flex align-items-center mt-2">
@@ -99,7 +99,7 @@
                                     <label for="comment" class="col-form-label judul-form">Komentar</label>
                                 </div>
                                 <div class="col-md-10">
-                                    <textarea name="komen" id="comment" cols="50" rows="5" class="form-control"></textarea>
+                                    <textarea name="komen" id="comment" cols="50" rows="5" class="form-control" required></textarea>
                                 </div>
                             </div>
                             <div class="text-right mt-2">

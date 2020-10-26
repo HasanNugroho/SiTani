@@ -11,15 +11,6 @@ use App\Http\Controllers\ClassController;
 use Illuminate\Http\Request;
 
 
-
-
-// Route::get('/ujicoba', [BabController::class, 'index']);
-// Route::post('/ujicoba/bab/post', [BabController::class, 'store'])->name('ujicoba.post');
-// Route::post('/ujicoba/materi/post', [MateriController::class, 'store'])->name('tambah.materi');
-
-// Route::post('/ujicoba/post', function (Request $request) {
-//     dd($request->all());
-// });
 Route::group(['prefix' => '/'], function () {
     Route::get('', [HomeController::class, 'home']);
     Route::get('/download/{path}', [HomeController::class, 'download']);
@@ -41,9 +32,11 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verif
     Route::post('user', [DashboardController::class, 'destroy']);
     Route::get('kelas', [DashboardController::class, 'getKelas']);
     Route::get('tanggapan', [DashboardController::class, 'getTanggapan']);
+    Route::post('hapus/tanggapan/{id}', [DashboardController::class, 'delTanggapan']);
     Route::get('komentar', [DashboardController::class, 'getKomen']);
-    Route::get('komentar/balas/${id}', [DashboardController::class, 'balas']);
+    Route::get('komentar/balas/{id}', [DashboardController::class, 'balas']);
     Route::post('komentar', [DashboardController::class, 'postKomen']);
+    Route::post('komentar/admin', [DashboardController::class, 'postKomenAdmin']);
     Route::delete('komen/{id}', [DashboardController::class, 'deleteKomen']);
 
     Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
@@ -55,6 +48,7 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas/',
     Route::get('hidroponik', [ClassController::class, 'getHidro']);
     Route::post('hidroponik', [ClassController::class, 'storeHidro']);
     Route::post('bab/tambah', [BabController::class, 'store'])->name('bab.post');
+    Route::post('hapus/{id}', [BabController::class, 'delete'])->name('bab.delete');
 });
 
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas/materi', 'verified'], function () {

@@ -31,7 +31,7 @@ class DashboardController extends Controller
     {
         $id = $request['id'];
         User::destroy($id);
-        return redirect()->back();
+        return redirect()->back()->with(session()->flash('status', 'Data Berhasil Dihapus'));
     }
 
     public function getKelas(Request $request)
@@ -65,14 +65,30 @@ class DashboardController extends Controller
         ]);
         return redirect()->back();
     }
+    public function postKomenAdmin(Request $request)
+    {
+        Comment::create([
+            'email' => $request->email,
+            'comment' => $request->komen,
+            'gambar' =>  '/assets/admin.svg',
+            'post_id' => $request->post_id,
+        ]);
+        return redirect('/dashboard/komentar');
+    }
 
     public function deleteKomen(Request $request, $id)
     {
         Comment::destroy($id);
         return redirect()->back();
     }
+    public function delTanggapan(Request $request, $id)
+    {
+        Feedback::destroy($id);
+        return redirect()->back()->with(session()->flash('status', 'Data Berhasil Dihapus'));
+    }
     public function balas($id)
     {
-        dd($id);
+        $komen = Comment::where('id', $id)->get();
+        return view('backend.balas-komen', ['komen' => $komen]);
     }
 }

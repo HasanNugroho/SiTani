@@ -32,7 +32,7 @@
                     <input type="hidden" value="{{$comment['id']}}" name="id">
                     <button class="btn btn-danger  btn-sm " type="submit" style="width: 60px;">Hapus</button>
                 </form>
-                <a href="/dashboard/komentar/{{$comment['id']}}" class="btn btn-warning btn-sm  d-inline-block" style="width: 60px; height:30px;">Balas</a>
+                <a href="/dashboard/komentar/balas/{{$comment['id']}}" class="btn btn-warning btn-sm  d-inline-block" style="width: 60px; height:30px;">Balas</a>
             </td>
         </tr>
         <?php $i++ ?>

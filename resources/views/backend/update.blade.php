@@ -2,10 +2,9 @@
 @section('table')
 <div class="container">
     <div class="mt-4 mb-3">
-        <h3>Edit Materi {{$edit->judul}}</h3>
+        <h2>Edit Materi {{$edit->judul}}</h2>
     </div>
-    <form method="POST" action="{{route('materi.update')}}"
-        enctype="multipart/form-data">
+    <form method="POST" action="{{route('materi.update')}}" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="container mt-4">
             <input type="hidden" value="{{$edit->id}}" name="id">
