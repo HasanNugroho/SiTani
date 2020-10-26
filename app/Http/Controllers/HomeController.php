@@ -43,14 +43,19 @@ class HomeController extends Controller
     public function materi($slug, $id)
     {
         $bab = bab::where('slug', $slug)->get();
-        $materi = materi::where(['bab' => $bab[0]->judul_bab, 'materi_ke' => $id])->get();
-        $materis = materi::where(['bab' => $bab[0]->judul_bab])->get();
-        $comment = Comment::where('post_id', $materi[0]->post_id)->get();
         $m = materi::where('bab', $bab[0]->judul_bab)->count();
+        $mcount = materi::where(['bab' => $bab[0]->judul_bab, 'materi_ke' => $id])->count();
+
+
         if ($m == 0) {
             return redirect('/pengembangan');
+            $materi = materi::where(['bab' => $bab[0]->judul_bab, 'materi_ke' => $id])->get();
+        } else if ($mcount == 0) {
+            abort(404, 'Not Found');
         } else {
-
+            $materi = materi::where(['bab' => $bab[0]->judul_bab, 'materi_ke' => $id])->get();
+            $materis = materi::where(['bab' => $bab[0]->judul_bab])->get();
+            $comment = Comment::where('post_id', $materi[0]->post_id)->get();
             return view('materi')->with(compact('bab', 'materi', 'comment', 'materis'));
         }
     }

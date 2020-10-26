@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-8 mt-5">
             <div class="ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MKazjpTyAis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="{{$materi[0]->youtube}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class=" row mt-3">
                 <div class="col-6">
@@ -54,11 +54,7 @@
                     <a href="/download/{{$materi[0]->ringkasan}}" type="button" class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</a>
                 </div>
             </div>
-            {{-- <p class="about-small">
-                Sayangnya, untuk saat ini, kelas yang ingin kamu ikuti sedang dalam
-                pengembangan. Mohon untuk cek secara berkala untuk mengetahui
-                update dari kami ya
-            </p> --}}
+
             <div class="row mt-3 mb-2 align-items-center">
                 <hr>
 

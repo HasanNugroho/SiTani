@@ -71,4 +71,8 @@ class DashboardController extends Controller
         Comment::destroy($id);
         return redirect()->back();
     }
+    public function balas($id)
+    {
+        dd($id);
+    }
 }

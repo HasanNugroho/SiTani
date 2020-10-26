@@ -42,6 +42,7 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verif
     Route::get('kelas', [DashboardController::class, 'getKelas']);
     Route::get('tanggapan', [DashboardController::class, 'getTanggapan']);
     Route::get('komentar', [DashboardController::class, 'getKomen']);
+    Route::get('komentar/balas/${id}', [DashboardController::class, 'balas']);
     Route::post('komentar', [DashboardController::class, 'postKomen']);
     Route::delete('komen/{id}', [DashboardController::class, 'deleteKomen']);
 
