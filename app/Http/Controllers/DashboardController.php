@@ -60,8 +60,8 @@ class DashboardController extends Controller
         Comment::create([
             'email' => $request->email,
             'comment' => $request->komen,
-            'gambar' =>  $avatar[$a],
             'post_id' => $request->post_id,
+            'gambar' => $avatar[$a],
         ]);
         return redirect()->back();
     }

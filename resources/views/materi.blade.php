@@ -61,18 +61,20 @@
             </div>
             <div class="row">
                 <div class="text-center">
-                    <p class="teks-komentar">Memiliki pertanyaan mengenai materi yang disampaikan? yuk tanyakan melalui kolom komentar!</p>
+                    <p class="teks-komentar">Memiliki pertanyaan mengenai materi yang disampaikan? yuk tanyakan melalui
+                        kolom komentar!</p>
                 </div>
                 @foreach($comment as $c)
                 <div class="komentar-pengguna">
                     <div class="row mt-4 d-flex">
                         <div class="col-md-1">
-                            <img src="/assets/{{$c['gambar']}}" alt="" class="img-comment" width="50px">
+                            <img src="/assets/{{$c['gambar]}}" alt="" class="img-comment" width="50px">
                         </div>
                         <div class="col-md-11">
                             <div class="bagian-komentar">
                                 <p class="nama">{{$c['email']}}</p>
-                                <p class="tanggal-komen">{{$c['comment']}}</p>
+                                <p class="tanggal-komen">{{$c->created_at->isoFormat('dddd, D MMMM Y H:m')}}</p>
+                                <p class="isi-komentar">{{$c['comment']}}</p>
                                 <a href="#komen" class="reply">Reply</a>
                             </div>
                         </div>
@@ -104,7 +106,6 @@
                             </div>
                             <div class="text-right mt-2">
                                 <button type="submit" class="btn btn-outline-success btn-comment">KIRIM</button>
-
                             </div>
                         </form>
                     </div>
@@ -113,4 +114,9 @@
         </div>
     </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+
 @endsection
