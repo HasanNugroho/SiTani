@@ -20,7 +20,7 @@ class DashboardController extends Controller
         $bab = bab::count();
         $materi = materi::count();
         $comment = Comment::count();
-        return view('backend.home', ['users' => $users, 'feed' => $feeds, 'bab' => $bab, 'materi' => $materi, 'comment' => $comment]);
+        return view('backend.home', ['users' => $users, 'feed' => $feeds, 'bab' => $bab, 'materi' => $materi, 'comment' => $comment, 'random' => $random]);
     }
     public function getUser()
     {
@@ -54,13 +54,9 @@ class DashboardController extends Controller
     }
     public function postKomen(Request $request)
     {
-        $avatar = ['avatar1.svg', 'avatar2.svg', 'avatar.svg'];
-        $a = array_rand($avatar, 1);
-
         Comment::create([
             'email' => $request->email,
             'comment' => $request->komen,
-            'gambar' =>  $avatar[$a],
             'post_id' => $request->post_id,
         ]);
         return redirect()->back();

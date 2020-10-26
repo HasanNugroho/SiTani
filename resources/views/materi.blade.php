@@ -29,7 +29,8 @@
                             <a href="/materi/{{$bab[0]->slug}}/{{$mat['materi_ke']}}" class="dftr-playlist">
                                 <div class="d-flex align-self-center">
                                     <div class="col-md-1">
-                                        <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
+                                        <span class="iconify play-icon" data-inline="true"
+                                            data-icon="ant-design:play-circle-filled"></span>
                                     </div>
                                     <div class="col-md-11">
                                         <p class="materi-playlist">Materi {{$mat['materi_ke']}} - {{$mat['judul']}}</p>
@@ -44,14 +45,17 @@
         </div>
         <div class="col-md-8 mt-5">
             <div class="ratio ratio-16x9">
-                <iframe width="560" height="315" src="{{$materi[0]->youtube}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="{{$materi[0]->youtube}}" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class=" row mt-3">
                 <div class="col-6">
                     <h4 class="judul-materi">Materi {{$materi[0]->materi_ke}} - {{$materi[0]->judul}}</h4>
                 </div>
                 <div class="col-6 text-right">
-                    <a href="/download/{{$materi[0]->ringkasan}}" type="button" class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</a>
+                    <a href="/download/{{$materi[0]->ringkasan}}" type="button"
+                        class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</a>
                 </div>
             </div>
 
@@ -61,18 +65,20 @@
             </div>
             <div class="row">
                 <div class="text-center">
-                    <p class="teks-komentar">Memiliki pertanyaan mengenai materi yang disampaikan? yuk tanyakan melalui kolom komentar!</p>
+                    <p class="teks-komentar">Memiliki pertanyaan mengenai materi yang disampaikan? yuk tanyakan melalui
+                        kolom komentar!</p>
                 </div>
                 @foreach($comment as $c)
                 <div class="komentar-pengguna">
                     <div class="row mt-4 d-flex">
                         <div class="col-md-1">
-                            <img src="/assets/{{$c['gambar']}}" alt="" class="img-comment" width="50px">
+                            <img src="/assets/{{$avatar[rand(0,2)]}}" alt="" class="img-comment" width="50px">
                         </div>
                         <div class="col-md-11">
                             <div class="bagian-komentar">
                                 <p class="nama">{{$c['email']}}</p>
-                                <p class="tanggal-komen">{{$c['comment']}}</p>
+                                <p class="tanggal-komen">{{$c->created_at->isoFormat('dddd, D MMMM Y H:m')}}</p>
+                                <p class="isi-komentar">{{$c['comment']}}</p>
                                 <a href="#komen" class="reply">Reply</a>
                             </div>
                         </div>
@@ -99,12 +105,12 @@
                                     <label for="comment" class="col-form-label judul-form">Komentar</label>
                                 </div>
                                 <div class="col-md-10">
-                                    <textarea name="komen" id="comment" cols="50" rows="5" class="form-control"></textarea>
+                                    <textarea name="komen" id="comment" cols="50" rows="5"
+                                        class="form-control"></textarea>
                                 </div>
                             </div>
                             <div class="text-right mt-2">
                                 <button type="submit" class="btn btn-outline-success btn-comment">KIRIM</button>
-
                             </div>
                         </form>
                     </div>
@@ -113,4 +119,9 @@
         </div>
     </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+
 @endsection

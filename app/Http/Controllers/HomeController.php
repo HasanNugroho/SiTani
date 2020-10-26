@@ -56,7 +56,8 @@ class HomeController extends Controller
             $materi = materi::where(['bab' => $bab[0]->judul_bab, 'materi_ke' => $id])->get();
             $materis = materi::where(['bab' => $bab[0]->judul_bab])->get();
             $comment = Comment::where('post_id', $materi[0]->post_id)->get();
-            return view('materi')->with(compact('bab', 'materi', 'comment', 'materis'));
+            $avatar = [0 => 'avatar1.svg', 1 => 'avatar2.svg', 2 => 'avatar.svg'];
+            return view('materi')->with(compact('bab', 'materi', 'comment', 'materis','avatar'));
         }
     }
     public function download($ringkasan)

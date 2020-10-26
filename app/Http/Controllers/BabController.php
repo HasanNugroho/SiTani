@@ -39,11 +39,11 @@ class BabController extends Controller
         Alert::success('Sukses', 'Bab berhasil diinput');
         return redirect('/dashboard/kelas');
     }
-    // public function hapus($slug)
-    // {
-    //     $data = materi::where('slug', $slug)->first();
-    //     Storage::delete($data['gambar']);
-    //     $data->delete();
-    //     return view('backend.kelas');
-    // }
+    public function hapus($slug)
+    {
+        $data = materi::where('slug', $slug)->first();
+        Storage::delete($data['gambar']);
+        $data->delete();
+        return view('backend.kelas');
+    }
 }

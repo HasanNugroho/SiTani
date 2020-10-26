@@ -18,7 +18,7 @@ class Comments extends Migration
             $table->string('email');
             $table->string('comment');
             $table->string('post_id');
-            $table->string('gambar')->nullable();
+            $table->string('gambar')->snullable();
             $table->timestamps();
         });
     }

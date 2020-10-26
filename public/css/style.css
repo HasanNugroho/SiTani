@@ -656,6 +656,7 @@ a{
     color: rgba(0, 0, 0, 0.6);
 }
 .tanggal-komen{
+    margin-top: -5px;
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
