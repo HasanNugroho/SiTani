@@ -22,7 +22,7 @@ use Illuminate\Http\Request;
 // });
 Route::group(['prefix' => '/'], function () {
     Route::get('', [HomeController::class, 'home']);
-    Route::get('/download/{path}', [HomeController::class, 'download']);
+    Route::get('/download/{ringkasan}', [HomeController::class, 'download']);
     Route::get('pertanian', [HomeController::class, 'pertanian']);
     Route::get('perkebunan', [HomeController::class, 'perkebunan']);
     Route::get('hidroponik', [HomeController::class, 'hidroponik']);

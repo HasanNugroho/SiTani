@@ -28,8 +28,8 @@ class MateriController extends Controller
         ]);
 
             $extensi = $request->file('ringkasan')->extension();
-            $imgname = Str::random(15).'.'.$extensi;
-            $file = Storage::putFileAs('public/data', $request->file('ringkasan'), $imgname);
+            $filename = Str::random(15).'.'.$extensi;
+            $file = Storage::putFileAs('public/data', $request->file('ringkasan'), $filename);
 
         materi::create([
             'kategori' => $request->kategori,
@@ -40,7 +40,7 @@ class MateriController extends Controller
             'slug' => Str::slug($request->judul),
             'mentor' => $request->mentor,
             'youtube' => $request->youtube,
-            'ringkasan' => $imgname,
+            'ringkasan' => $filename,
         ]);
         return redirect()->back();
     }
