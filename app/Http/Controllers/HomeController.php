@@ -59,8 +59,10 @@ class HomeController extends Controller
             return view('materi')->with(compact('bab', 'materi', 'comment', 'materis'));
         }
     }
-    public function download($path)
+    public function download($ringkasan)
     {
-        return Storage::download($path);
+        $data = materi::where('ringkasan', $ringkasan)->firstOrFail();
+        $pathToFile = storage_path('app/public/data/' . $data->ringkasan);
+        return response()->download($pathToFile);
     }
 }

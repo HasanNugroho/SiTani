@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Models\bab;
 use Illuminate\Support\Str;
 use Alert;
+use App\Models\Comment;
 use App\Models\materi;
 
 class BabController extends Controller
@@ -44,6 +45,7 @@ class BabController extends Controller
         $d = materi::where('bab', $bab[0]->judul_bab)->count();
         if ($d != 0) {
             $data = materi::where('bab', $bab[0]->judul_bab)->get();
+            Comment::where('post_id', $data[0]->post_id)->delete();
             materi::where('bab', $data[0]->bab)->delete();
             bab::destroy($bab[0]->id);
 

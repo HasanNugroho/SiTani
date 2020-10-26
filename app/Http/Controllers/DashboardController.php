@@ -54,7 +54,7 @@ class DashboardController extends Controller
     }
     public function postKomen(Request $request)
     {
-        $avatar = ['avatar1.svg', 'avatar2.svg', 'avatar.svg'];
+        $avatar = ['avatar1.png', 'avatar2.png', 'avatar3.png', 'avatar4.png'];
         $a = array_rand($avatar, 1);
 
         Comment::create([
@@ -70,7 +70,7 @@ class DashboardController extends Controller
         Comment::create([
             'email' => $request->email,
             'comment' => $request->komen,
-            'gambar' =>  '/assets/admin.svg',
+            'gambar' =>  'admin.png',
             'post_id' => $request->post_id,
         ]);
         return redirect('/dashboard/komentar');
@@ -79,7 +79,7 @@ class DashboardController extends Controller
     public function deleteKomen(Request $request, $id)
     {
         Comment::destroy($id);
-        return redirect()->back();
+        return redirect()->back()->with(session()->flash('status', 'Data Berhasil Dihapus'));
     }
     public function delTanggapan(Request $request, $id)
     {

@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 
 Route::group(['prefix' => '/'], function () {
     Route::get('', [HomeController::class, 'home']);
-    Route::get('/download/{path}', [HomeController::class, 'download']);
+    Route::get('/download/{ringkasan}', [HomeController::class, 'download']);
     Route::get('pertanian', [HomeController::class, 'pertanian']);
     Route::get('perkebunan', [HomeController::class, 'perkebunan']);
     Route::get('hidroponik', [HomeController::class, 'hidroponik']);
@@ -38,9 +38,8 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verif
     Route::post('komentar', [DashboardController::class, 'postKomen']);
     Route::post('komentar/admin', [DashboardController::class, 'postKomenAdmin']);
     Route::delete('komen/{id}', [DashboardController::class, 'deleteKomen']);
-
-    Route::post('/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
 });
+Route::post('/dashboard/feedback/post', [FeedbackController::class, 'store'])->name('feedback.post');
 
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard/kelas/', 'verified'], function () {
     Route::get('tani', [ClassController::class, 'getTani']);

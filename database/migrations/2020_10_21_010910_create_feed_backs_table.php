@@ -17,6 +17,7 @@ class CreateFeedBacksTable extends Migration
             $table->id();
             $table->string('nama');
             $table->string('email');
+            $table->string('gambar');
             $table->text('message');
             $table->timestamps();
         });
