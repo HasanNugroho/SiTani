@@ -8,6 +8,7 @@ use App\Models\Comment;
 use App\Models\materi as ModelsMateri;
 use App\Models\materi;
 use Facade\FlareClient\Http\Response;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -55,8 +56,6 @@ class HomeController extends Controller
     }
     public function download($path)
     {
-
-        $fpath = '/storage/pertanian/' . $path;
-        return response()->download(public_path($fpath));
+        return Storage::download($path);
     }
 }

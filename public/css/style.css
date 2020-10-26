@@ -11,6 +11,9 @@ li{
 hr{
     opacity: 8% !important;
 }
+a{
+    text-decoration:none !important;
+}
 
 /* NAVBAR */
 .navbar-font {
@@ -623,6 +626,9 @@ hr{
 }
 .hidden{
     display: none;
+}
+.dftr-playlist:hover{
+    background-color: #256a34 !important;
 }
 /* WEB PLAYER END */
 /* COMMENT */

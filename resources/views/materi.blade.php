@@ -26,7 +26,7 @@
                         </div>
                         <div class="daftar-playlist">
                             @foreach($materis as $mat)
-                            <a href="/materi/{{$bab[0]->slug}}/{{$mat['materi_ke']}}">
+                            <a href="/materi/{{$bab[0]->slug}}/{{$mat['materi_ke']}}" class="dftr-playlist">
                                 <div class="d-flex align-self-center">
                                     <div class="col-md-1">
                                         <span class="iconify play-icon" data-inline="true" data-icon="ant-design:play-circle-filled"></span>
@@ -51,7 +51,7 @@
                     <h4 class="judul-materi">Materi {{$materi[0]->materi_ke}} - {{$materi[0]->judul}}</h4>
                 </div>
                 <div class="col-6 text-right">
-                    <a href="/download/{{Storage::url($materi[0]->ringkasan)}}" type="button" class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</a>
+                    <a href="/download/{{$materi[0]->ringkasan}}" type="button" class="btn btn-success testi-button display-button">DOWNLOAD RINGKASAN</a>
                 </div>
             </div>
             {{-- <p class="about-small">

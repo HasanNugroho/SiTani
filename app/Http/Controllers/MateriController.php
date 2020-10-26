@@ -40,9 +40,9 @@ class MateriController extends Controller
             'slug' => Str::slug($request->judul),
             'mentor' => $request->mentor,
             'youtube' => $request->youtube,
-            'ringkasan' => $request->file('ringkasan')
+            'ringkasan' => $imgname,
         ]);
-        return view('backend.kelas');
+        return redirect()->back();
     }
     public function hapus($slug)
     {
