@@ -8,7 +8,9 @@
     <div class="container m-auto">
         <h3 class="ktkls mt-5">KATEGORI KELAS</h3>
         <h1 class="jumbo-big mt-2">Hidroponik</h1>
-        <p class="jumbo-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus tortor libero, vel mauris adipiscing suspendisse id risus vitae. Bibendum integer metus, sed tristique.</p>
+        <p class="jumbo-small">
+            Pada kelas online ini kamu akan belajar cara bertani secara konvensional. Kelas ini cocok untuk kamu yang baru mulai terjun di dunia hidroponik pada umumnya.
+        </p>
         <p class="lead mt-4 d-flex">
             <a class="btn btn-light jumbo-button-1" href="#kategori-hidro" role="button">LIHAT DAFTAR KELAS</a>
         </p>
@@ -58,104 +60,6 @@
                 </a>
             </div>
             @endforeach
-            {{-- <div class="col-md-4">
-                <a href="/pengembangan">
-                    <div class="card card-category">
-                        <img class="card-img category-img" src="/image/hidroponik/tomat.png"
-                            alt="tomat">
-                        <div class="card-img-overlay">
-                            <div class="category-content">
-                                <h3 class="card-title">Budidaya Tomat</h3>
-                                <p class="card-text">Mentor : Anjay Mabar S.Pd</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="/pengembangan">
-                    <div class="card card-category">
-                        <img class="card-img category-img" src="/image/hidroponik/brokoli.png"
-                            alt="brokoli">
-                        <div class="card-img-overlay">
-                            <div class="category-content">
-                                <h3 class="card-title">Budidaya Brokoli</h3>
-                                <p class="card-text">Mentor : Anjay Mabar S.Pd</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="/pengembangan">
-                    <div class="card card-category">
-                        <img class="card-img category-img" src="/image/hidroponik/sawi.png"
-                            alt="sawi">
-                        <div class="card-img-overlay">
-                            <div class="category-content">
-                                <h3 class="card-title">Budidaya Sawi</h3>
-                                <p class="card-text">Mentor : M. Abdullah Umam M.Hum</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="/pengembangan">
-                    <div class="card card-category">
-                        <img class="card-img category-img" src="/image/hidroponik/bayam.png"
-                            alt="bayam">
-                        <div class="card-img-overlay">
-                            <div class="category-content">
-                                <h3 class="card-title">Budidaya Bayam</h3>
-                                <p class="card-text">Mentor : Anjay Mabar S.Pd</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="/pengembangan">
-                    <div class="card card-category">
-                        <img class="card-img category-img" src="/image/hidroponik/selada.png"
-                            alt="selada">
-                        <div class="card-img-overlay">
-                            <div class="category-content">
-                                <h3 class="card-title">Budidaya Selada</h3>
-                                <p class="card-text">Mentor : Anjay Mabar S.Pd</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="/pengembangan">
-                    <div class="card card-category">
-                        <img class="card-img category-img" src="/image/hidroponik/pakcoy.png"
-                            alt="pakcoy">
-                        <div class="card-img-overlay">
-                            <div class="category-content">
-                                <h3 class="card-title">Budidaya Pakcoy</h3>
-                                <p class="card-text">Mentor : Anjay Mabar S.Pd</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div> 
-            <div class="col-md-4">
-                <a href="/pengembangan">
-                    <div class="card card-category">
-                        <img class="card-img category-img" src="/image/hidroponik/stroberi.png"
-                            alt="stroberi">
-                        <div class="card-img-overlay">
-                            <div class="category-content">
-                                <h3 class="card-title">Budidaya Stoberi</h3>
-                                <p class="card-text">Mentor : Anjay Mabar S.Pd</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div> --}}
             <div class="col-md-4">
                 <div class="card card-category">
                     <img class="card-img category-cms" src="/image/hidroponik/coming-soon.png" alt="Coming soon">

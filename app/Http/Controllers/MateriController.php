@@ -89,6 +89,6 @@ class MateriController extends Controller
         $update['youtube'] = $request->get('youtube');
 
         materi::where('id', $request->id)->update($update);
-        return redirect()->back();
+        return redirect('/dashboard/kelas');
     }
 }

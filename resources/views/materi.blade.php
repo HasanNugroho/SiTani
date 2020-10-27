@@ -68,7 +68,7 @@
                 <div class="komentar-pengguna">
                     <div class="row mt-4 d-flex">
                         <div class="col-md-1">
-                            <img src="/assets/{{$c['gambar]}}" alt="" class="img-comment" width="50px">
+                            <img src="/assets/{{$c['gambar']}}" alt="" class="img-comment" width="50px">
                         </div>
                         <div class="col-md-11">
                             <div class="bagian-komentar">

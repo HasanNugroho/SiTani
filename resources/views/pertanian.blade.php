@@ -9,7 +9,7 @@
         <h3 class="ktkls mt-5">KATEGORI KELAS</h3>
         <h1 class="jumbo-big mt-2">Pertanian
         </h1>
-        <p class="jumbo-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus tortor libero, vel mauris adipiscing suspendisse id risus vitae. Bibendum integer metus, sed tristique.</p>
+        <p class="jumbo-small">Pada kelas online ini kamu akan belajar cara bertani secara konvensional. Kelas ini cocok untuk kamu yang baru mulai terjun di dunia  Pertanian pada umumnya.</p>
         <p class="lead mt-4 d-flex">
             <a class="btn btn-light jumbo-button-1" href="#kategori-kelas" role="button">LIHAT DAFTAR KELAS</a>
         </p>
