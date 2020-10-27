@@ -23,10 +23,10 @@ Route::group(['prefix' => '/'], function () {
 
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/', 'verified'], function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
+    Route::get('register', function () {
+        return view('auth.register');
+    })->name('register');
 });
-        Route::get('register', function () {
-            return view('auth.register');
-        })->name('register');
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => '/dashboard', 'verified'], function () {
     Route::get('user', [DashboardController::class, 'getUser']);
     Route::post('user', [DashboardController::class, 'destroy']);
