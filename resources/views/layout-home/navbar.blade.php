@@ -53,11 +53,11 @@
                         @csrf
                         <div class="form-group">
                             <label for="exampleFormControlInput1" class="label-feed">Nama</label>
-                            <input type="text" class="form-feed form-control" id="exampleFormControlInput1" name="nama" required>
+                            <input type="text" class="form-feed form-control" id="exampleFormControlInput1" value="namamu.." name="nama" required>
                         </div>
                         <div class="form-group mt-2">
                             <label for="exampleFormControlInput1" class="label-feed">Email</label>
-                            <input type="email" class="form-feed form-control" id="exampleFormControlInput1" name="email" required>
+                            <input type="email" class="form-feed form-control" id="exampleFormControlInput1" value="emailmu@gmail.com" name="email" required>
                         </div>
                         <div class="form-group mt-2">
                             <label for="exampleFormControlInput2" class="label-feed">Pendapatmu</label>

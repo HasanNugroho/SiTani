@@ -4,11 +4,9 @@
 <div class="jumbotron d-flex" style="background-image: url(/image/perkebunan/jumbotron.png)">
     <div class="container m-auto jumbo-u">
         <h3 class="ktkls mt-5">KATEGORI KELAS</h3>
-        <h1 class="jumbo-big mt-2">Pertanian</h1>
+        <h1 class="jumbo-big mt-2">Perkebunan</h1>
         <p class="jumbo-small">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-            tortor libero, vel mauris adipiscing suspendisse id risus vitae.
-            Bibendum integer metus, sed tristique.
+            Pada kelas online ini kamu akan belajar cara bertani secara konvensional. Kelas ini cocok untuk kamu yang baru mulai terjun di dunia perkebunan pada umumnya.
         </p>
         <p class="lead mt-4 d-flex">
             <a class="btn btn-light jumbo-button-1" href="#kategori-perkebunan" role="button">LIHAT DAFTAR KELAS</a>
