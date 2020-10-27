@@ -20,7 +20,7 @@ class DashboardController extends Controller
         $bab = bab::count();
         $materi = materi::count();
         $comment = Comment::count();
-        return view('backend.home', ['users' => $users, 'feed' => $feeds, 'bab' => $bab, 'materi' => $materi, 'comment' => $comment, 'random' => $random]);
+        return view('backend.home', ['users' => $users, 'feed' => $feeds, 'bab' => $bab, 'materi' => $materi, 'comment' => $comment]);
     }
     public function getUser()
     {
