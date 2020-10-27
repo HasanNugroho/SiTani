@@ -13,6 +13,7 @@ class FeedBack extends Model
         'nama',
         'email',
         'message',
+        'gambar',
     ];
     protected $dates = [
         'created_at',

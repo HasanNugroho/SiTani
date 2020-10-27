@@ -582,6 +582,7 @@ a{
     line-height: 25px;
     text-align: center;
     color: #999999;
+    text-transform: capitalize;
 }
 .judul-playlist{
     font-family: Rubik;

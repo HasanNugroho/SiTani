@@ -143,7 +143,7 @@
                         <div class="body-testi">
                             <p class="card-text testi-small">{{$tanggapan->message}}</p>
                             <h4 class="card-title testi-big">{{$tanggapan->nama}}</h4>
-                            <img class="testi-img-round" alt="Image" src="/image/landing/profil1.png">
+                            <img class="testi-img-round" alt="Image" src="/assets/{{$tanggapan['gambar']}}">
                         </div>
                     </div>
                 </div>

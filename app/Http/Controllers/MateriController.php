@@ -27,9 +27,9 @@ class MateriController extends Controller
             'ringkasan' => 'required',
         ]);
 
-            $extensi = $request->file('ringkasan')->extension();
-            $filename = Str::random(15).'.'.$extensi;
-            $file = Storage::putFileAs('public/data', $request->file('ringkasan'), $filename);
+        $extensi = $request->file('ringkasan')->extension();
+        $filename = Str::random(15) . '.' . $extensi;
+        $file = Storage::putFileAs('public/data', $request->file('ringkasan'), $filename);
 
         materi::create([
             'kategori' => $request->kategori,
@@ -42,7 +42,7 @@ class MateriController extends Controller
             'youtube' => $request->youtube,
             'ringkasan' => $filename,
         ]);
-        return redirect()->back();
+        return redirect()->back()->with(session()->flash('status', 'Data Berhasil DItambahkan'));
     }
     public function hapus($slug)
     {
@@ -76,8 +76,8 @@ class MateriController extends Controller
             Storage::delete($targetItem->ringkasan); //hapus data lama
 
             $extensi = $request->file('ringkasan')->extension();
-            $imgname = Str::random(15).'.'.$extensi;
-            $file = Storage::putFileAs('public/data', $request->file('ringkasan'), $imgname);//tambah file baru
+            $imgname = Str::random(15) . '.' . $extensi;
+            $file = Storage::putFileAs('public/data', $request->file('ringkasan'), $imgname); //tambah file baru
 
             $update['ringkasan'] = $file;
         }

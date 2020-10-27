@@ -6,6 +6,11 @@
   </div>
 
 </div>
+@if(session('status') != Null)
+<div class="alert alert-success col-6" role="alert">
+  {{session('status')}}
+</div>
+@endif
 <table class="table mt-4">
   <thead>
     <tr>
@@ -26,10 +31,10 @@
       <td scope="col">{{$feed['email']}}</td>
       <td scope="col">{{$feed['message']}}</td>
       <td scope="col">
-        <form action="/dashboard/user" method="POST">
+        <form action="/dashboard/hapus/tanggapan/{{$feed['id']}}" method="POST">
           @csrf
           <input type="hidden" value="{{$feed['id']}}" name="id">
-          <button class="btn btn-danger  btn-sm" type="submit" onclick="confirm()">Hapus</button>
+          <button class="btn btn-danger  btn-sm" type="submit">Hapus</button>
         </form>
       </td>
     </tr>

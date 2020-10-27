@@ -12,6 +12,11 @@
     </button>
   </div>
 </div>
+@if(session('status') != Null)
+<div class="alert alert-success col-6" role="alert">
+  {{session('status')}}
+</div>
+@endif
 <table class="table mt-4">
   <thead>
     <tr>
@@ -54,7 +59,7 @@
       <div class="modal-body">
         <div class="mt-4 mb-3">
           @foreach ($bab as $bab)
-          <h3>Tambah Materi {{$bab->judul_bab}}</h3>
+
         </div>
         <form class="form-horizontal form-material" method="POST" action="{{route('materi.post')}}" enctype="multipart/form-data">
           @csrf
@@ -64,23 +69,23 @@
             @endforeach
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Materi Ke</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" name="materi_ke">
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="materi_ke" required>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Judul</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" name="judul">
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="judul" required>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Mentor</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" name="mentor">
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="mentor" required>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Link youtube</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" name="youtube">
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="youtube" required>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Ringkasan matei</label>
-              <input type="file" class="form-control" id="exampleFormControlInput1" name="ringkasan">
+              <input type="file" class="form-control" id="exampleFormControlInput1" name="ringkasan" required>
             </div>
           </div>
           <div class="modal-footer">

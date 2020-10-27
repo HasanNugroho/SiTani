@@ -14,6 +14,11 @@
     </a>
   </div>
 </div>
+@if(session('status') != Null)
+<div class="alert alert-success col-6" role="alert">
+  {{session('status')}}
+</div>
+@endif
 <table class="table mt-4">
   <thead>
     <tr>

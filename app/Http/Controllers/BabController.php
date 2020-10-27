@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Models\bab;
 use Illuminate\Support\Str;
 use Alert;
+use App\Models\Comment;
 use App\Models\materi;
 
 class BabController extends Controller
@@ -36,14 +37,22 @@ class BabController extends Controller
             'kategori' => $request->kategori,
             'mentor' => $request->mentor,
         ]);
-        Alert::success('Sukses', 'Bab berhasil diinput');
-        return redirect('/dashboard/kelas');
+        return redirect()->back()->with(session()->flash('status', 'Data Berhasil Ditambahkan'));
     }
-    public function hapus($slug)
+    public function delete($id)
     {
-        $data = materi::where('slug', $slug)->first();
-        Storage::delete($data['gambar']);
-        $data->delete();
-        return view('backend.kelas');
+        $bab = bab::where('id', $id)->get();
+        $d = materi::where('bab', $bab[0]->judul_bab)->count();
+        if ($d != 0) {
+            $data = materi::where('bab', $bab[0]->judul_bab)->get();
+            Comment::where('post_id', $data[0]->post_id)->delete();
+            materi::where('bab', $data[0]->bab)->delete();
+            bab::destroy($bab[0]->id);
+
+            return redirect()->back()->with(session()->flash('status', 'Data Berhasil Dihapus'));
+        } else {
+            bab::destroy($bab[0]->id);
+            return redirect()->back()->with(session()->flash('status', 'Data Berhasil Dihapus'));
+        }
     }
 }

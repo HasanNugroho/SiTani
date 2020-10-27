@@ -1,15 +1,25 @@
 @extends('dashboard')
 @section('table')
 <div class="row mt-4">
+
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
     <div class="col-md-6 col-sm-6 text-left">
         <h2>Bab Pertanian</h2>
     </div>
+
     <div class="col-md-6 col-sm-6 text-right">
         <a type="button" class="btn btn-success mr-3" data-toggle="modal" data-target="#exampleModal">
             Tambah Bab
         </a>
     </div>
 </div>
+@if(session('status') != Null)
+<div class="alert alert-success col-6" role="alert">
+    {{session('status')}}
+</div>
+@endif
 <table class="table mt-4">
     <thead>
         <tr>
@@ -32,6 +42,10 @@
             <td scope="col">{{$bab->slug}}</td>
             <td scope="col">
                 <a href="/dashboard/kelas/materi/{{$bab->slug}}" class="btn btn-sm btn-outline-success">Show</a>
+                <form action="/dashboard/kelas/hapus/{{$bab->id}}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-sm btn-outline-danger mt-1">Hapus</button>
+                </form>
             </td>
         </tr>
         <?php $i++ ?>
@@ -51,25 +65,19 @@
                     <div class="container mt-4">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Judul</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" name="judul_bab">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" name="judul_bab" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Mentor</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" name="mentor">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" name="mentor" required>
                         </div>
                         <div class="mb-3">
-                            {{-- <label for="exampleFormControlInput1" class="form-label">Kategori</label>
-                            <select  class="form-select" aria-label="Default select example" name="kategori">
-                                <option selected>Pilih Kategori</option>
-                                <option value="pertanian">Pertanian</option>
-                                <option value="perkebunan">Perkebunan</option>
-                                <option value="hidroponik">Hidroponik</option>
-                            </select> --}}
+
                             <input type="hidden" value="pertanian" name="kategori">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">gambar</label>
-                            <input type="file" class="form-control" id="exampleFormControlInput1" name="gambar">
+                            <label for="exampleFormControlInput1" class="form-label">Thumbnail</label>
+                            <input type="file" class="form-control" id="exampleFormControlInput1" name="gambar" required>
                         </div>
                     </div>
                     <div class="modal-footer">
